@@ -1,0 +1,3886 @@
+{
+  "id": "89d5dacc517a",
+  "created_at": "2026-11-13T01:35:20.825700Z",
+  "finished_at": "2026-11-13T01:35:22.697645Z",
+  "procurement": {
+    "title": "Закупка картриджей для принтеров",
+    "customer": null,
+    "delivery_place": null,
+    "delivery_terms": null,
+    "delivery_included": null,
+    "items": [
+      {
+        "id": "item1",
+        "number": 1,
+        "name": "Картридж лазерный HP 59A (CF259A)",
+        "short_name": "Картридж HP 59A",
+        "brand": "HP",
+        "model": "59A / CF259A",
+        "okpd2": null,
+        "ktru": null,
+        "quantity": "10",
+        "unit": "шт.",
+        "content": null,
+        "content_op": "=",
+        "requirements": [
+          {
+            "id": "item1_r1",
+            "name": "Тип картриджа",
+            "op": "=",
+            "value": "лазерный",
+            "value_max": null,
+            "values": [],
+            "unit": null,
+            "tolerance": null,
+            "mandatory": true,
+            "by_brand": true,
+            "quote": "Картридж лазерный HP 59A (CF259A)"
+          },
+          {
+            "id": "item1_r2",
+            "name": "Оригинальность",
+            "op": "=",
+            "value": "оригинальный",
+            "value_max": null,
+            "values": [],
+            "unit": null,
+            "tolerance": null,
+            "mandatory": true,
+            "by_brand": false,
+            "quote": "оригинальный"
+          },
+          {
+            "id": "item1_r3",
+            "name": "Цвет",
+            "op": "=",
+            "value": "черный",
+            "value_max": null,
+            "values": [],
+            "unit": null,
+            "tolerance": null,
+            "mandatory": false,
+            "by_brand": true,
+            "quote": "черный"
+          },
+          {
+            "id": "item1_r4",
+            "name": "Ресурс",
+            "op": ">=",
+            "value": "3000",
+            "value_max": null,
+            "values": [],
+            "unit": "страниц",
+            "tolerance": null,
+            "mandatory": true,
+            "by_brand": true,
+            "quote": "ресурс не менее 3000 страниц"
+          }
+        ],
+        "search_queries": [
+          "Картридж лазерный HP 59A",
+          "Картридж лазерный 59A",
+          "HP 59A"
+        ],
+        "eis_queries": [
+          "Картридж HP 59A CF259A",
+          "Картридж лазерный HP 59A оригинальный"
+        ],
+        "web_queries": [
+          "HP 59A CF259A оригинальный картридж цена",
+          "Картридж HP 59A черный 3000 страниц цена"
+        ],
+        "negative_terms": [
+          "совместимый",
+          "заправка",
+          "тонер",
+          "б/у"
+        ]
+      }
+    ],
+    "source_name": "opisanie_kartridzh.txt",
+    "source_sha256": "48a5c08cb35f41b6718e60f62fb12117ce6ec1e627879147381fa51d5d24b148",
+    "parse_mode": "llm",
+    "notes": [
+      "Таблица позиций не найдена: описание разобрано как одна позиция."
+    ]
+  },
+  "items": [
+    {
+      "item": {
+        "id": "item1",
+        "number": 1,
+        "name": "Картридж лазерный HP 59A (CF259A)",
+        "short_name": "Картридж HP 59A",
+        "brand": "HP",
+        "model": "59A / CF259A",
+        "okpd2": null,
+        "ktru": null,
+        "quantity": "10",
+        "unit": "шт.",
+        "content": null,
+        "content_op": "=",
+        "requirements": [
+          {
+            "id": "item1_r1",
+            "name": "Тип картриджа",
+            "op": "=",
+            "value": "лазерный",
+            "value_max": null,
+            "values": [],
+            "unit": null,
+            "tolerance": null,
+            "mandatory": true,
+            "by_brand": true,
+            "quote": "Картридж лазерный HP 59A (CF259A)"
+          },
+          {
+            "id": "item1_r2",
+            "name": "Оригинальность",
+            "op": "=",
+            "value": "оригинальный",
+            "value_max": null,
+            "values": [],
+            "unit": null,
+            "tolerance": null,
+            "mandatory": true,
+            "by_brand": false,
+            "quote": "оригинальный"
+          },
+          {
+            "id": "item1_r3",
+            "name": "Цвет",
+            "op": "=",
+            "value": "черный",
+            "value_max": null,
+            "values": [],
+            "unit": null,
+            "tolerance": null,
+            "mandatory": false,
+            "by_brand": true,
+            "quote": "черный"
+          },
+          {
+            "id": "item1_r4",
+            "name": "Ресурс",
+            "op": ">=",
+            "value": "3000",
+            "value_max": null,
+            "values": [],
+            "unit": "страниц",
+            "tolerance": null,
+            "mandatory": true,
+            "by_brand": true,
+            "quote": "ресурс не менее 3000 страниц"
+          }
+        ],
+        "search_queries": [
+          "Картридж лазерный HP 59A",
+          "Картридж лазерный 59A",
+          "HP 59A"
+        ],
+        "eis_queries": [
+          "Картридж HP 59A CF259A",
+          "Картридж лазерный HP 59A оригинальный"
+        ],
+        "web_queries": [
+          "HP 59A CF259A оригинальный картридж цена",
+          "Картридж HP 59A черный 3000 страниц цена"
+        ],
+        "negative_terms": [
+          "совместимый",
+          "заправка",
+          "тонер",
+          "б/у"
+        ]
+      },
+      "offers": [
+        {
+          "id": "item1-e1",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1121509958424000025",
+          "retrieved_at": "2026-11-12T20:59:57.851346Z",
+          "title": "Картридж лазерный (оригинальный). HP 59A (CF259A)",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ НАУЧНО-ПРОИЗВОДСТВЕННОЕ ПРЕДПРИЯТИЕ \"МАРСИСТЕМСЕРВИС\" (ООО НПП \"МАРСИСТЕМСЕРВИС\")",
+          "supplier_inn": "1215023289",
+          "price": "7588.86285714286",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2024-06-21T00:00:00Z",
+          "contract_number": "1121509958424000025",
+          "contract_status": "Исполнение завершено",
+          "penalties": false,
+          "customer": null,
+          "okpd2": "26.20.40.190",
+          "ktru": null,
+          "quantity_in_source": "18",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "Картридж лазерный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "Картридж лазерный (оригинальный)",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "",
+              "unit": null,
+              "quote": "",
+              "quote_verified": false
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Картридж лазерный (оригинальный). HP 59A (CF259A). Характеристики: . Единица измерения: Штука. Цена за единицу: 7588.86285714286 руб. Количество в контракте: 18.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1121509958424000025",
+            "retrieved_at": "2026-11-12T20:59:57.851346Z",
+            "snapshot_path": "evidence/6ff21ed843656c40d105b0656e53b26a5cad0956f61185c339d221f4b955b1fe.html.gz",
+            "sha256": "6ff21ed843656c40d105b0656e53b26a5cad0956f61185c339d221f4b955b1fe",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1121509958424000025",
+            "method": "Электронный аукцион",
+            "prefilter_score": 1.03,
+            "position_index": 1,
+            "relevant": true,
+            "note": "Модель и существенные тип и оригинальность подтверждены; цвет и ресурс не указаны.",
+            "product_name": "Картридж лазерный (оригинальный). HP 59A (CF259A)",
+            "content_quote": "Единица измерения: Штука.",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "missing",
+              "item1_r4": "missing"
+            },
+            "penalties_url": "https://zakupki.gov.ru/epz/contract/contractCard/process-info.html?reestrNumber=1121509958424000025",
+            "rnp": false,
+            "rnp_url": "https://zakupki.gov.ru/epz/dishonestsupplier/search/results.html?searchString=1215023289&fz44=on&fz223=on&dsStatuses=0&dsStatuses_0=on",
+            "legal_checked": true
+          }
+        },
+        {
+          "id": "item1-e2",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1121509958424000025",
+          "retrieved_at": "2026-11-12T20:59:57.851346Z",
+          "title": "Картридж лазерный (оригинальный). HP 59A (CF259A)",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ НАУЧНО-ПРОИЗВОДСТВЕННОЕ ПРЕДПРИЯТИЕ \"МАРСИСТЕМСЕРВИС\" (ООО НПП \"МАРСИСТЕМСЕРВИС\")",
+          "supplier_inn": "1215023289",
+          "price": "7550.15",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2024-06-21T00:00:00Z",
+          "contract_number": "1121509958424000025",
+          "contract_status": "Исполнение завершено",
+          "penalties": false,
+          "customer": null,
+          "okpd2": "26.20.40.190",
+          "ktru": null,
+          "quantity_in_source": "1",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "Картридж лазерный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "Картридж лазерный (оригинальный)",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "",
+              "unit": null,
+              "quote": "",
+              "quote_verified": false
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Картридж лазерный (оригинальный). HP 59A (CF259A). Характеристики: . Единица измерения: Штука. Цена за единицу: 7550.15 руб. Количество в контракте: 1.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1121509958424000025",
+            "retrieved_at": "2026-11-12T20:59:57.851346Z",
+            "snapshot_path": "evidence/6ff21ed843656c40d105b0656e53b26a5cad0956f61185c339d221f4b955b1fe.html.gz",
+            "sha256": "6ff21ed843656c40d105b0656e53b26a5cad0956f61185c339d221f4b955b1fe",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1121509958424000025",
+            "method": "Электронный аукцион",
+            "prefilter_score": 1.03,
+            "position_index": 3,
+            "relevant": true,
+            "note": "Модель и существенные тип и оригинальность подтверждены; цвет и ресурс не указаны.",
+            "product_name": "Картридж лазерный (оригинальный). HP 59A (CF259A)",
+            "content_quote": "Единица измерения: Штука.",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "missing",
+              "item1_r4": "missing"
+            },
+            "penalties_url": "https://zakupki.gov.ru/epz/contract/contractCard/process-info.html?reestrNumber=1121509958424000025",
+            "rnp": false,
+            "rnp_url": "https://zakupki.gov.ru/epz/dishonestsupplier/search/results.html?searchString=1215023289&fz44=on&fz223=on&dsStatuses=0&dsStatuses_0=on",
+            "legal_checked": true
+          }
+        },
+        {
+          "id": "item1-e3",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2781313300024000011",
+          "retrieved_at": "2026-11-12T20:47:09.391918Z",
+          "title": "Картридж лазерный HP 59А (CF259A) черный, с чипом, оригинальный. HP 59А (CF259A)",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ВИКТОРИ\" (ООО \"ВИКТОРИ\")",
+          "supplier_inn": "2464256648",
+          "price": "12024.8925",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2024-06-03T00:00:00Z",
+          "contract_number": "2781313300024000011",
+          "contract_status": "Исполнение завершено",
+          "penalties": false,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "4",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "Картридж лазерный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "черный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Картридж лазерный HP 59А (CF259A) черный, с чипом, оригинальный. HP 59А (CF259A). Характеристики: . Единица измерения: Штука. Цена за единицу: 12024.8925 руб. Количество в контракте: 4.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2781313300024000011",
+            "retrieved_at": "2026-11-12T20:47:09.391918Z",
+            "snapshot_path": "evidence/3b4c09aad47788bcc82e71bd0b4af08879242bfe853d3063ae26d3e6451828c0.html.gz",
+            "sha256": "3b4c09aad47788bcc82e71bd0b4af08879242bfe853d3063ae26d3e6451828c0",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2781313300024000011",
+            "method": "Запрос котировок в электронной форме",
+            "prefilter_score": 0.85,
+            "position_index": 9,
+            "relevant": true,
+            "note": "Тип, оригинальность и черный цвет подтверждены; ресурс не указан.",
+            "product_name": "Картридж лазерный HP 59А (CF259A) черный, с чипом, оригинальный",
+            "content_quote": "Единица измерения: Штука.",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "ok",
+              "item1_r4": "missing"
+            },
+            "penalties_url": "https://zakupki.gov.ru/epz/contract/contractCard/process-info.html?reestrNumber=2781313300024000011",
+            "rnp": false,
+            "rnp_url": "https://zakupki.gov.ru/epz/dishonestsupplier/search/results.html?searchString=2464256648&fz44=on&fz223=on&dsStatuses=0&dsStatuses_0=on",
+            "legal_checked": true
+          }
+        },
+        {
+          "id": "item1-e4",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=3290202699523000043",
+          "retrieved_at": "2026-11-12T21:00:05.499523Z",
+          "title": "Картридж оригинальный, лазерный, HP 59A",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЦИФРОВЫЕ ТЕХНОЛОГИИ\" (ООО \"ЦИФРОВЫЕ ТЕХНОЛОГИИ\")",
+          "supplier_inn": "6318058067",
+          "price": "8938.34",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2023-11-24T00:00:00Z",
+          "contract_number": "3290202699523000043",
+          "contract_status": "Исполнение завершено",
+          "penalties": false,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "3",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "лазерный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "",
+              "unit": null,
+              "quote": "",
+              "quote_verified": false
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Картридж оригинальный, лазерный, HP 59A. Характеристики: . Единица измерения: Штука. Цена за единицу: 8938.34 руб. Количество в контракте: 3.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=3290202699523000043",
+            "retrieved_at": "2026-11-12T21:00:05.499523Z",
+            "snapshot_path": "evidence/6deef09bd7dddae5224c480672bc3406371a05c0c37d1e968732c5885d8f1506.html.gz",
+            "sha256": "6deef09bd7dddae5224c480672bc3406371a05c0c37d1e968732c5885d8f1506",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=3290202699523000043",
+            "method": "Электронный аукцион",
+            "prefilter_score": 0.85,
+            "position_index": 11,
+            "relevant": true,
+            "note": "Тип и оригинальность подтверждены; цвет и ресурс не указаны.",
+            "product_name": "Картридж оригинальный, лазерный, HP 59A",
+            "content_quote": "Единица измерения: Штука.",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "missing",
+              "item1_r4": "missing"
+            },
+            "penalties_url": "https://zakupki.gov.ru/epz/contract/contractCard/process-info.html?reestrNumber=3290202699523000043",
+            "rnp": false,
+            "rnp_url": "https://zakupki.gov.ru/epz/dishonestsupplier/search/results.html?searchString=6318058067&fz44=on&fz223=on&dsStatuses=0&dsStatuses_0=on",
+            "legal_checked": true
+          }
+        },
+        {
+          "id": "item1-e5",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202925024000084",
+          "retrieved_at": "2026-11-12T21:00:03.090919Z",
+          "title": "Картридж лазерный HP 59А CF259А для НР оригинальный",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ГРИНВЭЙ\" (ООО \"ГРИНВЭЙ\")",
+          "supplier_inn": "9715409599",
+          "price": "8030.82",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "20%",
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2024-04-05T00:00:00Z",
+          "contract_number": "1771202925024000084",
+          "contract_status": "Исполнение завершено",
+          "penalties": false,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "14",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "Картридж лазерный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "",
+              "unit": null,
+              "quote": "",
+              "quote_verified": false
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Картридж лазерный HP 59А CF259А для НР оригинальный. Характеристики: . Единица измерения: Штука. Цена за единицу: 8030.82 руб. Количество в контракте: 14.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202925024000084",
+            "retrieved_at": "2026-11-12T21:00:03.090919Z",
+            "snapshot_path": "evidence/51ff79931bf3bffd02995bb1b46fabdda244320a8132b36b81f69c0d41ceca9a.html.gz",
+            "sha256": "51ff79931bf3bffd02995bb1b46fabdda244320a8132b36b81f69c0d41ceca9a",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1771202925024000084",
+            "method": "Электронный аукцион",
+            "prefilter_score": 0.75,
+            "position_index": 1,
+            "relevant": true,
+            "note": "Тип и оригинальность подтверждены; цвет и ресурс не указаны.",
+            "product_name": "Картридж лазерный HP 59А CF259А для НР оригинальный",
+            "content_quote": "Единица измерения: Штука.",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "missing",
+              "item1_r4": "missing"
+            },
+            "penalties_url": "https://zakupki.gov.ru/epz/contract/contractCard/process-info.html?reestrNumber=1771202925024000084",
+            "rnp": false,
+            "rnp_url": "https://zakupki.gov.ru/epz/dishonestsupplier/search/results.html?searchString=9715409599&fz44=on&fz223=on&dsStatuses=0&dsStatuses_0=on",
+            "legal_checked": true
+          }
+        },
+        {
+          "id": "item1-e6",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202925024000084",
+          "retrieved_at": "2026-11-12T21:00:03.090919Z",
+          "title": "Картридж лазерный HP 59А CF259А для НР оригинальный",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ГРИНВЭЙ\" (ООО \"ГРИНВЭЙ\")",
+          "supplier_inn": "9715409599",
+          "price": "8030.87",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "20%",
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2024-04-05T00:00:00Z",
+          "contract_number": "1771202925024000084",
+          "contract_status": "Исполнение завершено",
+          "penalties": false,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "1",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "Картридж лазерный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "",
+              "unit": null,
+              "quote": "",
+              "quote_verified": false
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Картридж лазерный HP 59А CF259А для НР оригинальный. Характеристики: . Единица измерения: Штука. Цена за единицу: 8030.87 руб. Количество в контракте: 1.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202925024000084",
+            "retrieved_at": "2026-11-12T21:00:03.090919Z",
+            "snapshot_path": "evidence/51ff79931bf3bffd02995bb1b46fabdda244320a8132b36b81f69c0d41ceca9a.html.gz",
+            "sha256": "51ff79931bf3bffd02995bb1b46fabdda244320a8132b36b81f69c0d41ceca9a",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1771202925024000084",
+            "method": "Электронный аукцион",
+            "prefilter_score": 0.75,
+            "position_index": 3,
+            "relevant": true,
+            "note": "Тип и оригинальность подтверждены; цвет и ресурс не указаны.",
+            "product_name": "Картридж лазерный HP 59А CF259А для НР оригинальный",
+            "content_quote": "Единица измерения: Штука.",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "missing",
+              "item1_r4": "missing"
+            },
+            "penalties_url": "https://zakupki.gov.ru/epz/contract/contractCard/process-info.html?reestrNumber=1771202925024000084",
+            "rnp": false,
+            "rnp_url": "https://zakupki.gov.ru/epz/dishonestsupplier/search/results.html?searchString=9715409599&fz44=on&fz223=on&dsStatuses=0&dsStatuses_0=on",
+            "legal_checked": true
+          }
+        },
+        {
+          "id": "item1-e7",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2781313300024000011",
+          "retrieved_at": "2026-11-12T20:47:09.391918Z",
+          "title": "Картридж лазерный HP 42A (Q5942A) черный, с чипом, оригинальный. HP 42A (Q5942A)",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ВИКТОРИ\" (ООО \"ВИКТОРИ\")",
+          "supplier_inn": "2464256648",
+          "price": "9963.67",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2024-06-03T00:00:00Z",
+          "contract_number": "2781313300024000011",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "1",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "Картридж лазерный HP 42A (Q5942A)",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "черный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "не указано",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Картридж лазерный HP 42A (Q5942A) черный, с чипом, оригинальный. HP 42A (Q5942A). Характеристики: . Единица измерения: Штука. Цена за единицу: 9963.67 руб. Количество в контракте: 1.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2781313300024000011",
+            "retrieved_at": "2026-11-12T20:47:09.391918Z",
+            "snapshot_path": "evidence/3b4c09aad47788bcc82e71bd0b4af08879242bfe853d3063ae26d3e6451828c0.html.gz",
+            "sha256": "3b4c09aad47788bcc82e71bd0b4af08879242bfe853d3063ae26d3e6451828c0",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2781313300024000011",
+            "method": "Запрос котировок в электронной форме",
+            "prefilter_score": 0.75,
+            "position_index": 7,
+            "relevant": true,
+            "note": "Тип, оригинальность и цвет указаны; модель отличается, ресурс не указан.",
+            "product_name": "Картридж лазерный HP 42A (Q5942A) черный, с чипом, оригинальный",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "ok",
+              "item1_r4": "missing"
+            }
+          }
+        },
+        {
+          "id": "item1-e8",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2781313300024000011",
+          "retrieved_at": "2026-11-12T20:47:09.391918Z",
+          "title": "Картридж лазерный HP 83X (CF283X) черный, с чипом, оригинальный. HP 83X (CF283X)",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ВИКТОРИ\" (ООО \"ВИКТОРИ\")",
+          "supplier_inn": "2464256648",
+          "price": "3436.26666666667",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2024-06-03T00:00:00Z",
+          "contract_number": "2781313300024000011",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "3",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "Картридж лазерный HP 83X (CF283X)",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "черный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "не указано",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Картридж лазерный HP 83X (CF283X) черный, с чипом, оригинальный. HP 83X (CF283X). Характеристики: . Единица измерения: Штука. Цена за единицу: 3436.26666666667 руб. Количество в контракте: 3.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2781313300024000011",
+            "retrieved_at": "2026-11-12T20:47:09.391918Z",
+            "snapshot_path": "evidence/3b4c09aad47788bcc82e71bd0b4af08879242bfe853d3063ae26d3e6451828c0.html.gz",
+            "sha256": "3b4c09aad47788bcc82e71bd0b4af08879242bfe853d3063ae26d3e6451828c0",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2781313300024000011",
+            "method": "Запрос котировок в электронной форме",
+            "prefilter_score": 0.75,
+            "position_index": 11,
+            "relevant": true,
+            "note": "Тип, оригинальность и цвет указаны; модель отличается, ресурс не указан.",
+            "product_name": "Картридж лазерный HP 83X (CF283X) черный, с чипом, оригинальный",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "ok",
+              "item1_r4": "missing"
+            }
+          }
+        },
+        {
+          "id": "item1-e9",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=3290202699523000043",
+          "retrieved_at": "2026-11-12T21:00:05.499523Z",
+          "title": "Картридж оригинальный, лазерный, HP Q2612A",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЦИФРОВЫЕ ТЕХНОЛОГИИ\" (ООО \"ЦИФРОВЫЕ ТЕХНОЛОГИИ\")",
+          "supplier_inn": "6318058067",
+          "price": "5513.85",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2023-11-24T00:00:00Z",
+          "contract_number": "3290202699523000043",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "1",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "лазерный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "не указано",
+              "unit": null,
+              "quote": "",
+              "quote_verified": false
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "не указано",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Картридж оригинальный, лазерный, HP Q2612A. Характеристики: . Единица измерения: Штука. Цена за единицу: 5513.85 руб. Количество в контракте: 1.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=3290202699523000043",
+            "retrieved_at": "2026-11-12T21:00:05.499523Z",
+            "snapshot_path": "evidence/6deef09bd7dddae5224c480672bc3406371a05c0c37d1e968732c5885d8f1506.html.gz",
+            "sha256": "6deef09bd7dddae5224c480672bc3406371a05c0c37d1e968732c5885d8f1506",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=3290202699523000043",
+            "method": "Электронный аукцион",
+            "prefilter_score": 0.66,
+            "position_index": 1,
+            "relevant": true,
+            "note": "Указаны тип и оригинальность; цвет и ресурс не приведены, модель отличается.",
+            "product_name": "Картридж оригинальный, лазерный, HP Q2612A",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "missing",
+              "item1_r4": "missing"
+            }
+          }
+        },
+        {
+          "id": "item1-e10",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=3290202699523000043",
+          "retrieved_at": "2026-11-12T21:00:05.499523Z",
+          "title": "Картридж оригинальный, лазерный, HP 30A",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ЦИФРОВЫЕ ТЕХНОЛОГИИ\" (ООО \"ЦИФРОВЫЕ ТЕХНОЛОГИИ\")",
+          "supplier_inn": "6318058067",
+          "price": "5526.25",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2023-11-24T00:00:00Z",
+          "contract_number": "3290202699523000043",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "5",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "лазерный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "не указано",
+              "unit": null,
+              "quote": "",
+              "quote_verified": false
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "не указано",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Картридж оригинальный, лазерный, HP 30A. Характеристики: . Единица измерения: Штука. Цена за единицу: 5526.25 руб. Количество в контракте: 5.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=3290202699523000043",
+            "retrieved_at": "2026-11-12T21:00:05.499523Z",
+            "snapshot_path": "evidence/6deef09bd7dddae5224c480672bc3406371a05c0c37d1e968732c5885d8f1506.html.gz",
+            "sha256": "6deef09bd7dddae5224c480672bc3406371a05c0c37d1e968732c5885d8f1506",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=3290202699523000043",
+            "method": "Электронный аукцион",
+            "prefilter_score": 0.66,
+            "position_index": 9,
+            "relevant": true,
+            "note": "Указаны тип и оригинальность; цвет и ресурс не приведены, модель отличается.",
+            "product_name": "Картридж оригинальный, лазерный, HP 30A",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "missing",
+              "item1_r4": "missing"
+            }
+          }
+        },
+        {
+          "id": "item1-e11",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1770629450024000009",
+          "retrieved_at": "2026-11-12T20:59:56.634242Z",
+          "title": "Части и принадлежности прочих офисных машин. Картридж лазерный CF283X черный для HP LJ Рro M201dw",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"КОМПЛЕКСНЫЕ РЕШЕНИЯ\" (ООО \"КОМПЛЕКСНЫЕ РЕШЕНИЯ\")",
+          "supplier_inn": "7806513385",
+          "price": "511.3225",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "20%",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2024-07-04T00:00:00Z",
+          "contract_number": "1770629450024000009",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "4",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "Картридж лазерный CF283X",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "не указано",
+              "unit": null,
+              "quote": "",
+              "quote_verified": false
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "черный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "не указано",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Части и принадлежности прочих офисных машин. Картридж лазерный CF283X черный для HP LJ Рro M201dw. Характеристики: . Единица измерения: Штука. Цена за единицу: 511.3225 руб. Количество в контракте: 4.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1770629450024000009",
+            "retrieved_at": "2026-11-12T20:59:56.634242Z",
+            "snapshot_path": "evidence/307ec4d838dec2ff581aa759b788b4e6ea990f9af2fd6edc6a0507ec5e89c020.html.gz",
+            "sha256": "307ec4d838dec2ff581aa759b788b4e6ea990f9af2fd6edc6a0507ec5e89c020",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1770629450024000009",
+            "method": "Запрос котировок в электронной форме",
+            "prefilter_score": 0.57,
+            "position_index": 3,
+            "relevant": true,
+            "note": "Тип и цвет указаны; оригинальность и ресурс не подтверждены, модель отличается.",
+            "product_name": "Картридж лазерный CF283X черный для HP LJ Рro M201dw",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "missing",
+              "item1_r3": "ok",
+              "item1_r4": "missing"
+            }
+          }
+        },
+        {
+          "id": "item1-e12",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1770629450024000009",
+          "retrieved_at": "2026-11-12T20:59:56.634242Z",
+          "title": "Части и принадлежности прочих офисных машин. Картридж CF259A, черный оригинальный для принтера лазерного HP LJ Enterprise M406dn",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"КОМПЛЕКСНЫЕ РЕШЕНИЯ\" (ООО \"КОМПЛЕКСНЫЕ РЕШЕНИЯ\")",
+          "supplier_inn": "7806513385",
+          "price": "13386.65666666667",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "20%",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2024-07-04T00:00:00Z",
+          "contract_number": "1770629450024000009",
+          "contract_status": "Исполнение завершено",
+          "penalties": false,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "3",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "для принтера лазерного HP LJ Enterprise M406dn",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "черный оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "черный оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "не указано",
+              "unit": "страниц",
+              "quote": "",
+              "quote_verified": false
+            }
+          ],
+          "text": "Части и принадлежности прочих офисных машин. Картридж CF259A, черный оригинальный для принтера лазерного HP LJ Enterprise M406dn. Характеристики: . Единица измерения: Штука. Цена за единицу: 13386.65666666667 руб. Количество в контракте: 3.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1770629450024000009",
+            "retrieved_at": "2026-11-12T20:59:56.634242Z",
+            "snapshot_path": "evidence/307ec4d838dec2ff581aa759b788b4e6ea990f9af2fd6edc6a0507ec5e89c020.html.gz",
+            "sha256": "307ec4d838dec2ff581aa759b788b4e6ea990f9af2fd6edc6a0507ec5e89c020",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1770629450024000009",
+            "method": "Запрос котировок в электронной форме",
+            "prefilter_score": 0.57,
+            "position_index": 13,
+            "relevant": true,
+            "note": "Совпадает модель CF259A; тип, оригинальность и цвет указаны, ресурс не указан.",
+            "product_name": "Картридж CF259A, черный оригинальный для принтера лазерного HP LJ Enterprise M406dn",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "ok",
+              "item1_r4": "missing"
+            },
+            "penalties_url": "https://zakupki.gov.ru/epz/contract/contractCard/process-info.html?reestrNumber=1770629450024000009",
+            "rnp": false,
+            "rnp_url": "https://zakupki.gov.ru/epz/dishonestsupplier/search/results.html?searchString=7806513385&fz44=on&fz223=on&dsStatuses=0&dsStatuses_0=on",
+            "legal_checked": true
+          }
+        },
+        {
+          "id": "item1-e13",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1770809864526000028",
+          "retrieved_at": "2026-11-12T20:55:34.497253Z",
+          "title": "Картридж HP CF259A (или эквивалент). Товарный знак: отсутствует",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"МАТРИЦА\" (ООО \"МАТРИЦА\")",
+          "supplier_inn": "1650419785",
+          "price": "8700.39",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "5%",
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-07-20T00:00:00Z",
+          "contract_number": "1770809864526000028",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "26.20.40.120",
+          "ktru": null,
+          "quantity_in_source": "6",
+          "characteristics": [],
+          "text": "Картридж HP CF259A (или эквивалент). Товарный знак: отсутствует. Характеристики: . Единица измерения: Штука. Цена за единицу: 8700.39 руб. Количество в контракте: 6.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1770809864526000028",
+            "retrieved_at": "2026-11-12T20:55:34.497253Z",
+            "snapshot_path": "evidence/b5eede9355d0c1e05cd46894120a8f6314829eee3fd8d975404b26129608358f.html.gz",
+            "sha256": "b5eede9355d0c1e05cd46894120a8f6314829eee3fd8d975404b26129608358f",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1770809864526000028",
+            "method": "Электронный аукцион",
+            "prefilter_score": 0.57,
+            "position_index": 7,
+            "relevant": true,
+            "note": "Модель CF259A совпадает, но характеристики требований не указаны.",
+            "product_name": "Картридж HP CF259A",
+            "content_quote": "Единица измерения: Штука.",
+            "verdicts": {
+              "item1_r1": "missing",
+              "item1_r2": "missing",
+              "item1_r3": "missing",
+              "item1_r4": "missing"
+            }
+          }
+        },
+        {
+          "id": "item1-e14",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1770809864526000028",
+          "retrieved_at": "2026-11-12T20:55:34.497253Z",
+          "title": "Картридж HP CF256A (или эквивалент). Товарный знак: отсутствует",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"МАТРИЦА\" (ООО \"МАТРИЦА\")",
+          "supplier_inn": "1650419785",
+          "price": "3477.295",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "5%",
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-07-20T00:00:00Z",
+          "contract_number": "1770809864526000028",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "26.20.40.120",
+          "ktru": null,
+          "quantity_in_source": "2",
+          "characteristics": [],
+          "text": "Картридж HP CF256A (или эквивалент). Товарный знак: отсутствует. Характеристики: . Единица измерения: Штука. Цена за единицу: 3477.295 руб. Количество в контракте: 2.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1770809864526000028",
+            "retrieved_at": "2026-11-12T20:55:34.497253Z",
+            "snapshot_path": "evidence/b5eede9355d0c1e05cd46894120a8f6314829eee3fd8d975404b26129608358f.html.gz",
+            "sha256": "b5eede9355d0c1e05cd46894120a8f6314829eee3fd8d975404b26129608358f",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1770809864526000028",
+            "method": "Электронный аукцион",
+            "prefilter_score": 0.48,
+            "position_index": 3,
+            "relevant": false,
+            "note": "Указана другая модель картриджа — CF256A.",
+            "product_name": "Картридж HP CF256A",
+            "content_quote": "Единица измерения: Штука.",
+            "verdicts": {
+              "item1_r1": "missing",
+              "item1_r2": "missing",
+              "item1_r3": "missing",
+              "item1_r4": "missing"
+            }
+          }
+        },
+        {
+          "id": "item1-e15",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1770809864526000028",
+          "retrieved_at": "2026-11-12T20:55:34.497253Z",
+          "title": "Картридж HP 106A (или эквивалент). Товарный знак: отсутствует",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"МАТРИЦА\" (ООО \"МАТРИЦА\")",
+          "supplier_inn": "1650419785",
+          "price": "3651.21083333333",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "5%",
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-07-20T00:00:00Z",
+          "contract_number": "1770809864526000028",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "26.20.40.120",
+          "ktru": null,
+          "quantity_in_source": "12",
+          "characteristics": [],
+          "text": "Картридж HP 106A (или эквивалент). Товарный знак: отсутствует. Характеристики: . Единица измерения: Штука. Цена за единицу: 3651.21083333333 руб. Количество в контракте: 12.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1770809864526000028",
+            "retrieved_at": "2026-11-12T20:55:34.497253Z",
+            "snapshot_path": "evidence/b5eede9355d0c1e05cd46894120a8f6314829eee3fd8d975404b26129608358f.html.gz",
+            "sha256": "b5eede9355d0c1e05cd46894120a8f6314829eee3fd8d975404b26129608358f",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1770809864526000028",
+            "method": "Электронный аукцион",
+            "prefilter_score": 0.48,
+            "position_index": 5,
+            "relevant": false,
+            "note": "Предложена другая модель картриджа — HP 106A.",
+            "product_name": "Картридж HP 106A",
+            "content_quote": "Единица измерения: Штука.",
+            "verdicts": {
+              "item1_r1": "missing",
+              "item1_r2": "missing",
+              "item1_r3": "missing",
+              "item1_r4": "missing"
+            }
+          }
+        },
+        {
+          "id": "item1-e16",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2781313300024000011",
+          "retrieved_at": "2026-11-12T20:47:09.391918Z",
+          "title": "Картридж лазерный Xerox 106R03585 черный, с чипом, оригинальный. Xerox 106R03585",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ВИКТОРИ\" (ООО \"ВИКТОРИ\")",
+          "supplier_inn": "2464256648",
+          "price": "12883.615",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2024-06-03T00:00:00Z",
+          "contract_number": "2781313300024000011",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "28.23.25.000",
+          "ktru": null,
+          "quantity_in_source": "2",
+          "characteristics": [
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерный",
+              "unit": null,
+              "quote": "Картридж лазерный Xerox 106R03585 черный, с чипом, оригинальный.",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "Картридж лазерный Xerox 106R03585 черный, с чипом, оригинальный.",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "Картридж лазерный Xerox 106R03585 черный, с чипом, оригинальный.",
+              "quote_verified": true
+            }
+          ],
+          "text": "Картридж лазерный Xerox 106R03585 черный, с чипом, оригинальный. Xerox 106R03585. Характеристики: . Единица измерения: Штука. Цена за единицу: 12883.615 руб. Количество в контракте: 2.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2781313300024000011",
+            "retrieved_at": "2026-11-12T20:47:09.391918Z",
+            "snapshot_path": "evidence/3b4c09aad47788bcc82e71bd0b4af08879242bfe853d3063ae26d3e6451828c0.html.gz",
+            "sha256": "3b4c09aad47788bcc82e71bd0b4af08879242bfe853d3063ae26d3e6451828c0",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2781313300024000011",
+            "method": "Запрос котировок в электронной форме",
+            "prefilter_score": 0.36,
+            "position_index": 13,
+            "relevant": false,
+            "note": "Картридж Xerox — другая модель и товарный знак.",
+            "product_name": "Картридж лазерный Xerox 106R03585",
+            "content_quote": "Единица измерения: Штука.",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "ok",
+              "item1_r4": "missing"
+            }
+          }
+        },
+        {
+          "id": "item1-w1",
+          "item_id": "item1",
+          "source": "web",
+          "source_name": "www.citilink.ru",
+          "url": "https://www.citilink.ru/product/kartridzh-hp-59a-chernyi-cf259a-1148295/",
+          "retrieved_at": "2026-11-12T20:46:53.408345Z",
+          "title": "Картридж HP 59A, 3000 страниц, черный / CF259A",
+          "supplier_name": "www.citilink.ru",
+          "supplier_inn": null,
+          "price": "13200",
+          "price_unit": "шт.",
+          "price_includes_vat": true,
+          "vat_rate": null,
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": null,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-11-12T20:46:53.408345Z",
+          "contract_number": null,
+          "contract_status": null,
+          "penalties": null,
+          "customer": null,
+          "okpd2": null,
+          "ktru": null,
+          "quantity_in_source": null,
+          "characteristics": [
+            {
+              "requirement_id": null,
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "Цвет: черный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Ресурс",
+              "value": "3000стр",
+              "unit": null,
+              "quote": "Ресурс: 3000стр",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Для",
+              "value": "HP LJ M304/M404/MFP M428",
+              "unit": null,
+              "quote": "Для: HP LJ M304/M404/MFP M428",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "Оригинальность: оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Технология печати",
+              "value": "лазерная",
+              "unit": null,
+              "quote": "Технология печати: лазерная",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерная",
+              "unit": null,
+              "quote": "Технология печати: лазерная",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "Оригинальность: оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "Цвет: черный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "3000",
+              "unit": "страниц",
+              "quote": "Ресурс: 3000стр",
+              "quote_verified": true
+            }
+          ],
+          "text": "Заголовок: Картридж HP 59A, 3000 страниц, черный / CF259A – купить в Ситилинк | 1148295\nРазметка товара: Картридж HP 59A, 3000 страниц, черный / CF259A; бренд: HP; цена: 13200\nХарактеристики: Цвет: черный; Ресурс: 3000стр; Для: HP LJ M304/M404/MFP M428; Оригинальность: оригинальный; Технология печати: лазерная\nКартридж HP 59A, 3000 страниц, черный / CF259A – купить в Ситилинк | 1148295Москва[телефон]Юридическим лицамЖурналАкцииКонфигуратор ПКДоставкаМагазиныОбратная связьУцененные товарыПодарочные сертификатыСервисыКаталог товаровВойтиИзбранноеСравнениеКорзинаОфисная техникаКартриджиHPКартридж HP 59A, 3000 страниц, черный / CF259A54 ОтзываКод товара: 1148295Картридж HP 59A, 3000 страниц, черный / CF259A54 ОтзываКод товара: 1148295Появились вопросы о товаре?Консультация специалистаКартридж HP 59A, 3000 страниц, черный / CF259A54 ОтзываКод товара: 1148295Ресурс, страниц300010000ЦветчерныйРесурс3000стрДляHP LJ M304/M404/MFP M428ОригинальностьоригинальныйТехнология печатилазернаяВсе характеристикиВсе услугиПоявились вопросы о товаре?Консультация специалистаВ избранноеСравнить13 200₽Добавить в корзинуКупить как юрлицо‌‌‌О товареХарактеристикиАксессуарыУслуги5Отзывы4Вопрос-ответ9Обзоры‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌Хочу быть в курсе акций и новинокПодписатьсяПокупателямДоставкаГарантияКредит и рассрочкаКонфигуратор ПКИнформацияКорпоративным клиентамПодбор расходных материаловИнформация",
+          "evidence": {
+            "url": "https://www.citilink.ru/product/kartridzh-hp-59a-chernyi-cf259a-1148295/",
+            "retrieved_at": "2026-11-12T20:46:53.408345Z",
+            "snapshot_path": "evidence/6ac8fb1ab11c273fba04d59db9a10abdadc0c92fe08355e562c95c00965115d9.html.gz",
+            "sha256": "6ac8fb1ab11c273fba04d59db9a10abdadc0c92fe08355e562c95c00965115d9",
+            "http_status": 200
+          },
+          "extra": {
+            "query": "HP 59A CF259A оригинальный картридж цена",
+            "search_title": "Картридж HP 59A, 3000 страниц, черный / CF259A",
+            "page_prices": [
+              "13200"
+            ],
+            "price_from": "разметка schema.org",
+            "supplier_by": "домен",
+            "relevant": true,
+            "note": "Совпадают модель, лазерная технология, оригинальность, цвет и минимальный ресурс.",
+            "product_name": "Картридж HP 59A, 3000 страниц, черный / CF259A",
+            "content_quote": "Картридж HP 59A, 3000 страниц, черный / CF259A",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "ok",
+              "item1_r4": "ok"
+            },
+            "legal_checked": true
+          }
+        },
+        {
+          "id": "item1-w2",
+          "item_id": "item1",
+          "source": "web",
+          "source_name": "www.chip-toner.ru",
+          "url": "https://www.chip-toner.ru/kartridzh-cf259a-chernyj-dlja-hp-laserjet-pro-m304-m404-mfp-m428-originalnyj",
+          "retrieved_at": "2026-11-12T20:59:58.375524Z",
+          "title": "Картридж HP 59A CF259A оригинальный, купить в Москве, цены в интернет-магазине ОРГ-Сервис",
+          "supplier_name": "www.chip-toner.ru",
+          "supplier_inn": null,
+          "price": "28500",
+          "price_unit": "шт.",
+          "price_includes_vat": true,
+          "vat_rate": null,
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": null,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-11-12T20:59:58.375524Z",
+          "contract_number": null,
+          "contract_status": null,
+          "penalties": null,
+          "customer": null,
+          "okpd2": null,
+          "ktru": null,
+          "quantity_in_source": null,
+          "characteristics": [
+            {
+              "requirement_id": null,
+              "name": "Цвет",
+              "value": "черный (black)",
+              "unit": null,
+              "quote": "Цвет: черный (black)",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Подходит к моделям",
+              "value": "M304, M404,M404n,M404dn,M428,M428fdn,M428dw,M428fdw",
+              "unit": null,
+              "quote": "Подходит к моделям: M304, M404,M404n,M404dn,M428,M428fdn,M428dw,M428fdw",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "Лазерный",
+              "unit": null,
+              "quote": "Тип принтера Лазерный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "Оригинальный",
+              "unit": null,
+              "quote": "Производитель Оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "черный (black)",
+              "unit": null,
+              "quote": "Цвет черный (black)",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "3 000",
+              "unit": "страниц",
+              "quote": "Ресурс А4 при заполнения 5% 3 000",
+              "quote_verified": true
+            }
+          ],
+          "text": "Заголовок: Картридж HP 59A CF259A оригинальный, купить в Москве, цены в интернет-магазине ОРГ-Сервис\nРазметка товара: ; бренд: ; цена: 28500\nХарактеристики: Цвет: черный (black); Подходит к моделям: M304, M404,M404n,M404dn,M428,M428fdn,M428dw,M428fdw\nКартридж HP 59A CF259A оригинальный, купить в Москве, цены в интернет-магазине ОРГ-Сервис Сравнение (0) skype telegram whatsapp Выбрать регион МоскваНовосибирскЕкатеринбургНижний НовгородКазаньСамараОмскЧелябинскРостов-на-ДонуУфаВолгоградПермьКрасноярскХабаровскВладивостокЧитаИркутскЮжно-СахалинскБлаговещенск Личный кабинет Регистрация Авторизация Расходные материалы для оргтехники [телефон] [телефон] Везде Везде По брендам -Brother -DCP -FAX -HL -M … 915 -5921 -Altalink -Color -CopyCentre -DocuColor -Document Centre -DocuPrint -Phaser -VersaLink -Versant -WorkCentre -WorkCentre Pro -Серия B -Серия C -Серия D -Катюша -серия М Расходники -Блоки проявки -Konica Minolta -Девелоперы (порошки) -Xerox -Картриджи -Brother -Canon -Epson -HP -Konica Minolta -Kyocera -Lexmark -OKI -Samsung -Xerox -Катюша -Комплекты для восстановления -Ленты переноса -HP -Konica Minolta -Xerox -Печки (фьюзеры) -HP -Kyocera -OKI -Xerox -Тонер -Катюша -Фотобарабаны и драм-картриджи -Brother -Canon -HP -Konica Minolta -OKI -Xerox -Фотовалы и ЗИП -Чипы -Canon -Epson -HP -Kyocera -Lexmark -OKI -Samsung -Xerox -Яндекс маркет Например: CLP-M660A Москва [телефон] пн—пт...10:00—18:00сб—вс...10:00—16:00 [e-mail] [телефон] Перезвоните мне Каталог Каталог По брендам Brother Canon Develop Epson HP Intec Konica Minolta Kyocera Lexmark OKI Panasonic Pantum Ricoh Samsung Xante Xerox Катюша Картриджи Br … алы и ЗИП Блоки проявки Konica Minolta Чипы Canon Epson HP Kyocera Lexmark OKI Samsung Xerox Яндекс маркет Расходники Доставка Акции О нас Контакты Заправка картриджей Корзина 0 Ваша корзина пуста! Главная По брендам HP LaserJet Pro M428fdw Картридж CF259A черный для HP LaserJet Pro M304 / M404 / MFP M428 оригинальный HP 59A Картридж CF259A черный для HP LaserJet Pro M304 / M404 / MFP M428 оригинальный Артикул: 0003824 В наличии Цвет черный (black) Подходит к моделям M304, M404,M404n,M404dn,M428,M428fdn,M428dw,M428fdw Все характеристики 28 500 ₽ Добавить в сравнение В корзину Быстрый заказ Описание Компания «ОРГ-Сервис» предлагает купить оригинальный картридж с черным тонером HP 59A CF259A который применяется в лазерных монохромных принтерах HP LaserJet Pro M304, HP LaserJet Pro M404,HP LaserJet Pro M404n,HP LaserJet Pro M404dn, HP LaserJet Pro MFP M428,HP LaserJet Pro M428fdn,HP LaserJet Pro M428dw,HP LaserJet Pro M428fdw. Картридж CF259A заполнен черным тонером и обладает ресурсом печати до 3000 страниц формата А4. Возможна доставка картриджа HP 59A CF259A курьером по Москве или отправка через транспортную компанию во все регионы России. Есть самовывоз в Москве и в точках самовывоза ТК в России. Так же возможна отправка Почтой по России. Характеристики Отзывов (0) Доставка и оплата Производитель:HP Тип товара Картриджи Подходит к моделям M304, M404,M404n,M404dn,M428,M428fdn,M428dw,M428fdw Производитель Оригинальный Ресурс А4 при заполнения 5% 3 000 Серия LaserJet Pro Тип принтера Лазерный Цвет черный (black) Ваше имя: Ваш отзыв: Примечание: HTML разметка не поддерживается! Используйте обычный текст. Оценка: Отправить свой отзыв Товары, представленные на нашем сайте, Вы можете приобрести:в нашем магазине по адресу: Москва, Варшавское шоссе, 26с2, м. Нагатинскаязаказать по почте (наложенным платежом)по безналичному расчетудоставкой курьером по МосквеОплата по безналичному расчетуДля оплаты товара по безналичном … [e-mail], [e-mail] оплате по безналичному расчету доставка осуществляется транспортными компаниямиДоставка до транспортной компании (бесплатная)ЖелдорАльянсБайкалСервисЖелДорЭкспедицияСДЭКДоставка курьером по МосквеCтоимость доставки в пределах МКАД:При заказе до 50000 рублей-500рублейПри заказе свыше 50000 рублей-бесплатноЗа пределы МКАД, до границ Московской области, стоимость доставки: 500 руб. + 30 руб. за километрЗаказ наложенным платежомПри заказе наложенным платежом мы высылаем заказанные Вами товары, которые Вы оплачиваете только при получении в Вашем почтовом отделении.Заказы выполняются наложенным платежом только на территории Росси",
+          "evidence": {
+            "url": "https://www.chip-toner.ru/kartridzh-cf259a-chernyj-dlja-hp-laserjet-pro-m304-m404-mfp-m428-originalnyj",
+            "retrieved_at": "2026-11-12T20:59:58.375524Z",
+            "snapshot_path": "evidence/dcd68bcb749fa4efeac48cfc2b481a4a184991b590157bd53dd93461aaea0379.html.gz",
+            "sha256": "dcd68bcb749fa4efeac48cfc2b481a4a184991b590157bd53dd93461aaea0379",
+            "http_status": 200
+          },
+          "extra": {
+            "query": "HP 59A CF259A оригинальный картридж цена",
+            "search_title": "Картридж HP 59A CF259A оригинальный, купить в Москве, цены...",
+            "page_prices": [
+              "28500",
+              "50000",
+              "500",
+              "50000",
+              "500",
+              "30",
+              "1000",
+              "70"
+            ],
+            "price_from": "разметка schema.org",
+            "supplier_by": "домен",
+            "relevant": true,
+            "note": "Предложен оригинальный лазерный HP CF259A, черный, ресурс 3000 страниц.",
+            "product_name": "Картридж HP 59A CF259A оригинальный",
+            "content_quote": "Картридж HP 59A CF259A черный для HP LaserJet Pro M304 / M404 / MFP M428 оригинальный",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "ok",
+              "item1_r4": "ok"
+            },
+            "legal_checked": true
+          }
+        },
+        {
+          "id": "item1-w3",
+          "item_id": "item1",
+          "source": "web",
+          "source_name": "nbstor.ru",
+          "url": "https://nbstor.ru/product/kartridzh-hp-cf259a/",
+          "retrieved_at": "2026-11-12T20:46:55.061180Z",
+          "title": "Картридж HP CF259A (59A) 3000стр",
+          "supplier_name": "nbstor.ru",
+          "supplier_inn": null,
+          "price": "10700.00",
+          "price_unit": "шт.",
+          "price_includes_vat": true,
+          "vat_rate": null,
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": false,
+          "delivery_cost": "400",
+          "min_order_qty": null,
+          "price_date": "2026-11-12T20:46:55.061180Z",
+          "contract_number": null,
+          "contract_status": null,
+          "penalties": null,
+          "customer": null,
+          "okpd2": null,
+          "ktru": null,
+          "quantity_in_source": null,
+          "characteristics": [
+            {
+              "requirement_id": null,
+              "name": "Тип",
+              "value": "Оригинальный",
+              "unit": null,
+              "quote": "Тип: Оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Технология печати",
+              "value": "Лазерная",
+              "unit": null,
+              "quote": "Технология печати: Лазерная",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Ресурс(страниц)",
+              "value": "3000",
+              "unit": null,
+              "quote": "Ресурс(страниц): 3000",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "Цвет: черный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Прочее",
+              "value": "Стандартный ресурс",
+              "unit": null,
+              "quote": "Прочее: Стандартный ресурс",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Ресурс (страниц)",
+              "value": "3000",
+              "unit": null,
+              "quote": "Ресурс (страниц): 3000",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерная",
+              "unit": null,
+              "quote": "Технология печати Лазерная",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r2",
+              "name": "Оригинальность",
+              "value": "оригинальный",
+              "unit": null,
+              "quote": "Тип Оригинальный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "Цвет черный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "3000",
+              "unit": "страниц",
+              "quote": "Ресурс (страниц) 3000",
+              "quote_verified": true
+            }
+          ],
+          "text": "Заголовок: Картридж HP CF259A (59A) 3000стр черный\nРазметка товара: Картридж HP CF259A (59A) 3000стр; бренд: Hewlett-Packard; цена: 10700.00\nХарактеристики: Тип: Оригинальный; Технология печати: Лазерная; Ресурс(страниц): 3000; Цвет: черный; Прочее: Стандартный ресурс; Ресурс (страниц): 3000\nКупить оригинальный Картридж HP CF259A (59A) 3000стр за 10 700р. в Москве Акции Оплата Доставка Новости Контакты Отзывы Работаем 17 лет Вход / Регистрация Работаем 14 лет Оригинальные картриджи HP Canon Samsung Xerox Kyocera Brother Lexmark Ricoh Oki Panasonic Epson Pantum Катюша Avision F+ Imaging Sharp Toshiba Sony Philips Струйные картриджи Совместимые картриджи HP Canon Samsung Xerox Brother Kyocera Panasonic Ricoh Epson Konica Minolta Oki Используется в принтерах HP Canon Samsung Xerox Brother Kyocera Panasonic Epson Lexmark Oki Ricoh Sony Toshiba Sharp Philips Pantum Konica Minolta Катюша Fplus Картриджи по брендам Hewlett-Packard Panasonic Samsung Sony Canon Xerox Brother Kyocera Epson Lexmark Oki Ricoh Toshiba Sharp Konica Minolta Pantum Philips Катюша F+ Imaging Avis …  Canon Xerox Brother Kyocera Epson Lexmark Oki Ricoh Toshiba Sharp Konica Minolta Pantum Philips Катюша F+ Imaging Avision Поиск картриджа Введите запрос, например W2030A 0 0 0 на сумму 0 р. Оформить Главная - Оригинальные картриджи - HP Картридж HP CF259A (59A) 3000стр черный В наличии на складе в Москве 100% оригинал Как убедиться, что это оригинал? Артикул: HP CF259A К сравнению В избранное * внешний вид упаковки картриджа может отличаться 100% оригинал Как убедиться, что это оригинал? 10 700 p. для организаций по безналичному расчету : 10 700р. В корзинуКупить в 1 клик Тип Оригинальный Технология печати Лазерная Ресурс(страниц) 3000 Цвет черный Все характеристики Доставка По Москве - СЕГОДНЯ! при заказе до 12:00 от 400р. в пределах МКАД По регионам РФ: транспортной компанией до терминала или адреса на Ваш выбор. От 400р. Самовывоз - СЕГОДНЯ ул. Народного Ополчения, 43к2 Посмотреть на карте Подробнее о доставке 10 700 p. Смотрите другие картриджи, которые на 100% подойдут к Вашему принтеру Показать сначала ОРИГИНАЛЬНЫЕ Показать сначала СОВМЕСТИМЫЕ Оригинальные картриджи Что значит оригинальный картридж? Картридж HP CF259X (59X) Технология печати: Лазерная Ресурс: 10000 Цвет: черный 21 500 р. Заказать Картридж HP CF259XH Технология печати: Лазерная Ресурс: 10000 Цвет: черный 15 900 р. Заказать Картридж HP CF259XC Технология печати: Лазерная Ресурс: 10000 Цвет: черный 16 700 р. Совместимые картриджи Что значит совместимый картридж? Картридж Premium CF259A без чипа Технология печати: Лазерная Ресурс: 3000 Цвет: черный 2 400 р. Заказать Картридж Premium CF259X без чипа Технология печати: Лазерная Ресурс: 10000 Цвет: черный 1 800 р. Заказать Картридж HP CF259A (59A) 3000стр используется в принт …  M304a HP LaserJet Pro M404dn HP LaserJet Pro M404n HP LaserJet Pro M404dw HP LaserJet Pro MFP M428dw (W1A31A) HP LaserJet Pro MFP M428fdw (W1A30A) HP LaserJet Pro MFP M428fdn (W1A32A) Характеристики и описание Доставка Возврат Гарантии Отзывы Общие Тип Оригинальный Технология печати Лазерная Прочее Стандартный ресурс Персональные Ресурс (страниц) 3000 Цвет черный Самовывоз По будням Бесплатно Пункт самовывоза. метро Октябрьское Поле, ул. Народного Ополчения, 43к2, подъезд 2 пн-пт 10-16 Стандартная доставка курьером в пределах МКАД Сегодня, завтра от 400р. пн-пт с 10-19, при заказе до 12-00 возможна доставка в этот же день. Экспресс-доставка курьером в пределах МКАД за 2-3 часа 550р. пн-пт с",
+          "evidence": {
+            "url": "https://nbstor.ru/product/kartridzh-hp-cf259a/",
+            "retrieved_at": "2026-11-12T20:46:55.061180Z",
+            "snapshot_path": "evidence/153abb41213856f44a4ed4b63d752904b2bf25fffeea50804158652160c4e63b.html.gz",
+            "sha256": "153abb41213856f44a4ed4b63d752904b2bf25fffeea50804158652160c4e63b",
+            "http_status": 200
+          },
+          "extra": {
+            "query": "HP 59A CF259A оригинальный картридж цена",
+            "search_title": "Картридж HP CF259A (59A) 3000стр",
+            "page_prices": [
+              "10700",
+              "10700",
+              "400",
+              "400",
+              "21500",
+              "15900",
+              "16700",
+              "2400"
+            ],
+            "price_from": "разметка schema.org",
+            "supplier_by": "домен",
+            "relevant": true,
+            "note": "Оригинальный лазерный картридж, характеристики соответствуют требованиям; доставка от 400 руб.",
+            "product_name": "Картридж HP CF259A (59A) 3000стр черный",
+            "content_quote": "Картридж HP CF259A (59A) 3000стр",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "ok",
+              "item1_r3": "ok",
+              "item1_r4": "ok"
+            },
+            "legal_checked": true
+          }
+        },
+        {
+          "id": "item1-w4",
+          "item_id": "item1",
+          "source": "web",
+          "source_name": "nvprint-shop.ru",
+          "url": "https://nvprint-shop.ru/hewlett-packard/nv-cf259a-black/",
+          "retrieved_at": "2026-11-12T20:46:54.348886Z",
+          "title": "Картридж NV Print CF59A Black для HP LaserJet Pro M304/M404/M428",
+          "supplier_name": "nvprint-shop.ru",
+          "supplier_inn": null,
+          "price": "809",
+          "price_unit": "шт.",
+          "price_includes_vat": true,
+          "vat_rate": null,
+          "content": {
+            "value": "1",
+            "unit": "шт."
+          },
+          "delivery_included": null,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-11-12T20:46:54.348886Z",
+          "contract_number": null,
+          "contract_status": null,
+          "penalties": null,
+          "customer": null,
+          "okpd2": null,
+          "ktru": null,
+          "quantity_in_source": null,
+          "characteristics": [
+            {
+              "requirement_id": null,
+              "name": "Быстрая доставка",
+              "value": "Отправка со склада в Москве Доставка по всей России Отправка заказов на следующий день Курьерская доставка по Москве",
+              "unit": null,
+              "quote": "Быстрая доставка: Отправка со склада в Москве Доставка по всей России Отправка заказов на следующий день Курьерская доставка по Москве",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Оплата",
+              "value": "Наличные при получении Банковской картой",
+              "unit": null,
+              "quote": "Оплата: Наличные при получении Банковской картой",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Наличные при получении",
+              "value": "Банковской картой",
+              "unit": null,
+              "quote": "Наличные при получении: Банковской картой",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Онлайн оплата",
+              "value": "Наличный и безналичный расчет",
+              "unit": null,
+              "quote": "Онлайн оплата: Наличный и безналичный расчет",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Доставим куда угодно",
+              "value": "Работаем по всей России",
+              "unit": null,
+              "quote": "Доставим куда угодно: Работаем по всей России",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Привезем вовремя",
+              "value": "Точные срокивыполнения работ",
+              "unit": null,
+              "quote": "Привезем вовремя: Точные срокивыполнения работ",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Любые гарантии",
+              "value": "Гарантия качества всех работ",
+              "unit": null,
+              "quote": "Любые гарантии: Гарантия качества всех работ",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Всегда на связи",
+              "value": "+7 (495) 477-56-25",
+              "unit": null,
+              "quote": "Всегда на связи: +7 (495) 477-56-25",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Бренд",
+              "value": "NV Print",
+              "unit": null,
+              "quote": "Бренд: NV Print",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Вендор",
+              "value": "HP",
+              "unit": null,
+              "quote": "Вендор: HP",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Код производителя",
+              "value": "NV-CF259",
+              "unit": "А",
+              "quote": "Код производителя: NV-CF259A",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Модель",
+              "value": "CF259",
+              "unit": "А",
+              "quote": "Модель: CF259A",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Тип печати",
+              "value": "черно-белый",
+              "unit": null,
+              "quote": "Тип печати: черно-белый",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "Цвет: черный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Ресурс, страниц",
+              "value": "3000",
+              "unit": null,
+              "quote": "Ресурс, страниц: 3000",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Тип",
+              "value": "картридж",
+              "unit": null,
+              "quote": "Тип: картридж",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Технология печати",
+              "value": "лазерная",
+              "unit": null,
+              "quote": "Технология печати: лазерная",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Описание",
+              "value": "картридж NVP совместимый HP",
+              "unit": null,
+              "quote": "Описание: картридж NVP совместимый HP",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Подходит к моделям",
+              "value": "HP Laser Jet Pro M304/ M404/ M428",
+              "unit": null,
+              "quote": "Подходит к моделям: HP Laser Jet Pro M304/ M404/ M428",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": null,
+              "name": "Вес",
+              "value": "850",
+              "unit": "г",
+              "quote": "Вес: 850 г",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r1",
+              "name": "Тип картриджа",
+              "value": "лазерная",
+              "unit": null,
+              "quote": "Технология печати: лазерная",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r3",
+              "name": "Цвет",
+              "value": "черный",
+              "unit": null,
+              "quote": "Цвет: черный",
+              "quote_verified": true
+            },
+            {
+              "requirement_id": "item1_r4",
+              "name": "Ресурс",
+              "value": "3000",
+              "unit": "страниц",
+              "quote": "Ресурс, страниц: 3000",
+              "quote_verified": true
+            }
+          ],
+          "text": "Заголовок: Картридж NV Print CF59A Black для HP LaserJet Pro M304/M404/M428\nРазметка товара: ; бренд: ; цена: 809\nХарактеристики: Быстрая доставка: Отправка со склада в Москве Доставка по всей России Отправка заказов на следующий день Курьерская доставка по Москве; Оплата: Наличные при получении Банковской картой; Наличные при получении: Банковской картой; Онлайн оплата: Наличный и безналичный расчет; Доставим куда угодно: Работаем по всей России; Привезем вовремя: Точные срокивыполнения работ; Любые гарантии: Гарантия качества всех работ; Всегда на связи: +7 (495) 477-56-25; Бренд: NV Print; Вендор: HP; Код производителя: NV-CF259A; Модель: CF259A; Тип печати: черно-белый; Цвет: черный; Ресурс, страниц: 3000; Тип: картридж; Технология печати: лазерная; Описание: картридж NVP совместимый HP; Подходит к моделям: HP Laser Jet Pro M304/ M404/ M428; Вес: 850 г\nКартридж NV Print CF59A Black для HP LaserJet Pro M304/M404/M428 Вычет НДС до 22% Закрывающие документы в ЭДО ВЫГОДНО Совершайте покупки для юридических лиц × ВходРегистрацияПоискКатюшаSindohBrotherCanonEpsonHewlett-PackardKonica - MinoltaKyoceraLexmarkOkiPanasonicPantumRicohSamsungSharpToshibaXeroxСтруйные картриджиТонерыЧернилаЗИПАксессуары для офисаОплатаДоставка и самовывозГарантия и сервисВозврат товараВАЖНОСертификатыКонтактыПромоПолитика обработки персональных данныхПользовательское соглашениеПолитика конфиденциальности ОплатаДоставка и самовывозГарантия и сервисВозврат товараВАЖНОСертификатыКонтактыПромоПолитика обработки персональных данныхПользовательское соглашениеПолитика конфиденциальности[телефон]Заказать звонокЛичный кабинетВходРегистрация[телефон]Заказать звонок Каталог товаровКатюшаSindohBrotherCanonEpsonHewlett-PackardKonica - MinoltaKyoceraLexmarkOkiPanasonicPantumRicohSamsungSharpToshibaXeroxСтруйные картриджиТонерыЧернилаЗИПАксессуары для офисаПоиск00КорзинаПуста Главная-Hewlett-Packard-Картридж NV Print NV-CF259A Black для принтеров HP Laser Jet Pro M304/ M404/ M428, 3000 страниц (БЕЗ ГАРАНТИИ)Увеличить Картридж NV Print NV-CF259A Black для принтеров HP Laser Jet Pro M304/ M404/ M428, 3000 страниц (БЕЗ ГАРАНТИИ)Картридж NV Print Black — совместимое решение премиального уровня для принтеров HP Laser Jet Pro M304, M404 и M428. Обеспечивает безупречно чёткую и контрастную печать текстовых документов на ресурсе до 3000 страниц. Точное соответствие оригинальным параметрам гарантирует стабильную работу принтера без сбоев. Оптимальный выбор для профессионалов, ценящих качество печати и экономичность расходных материалов.Арт.NV-C2823809 ₽0 ₽0Экономия 0В наличииИзбранноеСравнитьКартридж NV Print NV-CF259A Black для принтеров HP Laser Jet Pro M304/ M404/ M428, 3000 страниц (БЕЗ ГАРАНТИИ) теперь в вашей корзине покупокПерейти в корзину Быстрая доставка Отправка со склада в Москве Доставка по всей России Отправка заказов на следующий день Курьерская доставка по Москве Оплата Наличные при получении Банковской картой Купить в 1 кликНаписать в MAXОнлайн оплатаНаличный и безналичный расчетДоставим куда угодноРаботаем по всей РоссииПривезем вовремя … Black — совместимое решение для чёрно-белой лазерной печати на принтерах HP LaserJet Pro M304, M404 и M428. Разработан для стабильной работы техники в офисе и дома, обеспечивая насыщенный чёрный цвет и уверенную читаемость текста на протяжении всего ресурса. 3000 страниц ресурс B/W чёрно-белая печать 3 модели HP Чёткость на каждой странице Плотный чёрный тонер и равномерное распределение красящего вещества обеспечивают ровный и контрастный текст без размытия и осыпания. Картридж подходит для печати деловых писем, договоров, отчётов и другой документации, где важна безупречная читаемость каждой строки. Достаточный ресурс печати До 3000 страниц без замены картриджа — комфортный запас для регулярной офисной и домашн … артридж для HPкартридж без гарантииNV Print BlackHP M428HP M404HP M304NV Print для HPрасходные материалы HPкартридж CF59ANV-CF259AHP CF259AАналог HP CF259AКартридж NVP BlackЛазерная печать HPБрендNV PrintВендорHPКод производителяNV-CF259AМодельCF259AТип печатичерно-белыйЦветчерныйРесурс, страниц3000ТипкартриджТехнология печатилазернаяОписаниекартридж NVP совместимый HPПодходит к моделямHP Laser Jet Pro M304/ M404/ M428Вес850 гКартридж NV Print NV-CF259A Black для принтеров HP Laser Jet Pro M304/ M404/ M428, 3000 страниц (БЕЗ ГАРАНТИИ) отзывы00000Покупатели, которые приобрели Картридж NV Print NV-CF259A Black для принтеров HP Laser Jet Pro M304/ M404/ M428, 3000 страниц (БЕЗ ГАРАНТИИ), также купилиБыстрый просмотрКартридж NV Print CE505XX Черный для принтеров HP LaserJet P2055/ 2055d/ 2055dn, 10000 страницКартридж NV Print CE505XX — эталон стабильной печати для принтеров HP LaserJet P2055, 2055d и...958 ₽Купить в 1 кликПерейти в корзинуПерейти в карточку товараБыстрый просмотрКартридж NV Print 057H (БЕЗ ЧИПА) для Canon i-SENSYS LBP 223dw/ 226dw/ 228x/ MF443dw/ 445dw/ 446x/ 449x 10000 страницКартридж NV Print 057H — профессиональное решение для чёткой чёрно-белой печати на принтерах и...981 ₽Куп",
+          "evidence": {
+            "url": "https://nvprint-shop.ru/hewlett-packard/nv-cf259a-black/",
+            "retrieved_at": "2026-11-12T20:46:54.348886Z",
+            "snapshot_path": "evidence/406d264a04deede73192b68d304e1b97b434867e2717c9739dd2602203b2295f.html.gz",
+            "sha256": "406d264a04deede73192b68d304e1b97b434867e2717c9739dd2602203b2295f",
+            "http_status": 200
+          },
+          "extra": {
+            "query": "Картридж HP 59A черный 3000 страниц цена",
+            "search_title": "Картридж NV Print NV-CF259A Black для принтеров HP...",
+            "page_prices": [
+              "2823809",
+              "958",
+              "981",
+              "1563",
+              "809",
+              "357",
+              "909",
+              "658"
+            ],
+            "price_from": "разметка schema.org",
+            "supplier_by": "домен",
+            "relevant": true,
+            "note": "Совместимый NV Print, а не оригинальный картридж HP.",
+            "product_name": "Картридж NV Print NV-CF259A Black для HP LaserJet Pro M304/M404/M428",
+            "content_quote": "Картридж NV Print NV-CF259A Black",
+            "verdicts": {
+              "item1_r1": "ok",
+              "item1_r2": "fail",
+              "item1_r3": "ok",
+              "item1_r4": "ok"
+            }
+          }
+        }
+      ],
+      "matches": [
+        {
+          "offer_id": "item1-e1",
+          "cls": "identical",
+          "score": 1.0,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": false,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": true,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            }
+          ],
+          "reasons": [
+            "все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e2",
+          "cls": "identical",
+          "score": 1.0,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": false,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": true,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            }
+          ],
+          "reasons": [
+            "все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e3",
+          "cls": "identical",
+          "score": 1.0,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "черный",
+              "status": "ok",
+              "mandatory": false,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": true,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            }
+          ],
+          "reasons": [
+            "все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e4",
+          "cls": "identical",
+          "score": 1.0,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": false,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": true,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            }
+          ],
+          "reasons": [
+            "все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e5",
+          "cls": "identical",
+          "score": 1.0,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": false,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": true,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            }
+          ],
+          "reasons": [
+            "все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e6",
+          "cls": "identical",
+          "score": 1.0,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": false,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": true,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            }
+          ],
+          "reasons": [
+            "все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e7",
+          "cls": "unsuitable",
+          "score": 0.75,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "черный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано страниц",
+              "status": "unclear",
+              "mandatory": true,
+              "note": "значение не число"
+            }
+          ],
+          "reasons": [
+            "модель не совпадает или не указана (в ТЗ — 59A / CF259A)",
+            "обязательная характеристика не подтверждена источником: Ресурс: не менее 3000 страниц"
+          ],
+          "llm_used": false,
+          "not_confirmed": true
+        },
+        {
+          "offer_id": "item1-e8",
+          "cls": "unsuitable",
+          "score": 0.75,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "черный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано страниц",
+              "status": "unclear",
+              "mandatory": true,
+              "note": "значение не число"
+            }
+          ],
+          "reasons": [
+            "модель не совпадает или не указана (в ТЗ — 59A / CF259A)",
+            "обязательная характеристика не подтверждена источником: Ресурс: не менее 3000 страниц"
+          ],
+          "llm_used": false,
+          "not_confirmed": true
+        },
+        {
+          "offer_id": "item1-e9",
+          "cls": "unsuitable",
+          "score": 0.5,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "не указано",
+              "status": "fail",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано страниц",
+              "status": "unclear",
+              "mandatory": true,
+              "note": "значение не число"
+            }
+          ],
+          "reasons": [
+            "не выполнено: Цвет: черный (в источнике: не указано)"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e10",
+          "cls": "unsuitable",
+          "score": 0.5,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "не указано",
+              "status": "fail",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано страниц",
+              "status": "unclear",
+              "mandatory": true,
+              "note": "значение не число"
+            }
+          ],
+          "reasons": [
+            "не выполнено: Цвет: черный (в источнике: не указано)"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e11",
+          "cls": "unsuitable",
+          "score": 0.5,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "не указано",
+              "status": "fail",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "черный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано страниц",
+              "status": "unclear",
+              "mandatory": true,
+              "note": "значение не число"
+            }
+          ],
+          "reasons": [
+            "не выполнено: Оригинальность: оригинальный (в источнике: не указано)"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e12",
+          "cls": "identical",
+          "score": 1.0,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "черный",
+              "status": "ok",
+              "mandatory": false,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": true,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            }
+          ],
+          "reasons": [
+            "все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e13",
+          "cls": "unsuitable",
+          "score": 0.057,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "в названии: «эквивалент»",
+              "status": "fail",
+              "mandatory": true,
+              "note": "совместимый товар или аналог, а не оригинальный"
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": false,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            }
+          ],
+          "reasons": [
+            "не выполнено: Оригинальность: оригинальный (в источнике: в названии: «эквивалент»)"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e14",
+          "cls": "unsuitable",
+          "score": 0.0,
+          "checks": [],
+          "reasons": [
+            "другой товар: Указана другая модель картриджа — CF256A."
+          ],
+          "llm_used": true,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e15",
+          "cls": "unsuitable",
+          "score": 0.0,
+          "checks": [],
+          "reasons": [
+            "другой товар: Предложена другая модель картриджа — HP 106A."
+          ],
+          "llm_used": true,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-e16",
+          "cls": "unsuitable",
+          "score": 0.0,
+          "checks": [],
+          "reasons": [
+            "другой товар: Картридж Xerox — другая модель и товарный знак."
+          ],
+          "llm_used": true,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-w1",
+          "cls": "identical",
+          "score": 1.0,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерная",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "черный",
+              "status": "ok",
+              "mandatory": false,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "3000 страниц",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            }
+          ],
+          "reasons": [
+            "все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-w2",
+          "cls": "identical",
+          "score": 1.0,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "Лазерный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "Оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "черный (black)",
+              "status": "ok",
+              "mandatory": false,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "3 000 страниц",
+              "status": "ok",
+              "mandatory": true,
+              "note": "значение не число; по оценке модели"
+            }
+          ],
+          "reasons": [
+            "все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A"
+          ],
+          "llm_used": true,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-w3",
+          "cls": "identical",
+          "score": 1.0,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерная",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": "оригинальный",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "черный",
+              "status": "ok",
+              "mandatory": false,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "3000 страниц",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            }
+          ],
+          "reasons": [
+            "все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        },
+        {
+          "offer_id": "item1-w4",
+          "cls": "unsuitable",
+          "score": 0.714,
+          "checks": [
+            {
+              "requirement_id": "item1_r1",
+              "requirement": "Тип картриджа: лазерный",
+              "offer_value": "лазерная",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r2",
+              "requirement": "Оригинальность: оригинальный",
+              "offer_value": null,
+              "status": "fail",
+              "mandatory": true,
+              "note": "по оценке модели"
+            },
+            {
+              "requirement_id": "item1_r3",
+              "requirement": "Цвет: черный",
+              "offer_value": "черный",
+              "status": "ok",
+              "mandatory": false,
+              "note": ""
+            },
+            {
+              "requirement_id": "item1_r4",
+              "requirement": "Ресурс: не менее 3000 страниц",
+              "offer_value": "3000 страниц",
+              "status": "ok",
+              "mandatory": true,
+              "note": ""
+            }
+          ],
+          "reasons": [
+            "не выполнено: Оригинальность: оригинальный (в источнике: —)"
+          ],
+          "llm_used": true,
+          "not_confirmed": false
+        }
+      ],
+      "normalizations": [
+        {
+          "offer_id": "item1-e1",
+          "ok": true,
+          "unit_price": "8875.09168705918619854002",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.169489007",
+              "note": "цена от 21.06.2024 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за июль 2024 – сентябрь 2026, 27 мес.: K = 1,169489007"
+            }
+          ],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-e2",
+          "ok": true,
+          "unit_price": "8829.81742620105",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.169489007",
+              "note": "цена от 21.06.2024 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за июль 2024 – сентябрь 2026, 27 мес.: K = 1,169489007"
+            }
+          ],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-e3",
+          "ok": true,
+          "unit_price": "14062.9795891067475",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.169489007",
+              "note": "цена от 03.06.2024 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за июль 2024 – сентябрь 2026, 27 мес.: K = 1,169489007"
+            }
+          ],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-e4",
+          "ok": true,
+          "unit_price": "10937.12334071218",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.223619077",
+              "note": "цена от 24.11.2023 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за декабрь 2023 – сентябрь 2026, 34 мес.: K = 1,223619077"
+            }
+          ],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-e5",
+          "ok": true,
+          "unit_price": "9522.00950463126",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.185683343",
+              "note": "цена от 05.04.2024 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за май 2024 – сентябрь 2026, 29 мес.: K = 1,185683343"
+            }
+          ],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e6",
+          "ok": true,
+          "unit_price": "9522.06878879841",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.185683343",
+              "note": "цена от 05.04.2024 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за май 2024 – сентябрь 2026, 29 мес.: K = 1,185683343"
+            }
+          ],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e7",
+          "ok": true,
+          "unit_price": "11652.40253437569",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.169489007",
+              "note": "цена от 03.06.2024 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за июль 2024 – сентябрь 2026, 27 мес.: K = 1,169489007"
+            }
+          ],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-e8",
+          "ok": true,
+          "unit_price": "4018.67609178720389829669",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.169489007",
+              "note": "цена от 03.06.2024 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за июль 2024 – сентябрь 2026, 27 мес.: K = 1,169489007"
+            }
+          ],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-e9",
+          "ok": true,
+          "unit_price": "6746.85204771645",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.223619077",
+              "note": "цена от 24.11.2023 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за декабрь 2023 – сентябрь 2026, 34 мес.: K = 1,223619077"
+            }
+          ],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-e10",
+          "ok": true,
+          "unit_price": "6762.02492427125",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.223619077",
+              "note": "цена от 24.11.2023 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за декабрь 2023 – сентябрь 2026, 34 мес.: K = 1,223619077"
+            }
+          ],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-e11",
+          "ok": true,
+          "unit_price": "591.2458402076850",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.156307106",
+              "note": "цена от 04.07.2024 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за август 2024 – сентябрь 2026, 26 мес.: K = 1,156307106"
+            }
+          ],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e12",
+          "ok": true,
+          "unit_price": "15479.08622924894385435702",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.156307106",
+              "note": "цена от 04.07.2024 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за август 2024 – сентябрь 2026, 26 мес.: K = 1,156307106"
+            }
+          ],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e13",
+          "ok": true,
+          "unit_price": "8700.39",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e14",
+          "ok": true,
+          "unit_price": "3477.295",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e15",
+          "ok": true,
+          "unit_price": "3651.21083333333",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e16",
+          "ok": true,
+          "unit_price": "15067.246112920305",
+          "steps": [
+            {
+              "kind": "cpi",
+              "factor": "1.169489007",
+              "note": "цена от 03.06.2024 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за июль 2024 – сентябрь 2026, 27 мес.: K = 1,169489007"
+            }
+          ],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-w1",
+          "ok": true,
+          "unit_price": "13200",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-w2",
+          "ok": true,
+          "unit_price": "28500",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-w3",
+          "ok": true,
+          "unit_price": "10700.00",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-w4",
+          "ok": true,
+          "unit_price": "809",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        }
+      ],
+      "decisions": [
+        {
+          "offer_id": "item1-e1",
+          "included": false,
+          "code": "DUP_SUPPLIER",
+          "reason": "повторная цена того же поставщика: в расчёте одна его цена, самая поздняя (при равных датах — меньшая): контракт № 1121509958424000025 от 21.06.2024",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e10",
+          "included": false,
+          "code": "UNSUITABLE",
+          "reason": "не выполнено: Цвет: черный (в источнике: не указано)",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e11",
+          "included": false,
+          "code": "UNSUITABLE",
+          "reason": "не выполнено: Оригинальность: оригинальный (в источнике: не указано)",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e12",
+          "included": true,
+          "code": "INCLUDED",
+          "reason": "идентичное: все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e13",
+          "included": false,
+          "code": "UNSUITABLE",
+          "reason": "не выполнено: Оригинальность: оригинальный (в источнике: в названии: «эквивалент»)",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e14",
+          "included": false,
+          "code": "UNSUITABLE",
+          "reason": "другой товар: Указана другая модель картриджа — CF256A.",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e15",
+          "included": false,
+          "code": "UNSUITABLE",
+          "reason": "другой товар: Предложена другая модель картриджа — HP 106A.",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e16",
+          "included": false,
+          "code": "UNSUITABLE",
+          "reason": "другой товар: Картридж Xerox — другая модель и товарный знак.",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e2",
+          "included": true,
+          "code": "INCLUDED",
+          "reason": "идентичное: все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e3",
+          "included": true,
+          "code": "INCLUDED",
+          "reason": "идентичное: все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e4",
+          "included": true,
+          "code": "INCLUDED",
+          "reason": "идентичное: все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e5",
+          "included": true,
+          "code": "INCLUDED",
+          "reason": "идентичное: все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e6",
+          "included": false,
+          "code": "DUP_SUPPLIER",
+          "reason": "повторная цена того же поставщика: в расчёте одна его цена, самая поздняя (при равных датах — меньшая): контракт № 1771202925024000084 от 05.04.2024",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e7",
+          "included": false,
+          "code": "NOT_CONFIRMED",
+          "reason": "модель не совпадает или не указана (в ТЗ — 59A / CF259A); обязательная характеристика не подтверждена источником: Ресурс: не менее 3000 страниц",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e8",
+          "included": false,
+          "code": "NOT_CONFIRMED",
+          "reason": "модель не совпадает или не указана (в ТЗ — 59A / CF259A); обязательная характеристика не подтверждена источником: Ресурс: не менее 3000 страниц",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e9",
+          "included": false,
+          "code": "UNSUITABLE",
+          "reason": "не выполнено: Цвет: черный (в источнике: не указано)",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-w1",
+          "included": true,
+          "code": "INCLUDED",
+          "reason": "идентичное: все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A",
+          "flags": [
+            "SUPPLIER_BY_DOMAIN"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-w2",
+          "included": false,
+          "code": "OUTLIER_RATIO",
+          "reason": "цена 28 500 ₽ отличается от медианы 12 068,56 ₽ в 2,36 раза (больше порога 2)",
+          "flags": [
+            "SUPPLIER_BY_DOMAIN"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-w3",
+          "included": true,
+          "code": "INCLUDED",
+          "reason": "идентичное: все существенные характеристики совпали (3), товарный знак HP, модель 59A / CF259A",
+          "flags": [
+            "SUPPLIER_BY_DOMAIN"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-w4",
+          "included": false,
+          "code": "UNSUITABLE",
+          "reason": "не выполнено: Оригинальность: оригинальный (в источнике: —)",
+          "flags": [],
+          "actor": "system"
+        }
+      ],
+      "calc": {
+        "status": "final",
+        "set_used": "A",
+        "n": 7,
+        "n_suppliers": 7,
+        "prices": [
+          "8829.81742620105",
+          "9522.00950463126",
+          "10700.00",
+          "10937.12334071218",
+          "13200",
+          "14062.9795891067475",
+          "15479.08622924894385435702"
+        ],
+        "offer_ids": [
+          "item1-e2",
+          "item1-e5",
+          "item1-w3",
+          "item1-e4",
+          "item1-w1",
+          "item1-e3",
+          "item1-e12"
+        ],
+        "mean": "11818.71658427145447919386",
+        "median": "10937.12334071218",
+        "min": "8829.81742620105",
+        "max": "15479.08622924894385435702",
+        "sd": "2469.145644317361983334199220",
+        "cv": "0.2089182549316177245635562875",
+        "unit_price": "11818.72",
+        "total": "118187.20",
+        "message": "Цена обоснована: цены 7 разных поставщиков, коэффициент вариации 20,89 % не выше 33 %.",
+        "hints": [],
+        "method": "Метод сопоставимых рыночных цен, формула п. 3.21 Методических рекомендаций (приказ Минэкономразвития России № 567)"
+      },
+      "queries": [
+        {
+          "eis": [
+            "Картридж HP 59A CF259A",
+            "Картридж лазерный HP 59A оригинальный"
+          ],
+          "web": [
+            "HP 59A CF259A оригинальный картридж цена",
+            "Картридж HP 59A черный 3000 страниц цена"
+          ]
+        }
+      ]
+    }
+  ],
+  "total": "118187.20",
+  "status": "done",
+  "all_final": true,
+  "sources": [
+    {
+      "source": "ЕИС, реестр контрактов 44-ФЗ",
+      "state": "ok",
+      "requests": 30,
+      "errors": 0,
+      "found": 16,
+      "message": "запросов 30, ошибок 0"
+    },
+    {
+      "source": "Сайты поставщиков (Яндекс Search API)",
+      "state": "partial",
+      "requests": 13,
+      "errors": 7,
+      "found": 4,
+      "message": "запросов 13, ошибок 7; отклонили запрос сайты: www.dns-shop.ru, www.onlinetrade.ru"
+    }
+  ],
+  "trace": [
+    {
+      "ts": "2026-11-13T01:35:20.825875Z",
+      "stage": "start",
+      "message": "Анализ начат",
+      "data": {
+        "llm": true,
+        "web": true
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.839681Z",
+      "stage": "parse",
+      "message": "Документ «opisanie_kartridzh.txt» разобран по правилам: позиций 1",
+      "data": {
+        "items": [
+          "Картридж лазерный HP 59A (CF259A)"
+        ]
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.840421Z",
+      "stage": "privacy",
+      "message": "Перед отправкой во внешнюю модель обезличено: чувствительных сведений не найдено",
+      "data": {
+        "counts": {}
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.841163Z",
+      "stage": "parse",
+      "message": "Карточка уточнена моделью: существенные характеристики, фасовка, поисковые фразы",
+      "data": {
+        "items": [
+          {
+            "name": "Картридж лазерный HP 59A (CF259A)",
+            "requirements": 4,
+            "mandatory": 3
+          }
+        ]
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.841257Z",
+      "stage": "item",
+      "message": "Позиция 1: Картридж лазерный HP 59A (CF259A)",
+      "data": {
+        "item": "item1"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.851099Z",
+      "stage": "search",
+      "message": "ЕИС: «Картридж HP 59A CF259A» — найдено контрактов 20, исполненных за 3 года 20",
+      "data": {
+        "item": "item1",
+        "source": "eis44",
+        "url": "https://zakupki.gov.ru/epz/contract/search/results.html?searchString=%D0%9A%D0%B0%D1%80%D1%82%D1%80%D0%B8%D0%B4%D0%B6+HP+59A+CF259A&morphology=on&fz44=on&contractStageList_1=on&contractStageList=1&sortBy=UPDATE_DATE&sortDirection=false&recordsPerPage=_20&pageNumber=1"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.860448Z",
+      "stage": "search",
+      "message": "ЕИС: «Картридж лазерный HP 59A оригинальный» — найдено контрактов 20, исполненных за 3 года 7",
+      "data": {
+        "item": "item1",
+        "source": "eis44",
+        "url": "https://zakupki.gov.ru/epz/contract/search/results.html?searchString=%D0%9A%D0%B0%D1%80%D1%82%D1%80%D0%B8%D0%B4%D0%B6+%D0%BB%D0%B0%D0%B7%D0%B5%D1%80%D0%BD%D1%8B%D0%B9+HP+59A+%D0%BE%D1%80%D0%B8%D0%B3%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9&morphology=on&fz44=on&contractStageList_1=on&contractStageList=1&sortBy=UPDATE_DATE&sortDirection=false&recordsPerPage=_20&pageNumber=1"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.990206Z",
+      "stage": "search",
+      "message": "ЕИС: отобрано позиций контрактов для сверки — 16",
+      "data": {
+        "item": "item1",
+        "source": "eis44"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991146Z",
+      "stage": "search",
+      "message": "Пропущен www.ozon.ru: сайт с антибот-защитой или запретом для программ, обход не выполняется",
+      "data": {
+        "item": "item1",
+        "source": "web",
+        "url": "https://www.ozon.ru/category/kartridzh-hp-cf259a-original/"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991178Z",
+      "stage": "search",
+      "message": "Пропущен www.wildberries.ru: сайт с антибот-защитой или запретом для программ, обход не выполняется",
+      "data": {
+        "item": "item1",
+        "source": "web",
+        "url": "https://www.wildberries.ru/catalog/tags/cf259a-kartridzh-originalbnyi"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991195Z",
+      "stage": "search",
+      "message": "Пропущен market.yandex.ru: сайт с антибот-защитой или запретом для программ, обход не выполняется",
+      "data": {
+        "item": "item1",
+        "source": "web",
+        "url": "https://market.yandex.ru/search?text=%D0%BA%D0%B0%D1%80%D1%82%D1%80%D0%B8%D0%B4%D0%B6%20hp%2059%20a%20cf259a%20%D0%BE%D1%80%D0%B8%D0%B3%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991208Z",
+      "stage": "search",
+      "message": "Пропущен market.yandex.ru: сайт с антибот-защитой или запретом для программ, обход не выполняется",
+      "data": {
+        "item": "item1",
+        "source": "web",
+        "url": "https://market.yandex.ru/search?text=%D0%9A%D0%B0%D1%80%D1%82%D1%80%D0%B8%D0%B4%D0%B6%20%D0%BB%D0%B0%D0%B7%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20HP%2059A%20CF259A"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991255Z",
+      "stage": "search",
+      "message": "Веб-поиск: «HP 59A CF259A оригинальный картридж цена» — результатов 10, к загрузке 6",
+      "data": {
+        "item": "item1",
+        "source": "web"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991871Z",
+      "stage": "search",
+      "message": "Пропущен www.ozon.ru: сайт с антибот-защитой или запретом для программ, обход не выполняется",
+      "data": {
+        "item": "item1",
+        "source": "web",
+        "url": "https://www.ozon.ru/category/kartridzh-hp-59a-chernyy-cf259a/"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991887Z",
+      "stage": "search",
+      "message": "Пропущен www.vseinstrumenti.ru: сайт с антибот-защитой или запретом для программ, обход не выполняется",
+      "data": {
+        "item": "item1",
+        "source": "web",
+        "url": "https://www.vseinstrumenti.ru/product/lazernyj-kartridzh-cactus-csp-cf259a-chernyj-3000-stranits-dlya-hp-lj-m304-m404-mfp-m428-1885850-8716814/"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991897Z",
+      "stage": "search",
+      "message": "Пропущен www.wildberries.ru: сайт с антибот-защитой или запретом для программ, обход не выполняется",
+      "data": {
+        "item": "item1",
+        "source": "web",
+        "url": "https://www.wildberries.ru/catalog/tags/kartridzh-hp-59a-czernyi-cf259a"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991908Z",
+      "stage": "search",
+      "message": "Пропущен market.yandex.ru: сайт с антибот-защитой или запретом для программ, обход не выполняется",
+      "data": {
+        "item": "item1",
+        "source": "web",
+        "url": "https://market.yandex.ru/search?text=%D0%9A%D0%B0%D1%80%D1%82%D1%80%D0%B8%D0%B4%D0%B6%20HP%2059A%2C%20%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20%2F%203000%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%20(CF259A)"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991919Z",
+      "stage": "search",
+      "message": "Пропущен market.yandex.ru: сайт с антибот-защитой или запретом для программ, обход не выполняется",
+      "data": {
+        "item": "item1",
+        "source": "web",
+        "url": "https://market.yandex.ru/search?text=%D0%9A%D0%B0%D1%80%D1%82%D1%80%D0%B8%D0%B4%D0%B6%20%D0%BB%D0%B0%D0%B7%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20HP%2059A%20%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20(CF259A)"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:20.991955Z",
+      "stage": "search",
+      "message": "Веб-поиск: «Картридж HP 59A черный 3000 страниц цена» — результатов 10, к загрузке 5",
+      "data": {
+        "item": "item1",
+        "source": "web"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:22.652964Z",
+      "stage": "fetch",
+      "message": "www.onlinetrade.ru: страница не загружена — сайт отклонил автоматический запрос (антибот-защита), обход не выполняется",
+      "data": {
+        "item": "item1",
+        "url": "https://www.onlinetrade.ru/catalogue/kartridzhi_dlya_lazernoy_i_matrichnoy_pechati-c211/hp/kartridzh_cf259a_hp_59a_dlya_laserjet_m304_m404_m428_3000_str-1840434.html"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:22.653042Z",
+      "stage": "fetch",
+      "message": "www.officemag.ru: страница не загружена — страница формируется скриптом в браузере, текста товара в ней нет",
+      "data": {
+        "item": "item1",
+        "url": "https://www.officemag.ru/catalog/goods/363293/"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:22.653582Z",
+      "stage": "fetch",
+      "message": "www.komus.ru: страница не загружена — запрещено robots.txt",
+      "data": {
+        "item": "item1",
+        "url": "https://www.komus.ru/katalog/tekhnika/raskhodnye-materialy-dlya-pechatayushhej-tekhniki/kartridzhi-dlya-lazernykh-printerov-kopirov-i-mfu/kartridzhi-lazernye-originalnye/toner-kartridzh-hp-59a-cf259a-chernyj-originalnyj/p/1041332/"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:22.653900Z",
+      "stage": "fetch",
+      "message": "www.dns-shop.ru: страница не загружена — сайт отклонил автоматический запрос (антибот-защита), обход не выполняется",
+      "data": {
+        "item": "item1",
+        "url": "https://www.dns-shop.ru/product/a5a6fa6acfc07db3/kartridz-lazernyj-gg-gg-cf259x-cernyj-s-cipom/"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:22.653920Z",
+      "stage": "fetch",
+      "message": "www.dns-shop.ru: страница не загружена — сайт отклонил автоматический запрос (антибот-защита), обход не выполняется",
+      "data": {
+        "item": "item1",
+        "url": "https://www.dns-shop.ru/catalog/recipe/d2375b1f4159304e/hp/"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:22.653932Z",
+      "stage": "fetch",
+      "message": "www.officemag.ru: страница не загружена — страница формируется скриптом в браузере, текста товара в ней нет",
+      "data": {
+        "item": "item1",
+        "url": "https://www.officemag.ru/catalog/goods/364063/"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:22.653945Z",
+      "stage": "fetch",
+      "message": "www.komus.ru: страница не загружена — запрещено robots.txt",
+      "data": {
+        "item": "item1",
+        "url": "https://www.komus.ru/katalog/tekhnika/raskhodnye-materialy-dlya-pechatayushhej-tekhniki/kartridzhi-dlya-lazernykh-printerov-kopirov-i-mfu/kartridzhi-lazernye-sovmestimye/kartridzh-lazernyj-retech-59a-cf259a-dlya-hp-chernyj-sovmestimyj/p/2167520/"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:22.654794Z",
+      "stage": "search",
+      "message": "Сайты поставщиков: загружено страниц 4 из 11",
+      "data": {
+        "item": "item1",
+        "source": "web"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:22.696628Z",
+      "stage": "calc",
+      "message": "Позиция 1: Цена обоснована: цены 7 разных поставщиков, коэффициент вариации 20,89 % не выше 33 %.",
+      "data": {
+        "item": "item1",
+        "status": "final"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:22.696832Z",
+      "stage": "done",
+      "message": "Готово: позиций 1, с обоснованной ценой 1; НМЦД по ним 118 187,20 руб.",
+      "data": {}
+    },
+    {
+      "ts": "2026-11-13T13:44:41.587492Z",
+      "stage": "legal",
+      "message": "Позиция 1: проверены неустойки по контрактам (7) и РНП по ИНН поставщиков (7); неустойки — 0, в РНП — 0",
+      "data": {
+        "item": "item1"
+      }
+    }
+  ],
+  "settings": {
+    "llm": true,
+    "llm_model": "claude-sonnet-5",
+    "web": true,
+    "calc_date": "2026-11-13",
+    "rules": {
+      "method": {
+        "formula": "mean",
+        "min_suppliers": 3,
+        "cv_threshold": 0.33,
+        "max_age_months": 36,
+        "cpi_threshold_months": 6,
+        "selection": "stepwise",
+        "cpi_formula": "chain",
+        "cpi_from_price_month": false,
+        "cpi_max_lag_months": 3,
+        "executed_statuses": [
+          "исполнение завершено",
+          "исполнен",
+          "исполнено"
+        ]
+      },
+      "outliers": {
+        "mad_min_n": 5,
+        "mad_z": 3.5,
+        "ratio_flag": 1.5,
+        "ratio_exclude": 2.0,
+        "ratio_any_n": true
+      },
+      "matching": {
+        "identical_delta": 0.2,
+        "min_score": 0.35,
+        "eq_tolerance": 0.0,
+        "name_similarity": 0.8,
+        "weight_mandatory": 2.0,
+        "weight_optional": 1.0,
+        "above_credit": 0.8,
+        "missing_optional_credit": 0.4,
+        "model_confirms": true,
+        "one_unconfirmed_homogeneous": true,
+        "use_title": true,
+        "unverified_quote": "reject",
+        "pair_by_unit": [
+          "г/м²"
+        ],
+        "token_synonyms": {
+          "пачк": "упаковк",
+          "вес": "масс",
+          "изготовител": "производител",
+          "граммаж": "масс",
+          "плотност": "масс"
+        }
+      },
+      "normalize": {
+        "assume_equal_units": true,
+        "bulk_units": [
+          "коробка",
+          "ящик",
+          "блок",
+          "паллета"
+        ],
+        "content_from_title": true,
+        "max_content_ratio": 2.0
+      },
+      "vat": {
+        "rate_2026": 0.22,
+        "rate_before_2026": 0.2,
+        "change_date": "2026-01-01"
+      },
+      "card": {
+        "essential_names": [
+          "вид",
+          "тип",
+          "формат",
+          "модель",
+          "марка",
+          "класс",
+          "технология",
+          "назначение",
+          "материал",
+          "состав",
+          "плотность",
+          "масса листа",
+          "масса бумаги",
+          "область печати",
+          "рабочая область",
+          "объём",
+          "объем",
+          "ёмкость",
+          "емкость",
+          "мощность",
+          "производительность",
+          "разрешение",
+          "диагональ",
+          "система экспрессии",
+          "клеточная линия",
+          "штамм",
+          "действующее вещество",
+          "концентрация"
+        ],
+        "max_essential": 4,
+        "descriptive_len": 80
+      },
+      "rounding": 0.01
+    },
+    "cpi": "загружен",
+    "redaction": {
+      "summary": "чувствительных сведений не найдено",
+      "counts": {},
+      "preview": "Закупка картриджей для принтеров\n\nКартридж лазерный HP 59A (CF259A), оригинальный, черный, ресурс не менее 3000 страниц — 10 шт."
+    },
+    "org_name": "Заказчик",
+    "legal_checks": true
+  },
+  "llm": {
+    "model": "claude-sonnet-5",
+    "calls": 0,
+    "cached": 5,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "errors": 0,
+    "skipped_budget": 0,
+    "outbound": [
+      {
+        "purpose": "карточка ТЗ (обезличенный текст)",
+        "chars": 207,
+        "cached": true,
+        "sha256": "e12fae0d3fe60dd425feb63bf66d0966471c39c70a8a69da81b5046ec030a7cc"
+      },
+      {
+        "purpose": "сверка предложений: Картридж HP 59A",
+        "chars": 2490,
+        "cached": true,
+        "sha256": "30dbcb34175e6def285ab1894056fc283c8e65cdcde2232a6fd7da5bac3eba60"
+      },
+      {
+        "purpose": "сверка предложений: Картридж HP 59A",
+        "chars": 2801,
+        "cached": true,
+        "sha256": "bf32260b87208d39b7d7113e8e067ce18dbc9e4895b1abf9b165270865c0e19d"
+      },
+      {
+        "purpose": "сверка предложений: Картридж HP 59A",
+        "chars": 7181,
+        "cached": true,
+        "sha256": "9a5deb047b1585619e04ebc8b7af4205eb02e08efa9c72c5332e674897862055"
+      },
+      {
+        "purpose": "сверка предложений: Картридж HP 59A",
+        "chars": 7691,
+        "cached": true,
+        "sha256": "a9674f36c908d114ddf557426e8f7c5073ebd2b1d35d66a2d44552b32cccd1e6"
+      }
+    ],
+    "error_log": []
+  },
+  "error": null
+}

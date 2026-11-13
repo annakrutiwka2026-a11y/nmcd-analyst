@@ -1,0 +1,21 @@
+<header class="masthead">
+  <div class="width">
+    {% if site_base is defined and site_base %}
+    <a class="service" href="{{ site_base }}index.html">Обоснование НМЦД</a>
+    <nav aria-label="Разделы">
+      <a href="{{ site_base }}index.html#examples"{% if page == "index" %} aria-current="page"{% endif %}>Примеры</a>
+      <a href="{{ site_base }}index.html#run">Запуск</a>
+      <a href="{{ site_base }}method.html"{% if page == "method" %} aria-current="page"{% endif %}>Методика</a>
+    </nav>
+    {% else %}
+    <a class="service" href="{{ '/' if app_nav else '#top' }}">Обоснование НМЦД</a>
+    {% if app_nav %}
+    <nav aria-label="Разделы">
+      <a href="/"{% if page == "index" %} aria-current="page"{% endif %}>Новый расчёт</a>
+      <a href="/#examples">Примеры</a>
+      <a href="/method"{% if page == "method" %} aria-current="page"{% endif %}>Методика</a>
+    </nav>
+    {% endif %}
+    {% endif %}
+  </div>
+</header>

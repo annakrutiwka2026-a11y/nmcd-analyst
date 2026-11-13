@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Идёт расчёт — {{ title }}</title>
+{% include "favicon.html" %}
+{% include "style.css.html" %}
+<style>
+.stages{list-style:none;margin:8px 0 26px;padding:0;max-width:760px;border-top:1px solid var(--rule)}
+.stages li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--rule);font-size:18px}
+.now{min-height:1.5em}
+.log{font:13.5px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;max-height:380px;overflow:auto;white-space:pre-wrap}
+</style>
+</head>
+<body>
+{% set app_nav = True %}{% set page = "run" %}{% include "header.html" %}
+<main class="width">
+  <p class="crumbs"><a href="/">Главная</a> › Расчёт</p>
+  <h1>Идёт расчёт</h1>
+  <p class="lede" style="margin-bottom:22px">{{ title }} · прошло <span id="timer">0:00</span></p>
+  <ol class="stages">
+    <li data-step="1"><span>Разбор технического задания</span><span class="tag grey">ожидает</span></li>
+    <li data-step="2"><span>Поиск цен в ЕИС и у поставщиков</span><span class="tag grey">ожидает</span></li>
+    <li data-step="3"><span>Сверка с ТЗ и расчёт цены</span><span class="tag grey">ожидает</span></li>
+    <li data-step="4"><span>Документ обоснования</span><span class="tag grey">ожидает</span></li>
+  </ol>
+  <div class="inset"><p class="now" id="now" style="margin:0">Начинаем…</p></div>
+  <p class="hint">Обычно расчёт занимает 1–3 минуты: реестр ЕИС опрашивается с паузами, чтобы не создавать нагрузку на сайт. Страницу можно не обновлять — отчёт откроется сам.</p>
+  <details><summary><span class="u">Подробный журнал</span></summary><div class="inner"><div class="log" id="log"></div></div></details>
+</main>
+<script>
+const t0 = Date.parse('{{ started }}') || Date.now(), timer = document.getElementById('timer'), log = document.getElementById('log');
+setInterval(() => { const s = Math.max(0, Math.round((Date.now() - t0) / 1000)); timer.textContent = Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }, 1000);
+let current = 0;
+function stepOf(d){
+  if (d.stage === 'done') return 4;
+  if (d.stage === 'calc') return 3;
+  if (['item', 'search', 'fetch', 'llm'].includes(d.stage)) return 2;
+  return 1;
+}
+function show(n){
+  if (n <= current) return;
+  current = n;
+  document.querySelectorAll('.stages li').forEach(li => {
+    const k = +li.dataset.step, tag = li.querySelector('.tag');
+    if (k < current || current === 4) { tag.className = 'tag green'; tag.textContent = 'выполнено'; }
+    else if (k === current) { tag.className = 'tag amber'; tag.textContent = 'идёт'; }
+    else { tag.className = 'tag grey'; tag.textContent = 'ожидает'; }
+  });
+}
+const es = new EventSource('/runs/{{ run_id }}/events');
+es.onmessage = e => {
+  const d = JSON.parse(e.data);
+  log.textContent += d.ts + '  ' + d.message + '\n'; log.scrollTop = log.scrollHeight;
+  show(stepOf(d));
+  document.getElementById('now').textContent = d.message;
+};
+es.addEventListener('done', () => { show(4); document.getElementById('now').textContent = 'Расчёт завершён, открываем отчёт…'; es.close(); setTimeout(() => location.reload(), 500); });
+es.onerror = () => { es.close(); setTimeout(() => location.reload(), 3000); };
+</script>
+</body></html>

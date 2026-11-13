@@ -1,0 +1,63 @@
+# Источники цен. Включаются и настраиваются здесь, без правки кода.
+
+http:
+  timeout_sec: 25
+  retries: 2
+  cache_ttl_hours: 24        # повторный запуск не нагружает сайты
+  max_page_bytes: 3000000
+
+eis44:
+  enabled: true
+  title: "ЕИС, реестр контрактов (44-ФЗ)"
+  base_url: "https://zakupki.gov.ru"
+  min_interval_sec: 0.6      # пауза между запросами к ЕИС
+  results_per_query: 20
+  max_queries_per_item: 3
+  max_contracts_per_item: 14
+  # Только исполненные контракты (контракты за последние три года, ч. 18 ст. 22 44-ФЗ)
+  stage: "1"                 # 1 — «Исполнение завершено»
+
+web:
+  enabled: true              # нужен ключ YANDEX_SEARCH_API_KEY и YANDEX_FOLDER_ID
+  title: "Сайты поставщиков (поиск через Яндекс Search API)"
+  endpoint: "https://searchapi.api.cloud.yandex.net/v2/web/search"
+  results_per_query: 10
+  max_queries_per_item: 3
+  max_pages_per_item: 12
+  min_interval_per_host_sec: 1.0
+  # Сайты с антибот-защитой или запретом в robots.txt — не запрашиваем (обход защиты не делаем)
+  blocked_domains:
+    - ozon.ru
+    - wildberries.ru
+    - wb.ru
+    - market.yandex.ru
+    - avito.ru
+    - vseinstrumenti.ru
+    - gisp.gov.ru
+    - agregatoreat.ru
+    - aliexpress.ru
+    - aliexpress.com
+    - megamarket.ru
+    - lamoda.ru
+  # Агрегаторы тендеров, справочники и форумы — это не цены предложений
+  skip_domains:
+    - zakupki.gov.ru
+    - zakupki.mos.ru
+    - rostender.info
+    - tenderplan.ru
+    - tenderguru.ru
+    - b2b-center.ru
+    - roseltorg.ru
+    - sberbank-ast.ru
+    - rts-tender.ru
+    - fabrikant.ru
+    - zakupki360.ru
+    - kontur.ru
+    - youtube.com
+    - vk.com
+    - dzen.ru
+    - wikipedia.org
+    - pikabu.ru
+    - otzovik.com
+    - irecommend.ru
+    - habr.com

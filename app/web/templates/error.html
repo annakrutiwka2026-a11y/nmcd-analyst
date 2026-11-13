@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ "Страница не найдена" if code == 404 else "Ошибка" }} — Обоснование НМЦД</title>
+{% include "favicon.html" %}
+{% include "style.css.html" %}
+</head>
+<body>
+{% set app_nav = True %}{% include "header.html" %}
+<main class="width">
+  <h1>{{ "Страница не найдена" if code == 404 else "Не удалось выполнить запрос" }}</h1>
+  <p class="lede">{{ message }}.</p>
+  <p>{{ "Возможно, ссылка устарела или расчёт был удалён." if code == 404 else "Проверьте введённые данные и попробуйте ещё раз." }}</p>
+  <p><a href="/">Перейти к новому расчёту</a></p>
+</main>
+</body></html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Новый расчёт — Обоснование НМЦД</title>
+{% include "favicon.html" %}
+{% include "style.css.html" %}
+</head>
+<body>
+{% set app_nav = True %}{% set page = "index" %}{% include "header.html" %}
+<main class="width">
+  <h1>Расчёт начальной (максимальной) цены договора</h1>
+  <p class="lede">Загрузите техническое задание или опишите закупку. Сервис подберёт цены сопоставимых товаров в ЕИС и у поставщиков, сверит их с требованиями ТЗ и подготовит обоснование по методу сопоставимых рыночных цен.</p>
+
+  <form action="/runs" method="post" enctype="multipart/form-data" id="runform" novalidate>
+    <div class="field" id="f-file">
+      <label for="file">Техническое задание</label>
+      <span class="hint">Файл DOCX, PDF или TXT, не больше 15 МБ</span>
+      <input type="file" id="file" name="file" accept=".docx,.pdf,.txt,.md">
+    </div>
+    <p class="or">или</p>
+    <div class="field" id="f-text">
+      <label for="text">Описание закупки</label>
+      <span class="hint">Наименование, основные характеристики и количество. Например: «Бумага для офисной техники А4, 80 г/м², 500 листов в пачке, марка C — 2500 пачек»</span>
+      <textarea id="text" name="text" rows="4"></textarea>
+    </div>
+
+    <fieldset class="field">
+      <legend>Где искать цены</legend>
+      <div class="checks-list">
+        <label class="checkbox"><input type="checkbox" checked disabled><span>Реестр контрактов ЕИС<span class="hint">исполненные контракты за последние три года</span></span></label>
+        <label class="checkbox"><input type="checkbox" id="opt_web" {{ 'checked' if web else 'disabled' }}><span>Сайты поставщиков<span class="hint">{{ 'интернет-магазины и дистрибьюторы' if web else 'не подключено: нет ключа поискового API' }}</span></span></label>
+        <label class="checkbox"><input type="checkbox" id="opt_llm" {{ 'checked' if llm else 'disabled' }}><span>Разбор ТЗ моделью<span class="hint">{{ 'текст ТЗ передаётся только обезличенным' if llm else 'не подключено: нет ключа модели' }}</span></span></label>
+      </div>
+    </fieldset>
+    <input type="hidden" name="use_web" id="use_web" value="{{ 'on' if web else 'off' }}">
+    <input type="hidden" name="use_llm" id="use_llm" value="{{ 'on' if llm else 'off' }}">
+
+    <p class="error-text" id="formerror" role="alert" hidden></p>
+    <button class="button" type="submit" id="go">Рассчитать</button>
+  </form>
+
+  <h2 id="examples">Примеры</h2>
+  <p>Технические задания из материалов кейса и описание закупки одной строкой. Готовый отчёт открывается сразу, новый расчёт занимает 1–3 минуты.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Закупка</th><th class="hide-narrow">Состав</th><th class="hide-narrow"></th></tr></thead>
+    <tbody>
+    {% for key, ex in examples.items() %}
+    <tr>
+      <td><b>{{ ex[1] }}</b></td>
+      <td class="hide-narrow">{{ ex[2] }}</td>
+      <td><div class="ex-actions">
+        {% if 'full' in ready[key] %}<a href="/examples/full/{{ key }}">Открыть отчёт</a>{% endif %}
+        <form method="post" action="/runs">
+          <input type="hidden" name="example" value="{{ key }}">
+          <input type="hidden" name="use_llm" value="{{ 'on' if llm else 'off' }}"><input type="hidden" name="use_web" value="{{ 'on' if web else 'off' }}">
+          <button class="link-button" type="submit">Рассчитать заново</button>
+        </form>
+      </div></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+
+  {% if recent %}
+  <h2>Последние расчёты</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Закупка</th><th class="hide-narrow">Дата</th><th class="num">НМЦД</th><th>Состояние</th></tr></thead>
+    <tbody>
+    {% for r in recent %}<tr>
+      <td><a href="/runs/{{ r.id }}">{{ r.title }}</a></td>
+      <td class="hide-narrow nowrap">{{ r.created }}</td>
+      <td class="num">{{ r.total or "—" }}</td>
+      <td>{% if r.status == "failed" %}<span class="tag red">ошибка</span>{% elif r.all_final %}<span class="tag green">обоснована</span>{% elif r.total %}<span class="tag amber">частично</span>{% else %}<span class="tag grey">цена не сформирована</span>{% endif %}</td>
+    </tr>{% endfor %}
+    </tbody>
+  </table></div>
+  {% endif %}
+
+  <div class="footer">Метод сопоставимых рыночных цен: статья 22 Федерального закона № 44-ФЗ, Методические рекомендации, утверждённые приказом Минэкономразвития России № 567. <a href="/method">Методика расчёта</a> · <a href="/api/docs">API для интеграции</a></div>
+</main>
+<script>
+const form = document.getElementById('runform'), file = document.getElementById('file'), text = document.getElementById('text');
+const err = document.getElementById('formerror');
+for (const [box, hidden] of [['opt_web', 'use_web'], ['opt_llm', 'use_llm']]) {
+  const b = document.getElementById(box), h = document.getElementById(hidden);
+  if (b && !b.disabled) b.addEventListener('change', () => h.value = b.checked ? 'on' : 'off');
+}
+form.addEventListener('submit', ev => {
+  const hasFile = file.files.length > 0, hasText = text.value.trim().length > 0;
+  document.getElementById('f-file').classList.remove('has-error');
+  if (!hasFile && !hasText) {
+    ev.preventDefault();
+    err.textContent = 'Выберите файл технического задания или опишите закупку текстом';
+    err.hidden = false;
+    document.getElementById('f-file').classList.add('has-error');
+    file.focus();
+    return;
+  }
+  if (hasFile) text.value = '';
+  const b = document.getElementById('go'); b.disabled = true; b.textContent = 'Запускаем расчёт…';
+});
+</script>
+</body></html>

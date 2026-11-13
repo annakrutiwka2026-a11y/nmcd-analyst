@@ -1,0 +1,6 @@
+{$NMCD_DOMAIN} {
+	encode gzip
+	reverse_proxy nmcd:8000 {
+		flush_interval -1
+	}
+}

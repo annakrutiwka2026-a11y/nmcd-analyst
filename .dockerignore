@@ -1,0 +1,9 @@
+.venv
+var
+.env
+**/__pycache__
+**/*.pyc
+.git
+.pytest_cache
+presentation
+deploy

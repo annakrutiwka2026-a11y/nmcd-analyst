@@ -1,0 +1,26 @@
+services:
+  nmcd:
+    build: .
+    image: nmcd-analyst:1.0
+    ports:
+      - "${NMCD_PORT:-8000}:8000"
+    environment:
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-}
+      LLM_MODEL: ${LLM_MODEL:-claude-sonnet-5}
+      LLM_MAX_TOKENS_PER_RUN: ${LLM_MAX_TOKENS_PER_RUN:-600000}
+      YANDEX_SEARCH_API_KEY: ${YANDEX_SEARCH_API_KEY:-}
+      YANDEX_FOLDER_ID: ${YANDEX_FOLDER_ID:-}
+      NMCD_ORG_NAME: ${NMCD_ORG_NAME:-Заказчик}
+      NMCD_CONTACT_URL: ${NMCD_CONTACT_URL:-}
+      NMCD_DISABLE_LLM: ${NMCD_DISABLE_LLM:-}
+      NMCD_DISABLE_WEB: ${NMCD_DISABLE_WEB:-}
+      NMCD_PUBLIC: ${NMCD_PUBLIC:-}
+      NMCD_MAX_QUEUE: ${NMCD_MAX_QUEUE:-6}
+      LLM_DAILY_TOKEN_BUDGET: ${LLM_DAILY_TOKEN_BUDGET:-0}
+    volumes:
+      - nmcd-data:/data
+    restart: unless-stopped
+
+volumes:
+  nmcd-data:

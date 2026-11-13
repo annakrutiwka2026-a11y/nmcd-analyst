@@ -1,0 +1,1129 @@
+{
+  "id": "f1defe09d081",
+  "created_at": "2026-11-13T01:35:23.864351Z",
+  "finished_at": "2026-11-13T01:35:24.038967Z",
+  "procurement": {
+    "title": "Закупка картриджей для принтеров",
+    "customer": null,
+    "delivery_place": null,
+    "delivery_terms": null,
+    "delivery_included": null,
+    "items": [
+      {
+        "id": "item1",
+        "number": 1,
+        "name": "Картридж лазерный HP 59A (CF259A)",
+        "short_name": "Картридж лазерный HP 59A",
+        "brand": "HP",
+        "model": "59A / CF259A",
+        "okpd2": null,
+        "ktru": null,
+        "quantity": "10",
+        "unit": "шт.",
+        "content": null,
+        "content_op": "=",
+        "requirements": [
+          {
+            "id": "p1r1",
+            "name": "Оригинальность",
+            "op": "contains",
+            "value": "оригинальный",
+            "value_max": null,
+            "values": [],
+            "unit": null,
+            "tolerance": null,
+            "mandatory": true,
+            "by_brand": false,
+            "quote": "оригинальный"
+          },
+          {
+            "id": "p1r2",
+            "name": "Цвет",
+            "op": "contains",
+            "value": "черный",
+            "value_max": null,
+            "values": [],
+            "unit": null,
+            "tolerance": null,
+            "mandatory": false,
+            "by_brand": true,
+            "quote": "черный"
+          },
+          {
+            "id": "p1r3",
+            "name": "ресурс",
+            "op": ">=",
+            "value": "3000",
+            "value_max": null,
+            "values": [],
+            "unit": "страниц",
+            "tolerance": null,
+            "mandatory": false,
+            "by_brand": true,
+            "quote": "ресурс не менее 3000 страниц"
+          }
+        ],
+        "search_queries": [
+          "Картридж лазерный HP 59A",
+          "Картридж лазерный 59A",
+          "HP 59A"
+        ],
+        "eis_queries": [
+          "Картридж лазерный HP 59A",
+          "Картридж лазерный 59A",
+          "HP 59A"
+        ],
+        "web_queries": [
+          "HP 59A / CF259A цена",
+          "Картридж лазерный HP 59A купить цена"
+        ],
+        "negative_terms": []
+      }
+    ],
+    "source_name": "opisanie_kartridzh.txt",
+    "source_sha256": "48a5c08cb35f41b6718e60f62fb12117ce6ec1e627879147381fa51d5d24b148",
+    "parse_mode": "rules",
+    "notes": [
+      "Таблица позиций не найдена: описание разобрано как одна позиция.",
+      "Модель не подключена: карточка составлена по правилам."
+    ]
+  },
+  "items": [
+    {
+      "item": {
+        "id": "item1",
+        "number": 1,
+        "name": "Картридж лазерный HP 59A (CF259A)",
+        "short_name": "Картридж лазерный HP 59A",
+        "brand": "HP",
+        "model": "59A / CF259A",
+        "okpd2": null,
+        "ktru": null,
+        "quantity": "10",
+        "unit": "шт.",
+        "content": null,
+        "content_op": "=",
+        "requirements": [
+          {
+            "id": "p1r1",
+            "name": "Оригинальность",
+            "op": "contains",
+            "value": "оригинальный",
+            "value_max": null,
+            "values": [],
+            "unit": null,
+            "tolerance": null,
+            "mandatory": true,
+            "by_brand": false,
+            "quote": "оригинальный"
+          },
+          {
+            "id": "p1r2",
+            "name": "Цвет",
+            "op": "contains",
+            "value": "черный",
+            "value_max": null,
+            "values": [],
+            "unit": null,
+            "tolerance": null,
+            "mandatory": false,
+            "by_brand": true,
+            "quote": "черный"
+          },
+          {
+            "id": "p1r3",
+            "name": "ресурс",
+            "op": ">=",
+            "value": "3000",
+            "value_max": null,
+            "values": [],
+            "unit": "страниц",
+            "tolerance": null,
+            "mandatory": false,
+            "by_brand": true,
+            "quote": "ресурс не менее 3000 страниц"
+          }
+        ],
+        "search_queries": [
+          "Картридж лазерный HP 59A",
+          "Картридж лазерный 59A",
+          "HP 59A"
+        ],
+        "eis_queries": [
+          "Картридж лазерный HP 59A",
+          "Картридж лазерный 59A",
+          "HP 59A"
+        ],
+        "web_queries": [
+          "HP 59A / CF259A цена",
+          "Картридж лазерный HP 59A купить цена"
+        ],
+        "negative_terms": []
+      },
+      "offers": [
+        {
+          "id": "item1-e1",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1121509958426000009",
+          "retrieved_at": "2026-11-12T20:47:13.120162Z",
+          "title": "Комплектующие и запасные части для вычислительных машин, принтеров и многофункциональных печатающих устройств прочие, не включенные в другие группировки. Товарный знак: Картридж лазерный HP 59A (CF259A)",
+          "supplier_name": "НИКОЛАЕВА ЕЛЕНА ВИКТОРОВНА",
+          "supplier_inn": "121519518722",
+          "price": "6507.30",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-06-15T00:00:00Z",
+          "contract_number": "1121509958426000009",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "26.20.40.190",
+          "ktru": null,
+          "quantity_in_source": "11",
+          "characteristics": [],
+          "text": "Комплектующие и запасные части для вычислительных машин, принтеров и многофункциональных печатающих устройств прочие, не включенные в другие группировки. Товарный знак: Картридж лазерный HP 59A (CF259A). Характеристики: . Единица измерения: Штука. Цена за единицу: 6507.30 руб. Количество в контракте: 11.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1121509958426000009",
+            "retrieved_at": "2026-11-12T20:47:13.120162Z",
+            "snapshot_path": "evidence/98dfb89f8af76445d43ad36ea887e62de3d9ec8dd6f9f9109b2059c2a3c595d9.html.gz",
+            "sha256": "98dfb89f8af76445d43ad36ea887e62de3d9ec8dd6f9f9109b2059c2a3c595d9",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1121509958426000009",
+            "method": "Электронный аукцион",
+            "prefilter_score": 1.16,
+            "position_index": 3,
+            "relevant": true,
+            "note": "сверка без модели: совпадает 100 % слов названия позиции",
+            "verdicts": {}
+          }
+        },
+        {
+          "id": "item1-e2",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1121509958426000012",
+          "retrieved_at": "2026-11-12T20:47:10.436221Z",
+          "title": "Картридж лазерный. Товарный знак: HP 59A (CF259A)",
+          "supplier_name": "НИКОЛАЕВА ЕЛЕНА ВИКТОРОВНА",
+          "supplier_inn": "121519518722",
+          "price": "6540.00",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-06-29T00:00:00Z",
+          "contract_number": "1121509958426000012",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "26.20.40.190",
+          "ktru": null,
+          "quantity_in_source": "1",
+          "characteristics": [],
+          "text": "Картридж лазерный. Товарный знак: HP 59A (CF259A). Характеристики: . Единица измерения: Штука. Цена за единицу: 6540.00 руб. Количество в контракте: 1.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1121509958426000012",
+            "retrieved_at": "2026-11-12T20:47:10.436221Z",
+            "snapshot_path": "evidence/1e13ed17a3b692d687529841305c7f1b87b248967dafaf231ad568512365d4d9.html.gz",
+            "sha256": "1e13ed17a3b692d687529841305c7f1b87b248967dafaf231ad568512365d4d9",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1121509958426000012",
+            "method": "Электронный аукцион",
+            "prefilter_score": 1.01,
+            "position_index": 1,
+            "relevant": true,
+            "note": "сверка без модели: совпадает 100 % слов названия позиции",
+            "verdicts": {}
+          }
+        },
+        {
+          "id": "item1-e3",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2321800298926000096",
+          "retrieved_at": "2026-11-12T20:47:08.076107Z",
+          "title": "Картридж для электрографических печатающих устройств (Картридж лазерный (CE505A) для HP LJ P2035/ 2050/ 2055, чёрный (2300 стр.)). Товарный знак: отсутствует",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ПРОЦЕССОР\" (ООО \"ПРОЦЕССОР\")",
+          "supplier_inn": "3662992257",
+          "price": "373.22",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "22%",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-05-28T00:00:00Z",
+          "contract_number": "2321800298926000096",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "26.20.40.120",
+          "ktru": null,
+          "quantity_in_source": "4",
+          "characteristics": [],
+          "text": "Картридж для электрографических печатающих устройств (Картридж лазерный (CE505A) для HP LJ P2035/ 2050/ 2055, чёрный (2300 стр.)). Товарный знак: отсутствует. Характеристики: . Единица измерения: Штука. Цена за единицу: 373.22 руб. Количество в контракте: 4.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2321800298926000096",
+            "retrieved_at": "2026-11-12T20:47:08.076107Z",
+            "snapshot_path": "evidence/f7dd896de4fcf1d86b45e506bced0e8929d598212dabb43f34be9c65157ecc80.html.gz",
+            "sha256": "f7dd896de4fcf1d86b45e506bced0e8929d598212dabb43f34be9c65157ecc80",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2321800298926000096",
+            "method": "Запрос котировок в электронной форме",
+            "prefilter_score": 0.73,
+            "position_index": 1,
+            "relevant": true,
+            "note": "сверка без модели: совпадает 75 % слов названия позиции",
+            "verdicts": {}
+          }
+        },
+        {
+          "id": "item1-e4",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2321800298926000096",
+          "retrieved_at": "2026-11-12T20:47:08.076107Z",
+          "title": "Картридж для электрографических печатающих устройств (Картридж лазерный CF259A/ 057) для HP LJ Pro M304/ 404n/ MFP M428dw/ Canon MF-443/ MF-445, (без чипа), чёрный (3000 стр.)). Товарный знак: отсутствует",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ПРОЦЕССОР\" (ООО \"ПРОЦЕССОР\")",
+          "supplier_inn": "3662992257",
+          "price": "711.38",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "22%",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-05-28T00:00:00Z",
+          "contract_number": "2321800298926000096",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "26.20.40.120",
+          "ktru": null,
+          "quantity_in_source": "3",
+          "characteristics": [],
+          "text": "Картридж для электрографических печатающих устройств (Картридж лазерный CF259A/ 057) для HP LJ Pro M304/ 404n/ MFP M428dw/ Canon MF-443/ MF-445, (без чипа), чёрный (3000 стр.)). Товарный знак: отсутствует. Характеристики: . Единица измерения: Штука. Цена за единицу: 711.38 руб. Количество в контракте: 3.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2321800298926000096",
+            "retrieved_at": "2026-11-12T20:47:08.076107Z",
+            "snapshot_path": "evidence/f7dd896de4fcf1d86b45e506bced0e8929d598212dabb43f34be9c65157ecc80.html.gz",
+            "sha256": "f7dd896de4fcf1d86b45e506bced0e8929d598212dabb43f34be9c65157ecc80",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2321800298926000096",
+            "method": "Запрос котировок в электронной форме",
+            "prefilter_score": 0.73,
+            "position_index": 9,
+            "relevant": true,
+            "note": "сверка без модели: совпадает 75 % слов названия позиции",
+            "verdicts": {}
+          }
+        },
+        {
+          "id": "item1-e5",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2321800298926000096",
+          "retrieved_at": "2026-11-12T20:47:08.076107Z",
+          "title": "Картридж для электрографических печатающих устройств (Картридж лазерный Q2612A) для HP LJ 1010/ 1020/ 3050, чёрный (2000 стр.)). Товарный знак: отсутствует",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ПРОЦЕССОР\" (ООО \"ПРОЦЕССОР\")",
+          "supplier_inn": "3662992257",
+          "price": "409.14666666667",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "22%",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-05-28T00:00:00Z",
+          "contract_number": "2321800298926000096",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "26.20.40.120",
+          "ktru": null,
+          "quantity_in_source": "6",
+          "characteristics": [],
+          "text": "Картридж для электрографических печатающих устройств (Картридж лазерный Q2612A) для HP LJ 1010/ 1020/ 3050, чёрный (2000 стр.)). Товарный знак: отсутствует. Характеристики: . Единица измерения: Штука. Цена за единицу: 409.14666666667 руб. Количество в контракте: 6.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2321800298926000096",
+            "retrieved_at": "2026-11-12T20:47:08.076107Z",
+            "snapshot_path": "evidence/f7dd896de4fcf1d86b45e506bced0e8929d598212dabb43f34be9c65157ecc80.html.gz",
+            "sha256": "f7dd896de4fcf1d86b45e506bced0e8929d598212dabb43f34be9c65157ecc80",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2321800298926000096",
+            "method": "Запрос котировок в электронной форме",
+            "prefilter_score": 0.73,
+            "position_index": 11,
+            "relevant": true,
+            "note": "сверка без модели: совпадает 75 % слов названия позиции",
+            "verdicts": {}
+          }
+        },
+        {
+          "id": "item1-e6",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2321800298926000096",
+          "retrieved_at": "2026-11-12T20:47:08.076107Z",
+          "title": "Картридж для электрографических печатающих устройств (Картридж лазерный CF259X/ 057H) для HP LJ Pro M304/ 404n/ MFP M428dw/ Canon MF-443/ MF-445, чёрный (10000 стр.) без чипа). Товарный знак: отсутствует",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ПРОЦЕССОР\" (ООО \"ПРОЦЕССОР\")",
+          "supplier_inn": "3662992257",
+          "price": "729.66833333333",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "22%",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-05-28T00:00:00Z",
+          "contract_number": "2321800298926000096",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "26.20.40.120",
+          "ktru": null,
+          "quantity_in_source": "6",
+          "characteristics": [],
+          "text": "Картридж для электрографических печатающих устройств (Картридж лазерный CF259X/ 057H) для HP LJ Pro M304/ 404n/ MFP M428dw/ Canon MF-443/ MF-445, чёрный (10000 стр.) без чипа). Товарный знак: отсутствует. Характеристики: . Единица измерения: Штука. Цена за единицу: 729.66833333333 руб. Количество в контракте: 6.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=2321800298926000096",
+            "retrieved_at": "2026-11-12T20:47:08.076107Z",
+            "snapshot_path": "evidence/f7dd896de4fcf1d86b45e506bced0e8929d598212dabb43f34be9c65157ecc80.html.gz",
+            "sha256": "f7dd896de4fcf1d86b45e506bced0e8929d598212dabb43f34be9c65157ecc80",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=2321800298926000096",
+            "method": "Запрос котировок в электронной форме",
+            "prefilter_score": 0.73,
+            "position_index": 19,
+            "relevant": true,
+            "note": "сверка без модели: совпадает 75 % слов названия позиции",
+            "verdicts": {}
+          }
+        },
+        {
+          "id": "item1-e7",
+          "item_id": "item1",
+          "source": "eis44",
+          "source_name": "ЕИС, реестр контрактов 44-ФЗ",
+          "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1253620686426000016",
+          "retrieved_at": "2026-11-12T21:00:30.540954Z",
+          "title": "Картридж лазерный ТК-1140 или эквивалент. . Товарный знак: Отсутствует",
+          "supplier_name": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ИНФОКОМ\" (ООО \"ИНФОКОМ\")",
+          "supplier_inn": "2540224513",
+          "price": "323.895",
+          "price_unit": "Штука",
+          "price_includes_vat": null,
+          "vat_rate": "Без НДС",
+          "content": null,
+          "delivery_included": true,
+          "delivery_cost": null,
+          "min_order_qty": null,
+          "price_date": "2026-06-22T00:00:00Z",
+          "contract_number": "1253620686426000016",
+          "contract_status": "Исполнение завершено",
+          "penalties": null,
+          "customer": null,
+          "okpd2": "26.20.40.190",
+          "ktru": null,
+          "quantity_in_source": "6",
+          "characteristics": [],
+          "text": "Картридж лазерный ТК-1140 или эквивалент. . Товарный знак: Отсутствует. Характеристики: . Единица измерения: Штука. Цена за единицу: 323.895 руб. Количество в контракте: 6.",
+          "evidence": {
+            "url": "https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1253620686426000016",
+            "retrieved_at": "2026-11-12T21:00:30.540954Z",
+            "snapshot_path": "evidence/875ba74ad577969da5cec52cc057974ad33f9160c4ded0a466b7677b7ce0808a.html.gz",
+            "sha256": "875ba74ad577969da5cec52cc057974ad33f9160c4ded0a466b7677b7ce0808a",
+            "http_status": 200
+          },
+          "extra": {
+            "contract_url": "https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1253620686426000016",
+            "method": "Электронный аукцион",
+            "prefilter_score": 0.43,
+            "position_index": 17,
+            "relevant": true,
+            "note": "сверка без модели: совпадает 50 % слов названия позиции",
+            "verdicts": {}
+          }
+        }
+      ],
+      "matches": [
+        {
+          "offer_id": "item1-e1",
+          "cls": "unsuitable",
+          "score": 0.5,
+          "checks": [
+            {
+              "requirement_id": "p1r1",
+              "requirement": "Оригинальность: содержит «оригинальный»",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "p1r2",
+              "requirement": "Цвет: содержит «черный»",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": false,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            },
+            {
+              "requirement_id": "p1r3",
+              "requirement": "ресурс: не менее 3000 страниц",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": false,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            }
+          ],
+          "reasons": [
+            "обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»"
+          ],
+          "llm_used": false,
+          "not_confirmed": true
+        },
+        {
+          "offer_id": "item1-e2",
+          "cls": "unsuitable",
+          "score": 0.5,
+          "checks": [
+            {
+              "requirement_id": "p1r1",
+              "requirement": "Оригинальность: содержит «оригинальный»",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "p1r2",
+              "requirement": "Цвет: содержит «черный»",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": false,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            },
+            {
+              "requirement_id": "p1r3",
+              "requirement": "ресурс: не менее 3000 страниц",
+              "offer_value": "не указано, определяется моделью",
+              "status": "ok",
+              "mandatory": false,
+              "note": "задано товарным знаком и моделью из ТЗ"
+            }
+          ],
+          "reasons": [
+            "обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»"
+          ],
+          "llm_used": false,
+          "not_confirmed": true
+        },
+        {
+          "offer_id": "item1-e3",
+          "cls": "unsuitable",
+          "score": 0.333,
+          "checks": [
+            {
+              "requirement_id": "p1r1",
+              "requirement": "Оригинальность: содержит «оригинальный»",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "p1r2",
+              "requirement": "Цвет: содержит «черный»",
+              "offer_value": "найдено в описании",
+              "status": "ok",
+              "mandatory": true,
+              "note": "по тексту источника"
+            },
+            {
+              "requirement_id": "p1r3",
+              "requirement": "ресурс: не менее 3000 страниц",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            }
+          ],
+          "reasons": [
+            "модель не совпадает или не указана (в ТЗ — 59A / CF259A)",
+            "обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»",
+            "обязательная характеристика не подтверждена источником: ресурс: не менее 3000 страниц"
+          ],
+          "llm_used": false,
+          "not_confirmed": true
+        },
+        {
+          "offer_id": "item1-e4",
+          "cls": "unsuitable",
+          "score": 0.333,
+          "checks": [
+            {
+              "requirement_id": "p1r1",
+              "requirement": "Оригинальность: содержит «оригинальный»",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "p1r2",
+              "requirement": "Цвет: содержит «черный»",
+              "offer_value": "найдено в описании",
+              "status": "ok",
+              "mandatory": true,
+              "note": "по тексту источника"
+            },
+            {
+              "requirement_id": "p1r3",
+              "requirement": "ресурс: не менее 3000 страниц",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            }
+          ],
+          "reasons": [
+            "модель не совпадает или не указана (в ТЗ — 59A / CF259A)",
+            "обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»",
+            "обязательная характеристика не подтверждена источником: ресурс: не менее 3000 страниц"
+          ],
+          "llm_used": false,
+          "not_confirmed": true
+        },
+        {
+          "offer_id": "item1-e5",
+          "cls": "unsuitable",
+          "score": 0.333,
+          "checks": [
+            {
+              "requirement_id": "p1r1",
+              "requirement": "Оригинальность: содержит «оригинальный»",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "p1r2",
+              "requirement": "Цвет: содержит «черный»",
+              "offer_value": "найдено в описании",
+              "status": "ok",
+              "mandatory": true,
+              "note": "по тексту источника"
+            },
+            {
+              "requirement_id": "p1r3",
+              "requirement": "ресурс: не менее 3000 страниц",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            }
+          ],
+          "reasons": [
+            "модель не совпадает или не указана (в ТЗ — 59A / CF259A)",
+            "обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»",
+            "обязательная характеристика не подтверждена источником: ресурс: не менее 3000 страниц"
+          ],
+          "llm_used": false,
+          "not_confirmed": true
+        },
+        {
+          "offer_id": "item1-e6",
+          "cls": "unsuitable",
+          "score": 0.333,
+          "checks": [
+            {
+              "requirement_id": "p1r1",
+              "requirement": "Оригинальность: содержит «оригинальный»",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "p1r2",
+              "requirement": "Цвет: содержит «черный»",
+              "offer_value": "найдено в описании",
+              "status": "ok",
+              "mandatory": true,
+              "note": "по тексту источника"
+            },
+            {
+              "requirement_id": "p1r3",
+              "requirement": "ресурс: не менее 3000 страниц",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            }
+          ],
+          "reasons": [
+            "модель не совпадает или не указана (в ТЗ — 59A / CF259A)",
+            "обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»",
+            "обязательная характеристика не подтверждена источником: ресурс: не менее 3000 страниц"
+          ],
+          "llm_used": false,
+          "not_confirmed": true
+        },
+        {
+          "offer_id": "item1-e7",
+          "cls": "unsuitable",
+          "score": 0.0,
+          "checks": [
+            {
+              "requirement_id": "p1r1",
+              "requirement": "Оригинальность: содержит «оригинальный»",
+              "offer_value": "в названии: «эквивалент»",
+              "status": "fail",
+              "mandatory": true,
+              "note": "совместимый товар или аналог, а не оригинальный"
+            },
+            {
+              "requirement_id": "p1r2",
+              "requirement": "Цвет: содержит «черный»",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            },
+            {
+              "requirement_id": "p1r3",
+              "requirement": "ресурс: не менее 3000 страниц",
+              "offer_value": null,
+              "status": "missing",
+              "mandatory": true,
+              "note": ""
+            }
+          ],
+          "reasons": [
+            "не выполнено: Оригинальность: содержит «оригинальный» (в источнике: в названии: «эквивалент»)"
+          ],
+          "llm_used": false,
+          "not_confirmed": false
+        }
+      ],
+      "normalizations": [
+        {
+          "offer_id": "item1-e1",
+          "ok": true,
+          "unit_price": "6507.30",
+          "steps": [],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-e2",
+          "ok": true,
+          "unit_price": "6540.00",
+          "steps": [],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        },
+        {
+          "offer_id": "item1-e3",
+          "ok": true,
+          "unit_price": "373.22",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e4",
+          "ok": true,
+          "unit_price": "711.38",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e5",
+          "ok": true,
+          "unit_price": "409.14666666667",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e6",
+          "ok": true,
+          "unit_price": "729.66833333333",
+          "steps": [],
+          "problem": null,
+          "flags": []
+        },
+        {
+          "offer_id": "item1-e7",
+          "ok": true,
+          "unit_price": "323.895",
+          "steps": [],
+          "problem": null,
+          "flags": [
+            "NON_VAT_PAYER"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "offer_id": "item1-e1",
+          "included": false,
+          "code": "NOT_CONFIRMED",
+          "reason": "обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e2",
+          "included": false,
+          "code": "NOT_CONFIRMED",
+          "reason": "обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e3",
+          "included": false,
+          "code": "NOT_CONFIRMED",
+          "reason": "модель не совпадает или не указана (в ТЗ — 59A / CF259A); обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»; обязательная характеристика не подтверждена источником: ресурс: не менее 3000 страниц",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e4",
+          "included": false,
+          "code": "NOT_CONFIRMED",
+          "reason": "модель не совпадает или не указана (в ТЗ — 59A / CF259A); обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»; обязательная характеристика не подтверждена источником: ресурс: не менее 3000 страниц",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e5",
+          "included": false,
+          "code": "NOT_CONFIRMED",
+          "reason": "модель не совпадает или не указана (в ТЗ — 59A / CF259A); обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»; обязательная характеристика не подтверждена источником: ресурс: не менее 3000 страниц",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e6",
+          "included": false,
+          "code": "NOT_CONFIRMED",
+          "reason": "модель не совпадает или не указана (в ТЗ — 59A / CF259A); обязательная характеристика не подтверждена источником: Оригинальность: содержит «оригинальный»; обязательная характеристика не подтверждена источником: ресурс: не менее 3000 страниц",
+          "flags": [],
+          "actor": "system"
+        },
+        {
+          "offer_id": "item1-e7",
+          "included": false,
+          "code": "UNSUITABLE",
+          "reason": "не выполнено: Оригинальность: содержит «оригинальный» (в источнике: в названии: «эквивалент»)",
+          "flags": [
+            "NON_VAT_PAYER"
+          ],
+          "actor": "system"
+        }
+      ],
+      "calc": {
+        "status": "insufficient",
+        "set_used": "A",
+        "n": 0,
+        "n_suppliers": 0,
+        "prices": [],
+        "offer_ids": [],
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null,
+        "sd": null,
+        "cv": null,
+        "unit_price": null,
+        "total": null,
+        "message": "Цена не сформирована: цен разных поставщиков найдено 0, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.",
+        "hints": [],
+        "method": "Метод сопоставимых рыночных цен, формула п. 3.21 Методических рекомендаций (приказ Минэкономразвития России № 567)"
+      },
+      "queries": [
+        {
+          "eis": [
+            "Картридж лазерный HP 59A",
+            "Картридж лазерный 59A",
+            "HP 59A"
+          ],
+          "web": [
+            "HP 59A / CF259A цена",
+            "Картридж лазерный HP 59A купить цена"
+          ]
+        }
+      ]
+    }
+  ],
+  "total": null,
+  "status": "done",
+  "all_final": false,
+  "sources": [
+    {
+      "source": "ЕИС, реестр контрактов 44-ФЗ",
+      "state": "ok",
+      "requests": 31,
+      "errors": 0,
+      "found": 7,
+      "message": "запросов 31, ошибок 0"
+    },
+    {
+      "source": "Сайты поставщиков (Яндекс Search API)",
+      "state": "disabled",
+      "requests": 0,
+      "errors": 0,
+      "found": 0,
+      "message": "не задан ключ поискового API или поиск выключен"
+    }
+  ],
+  "trace": [
+    {
+      "ts": "2026-11-13T01:35:23.864542Z",
+      "stage": "start",
+      "message": "Анализ начат",
+      "data": {
+        "llm": false,
+        "web": false
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:23.877987Z",
+      "stage": "parse",
+      "message": "Документ «opisanie_kartridzh.txt» разобран по правилам: позиций 1",
+      "data": {
+        "items": [
+          "Картридж лазерный HP 59A (CF259A)"
+        ]
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:23.878116Z",
+      "stage": "item",
+      "message": "Позиция 1: Картридж лазерный HP 59A (CF259A)",
+      "data": {
+        "item": "item1"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:23.887458Z",
+      "stage": "search",
+      "message": "ЕИС: «Картридж лазерный HP 59A» — найдено контрактов 20, исполненных за 3 года 19",
+      "data": {
+        "item": "item1",
+        "source": "eis44",
+        "url": "https://zakupki.gov.ru/epz/contract/search/results.html?searchString=%D0%9A%D0%B0%D1%80%D1%82%D1%80%D0%B8%D0%B4%D0%B6+%D0%BB%D0%B0%D0%B7%D0%B5%D1%80%D0%BD%D1%8B%D0%B9+HP+59A&morphology=on&fz44=on&contractStageList_1=on&contractStageList=1&sortBy=UPDATE_DATE&sortDirection=false&recordsPerPage=_20&pageNumber=1"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:23.895653Z",
+      "stage": "search",
+      "message": "ЕИС: «Картридж лазерный 59A» — найдено контрактов 20, исполненных за 3 года 19",
+      "data": {
+        "item": "item1",
+        "source": "eis44",
+        "url": "https://zakupki.gov.ru/epz/contract/search/results.html?searchString=%D0%9A%D0%B0%D1%80%D1%82%D1%80%D0%B8%D0%B4%D0%B6+%D0%BB%D0%B0%D0%B7%D0%B5%D1%80%D0%BD%D1%8B%D0%B9+59A&morphology=on&fz44=on&contractStageList_1=on&contractStageList=1&sortBy=UPDATE_DATE&sortDirection=false&recordsPerPage=_20&pageNumber=1"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:23.903633Z",
+      "stage": "search",
+      "message": "ЕИС: «HP 59A» — найдено контрактов 20, исполненных за 3 года 20",
+      "data": {
+        "item": "item1",
+        "source": "eis44",
+        "url": "https://zakupki.gov.ru/epz/contract/search/results.html?searchString=HP+59A&morphology=on&fz44=on&contractStageList_1=on&contractStageList=1&sortBy=UPDATE_DATE&sortDirection=false&recordsPerPage=_20&pageNumber=1"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:24.027059Z",
+      "stage": "search",
+      "message": "ЕИС: отобрано позиций контрактов для сверки — 7",
+      "data": {
+        "item": "item1",
+        "source": "eis44"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:24.033607Z",
+      "stage": "calc",
+      "message": "Позиция 1: Цена не сформирована: цен разных поставщиков найдено 0, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.",
+      "data": {
+        "item": "item1",
+        "status": "insufficient"
+      }
+    },
+    {
+      "ts": "2026-11-13T01:35:24.033730Z",
+      "stage": "done",
+      "message": "Готово: позиций 1, с обоснованной ценой 0; НМЦД по ним — руб.",
+      "data": {}
+    }
+  ],
+  "settings": {
+    "llm": false,
+    "llm_model": null,
+    "web": false,
+    "calc_date": "2026-11-13",
+    "rules": {
+      "method": {
+        "formula": "mean",
+        "min_suppliers": 3,
+        "cv_threshold": 0.33,
+        "max_age_months": 36,
+        "cpi_threshold_months": 6,
+        "selection": "stepwise",
+        "cpi_formula": "chain",
+        "cpi_from_price_month": false,
+        "cpi_max_lag_months": 3,
+        "executed_statuses": [
+          "исполнение завершено",
+          "исполнен",
+          "исполнено"
+        ]
+      },
+      "outliers": {
+        "mad_min_n": 5,
+        "mad_z": 3.5,
+        "ratio_flag": 1.5,
+        "ratio_exclude": 2.0,
+        "ratio_any_n": true
+      },
+      "matching": {
+        "identical_delta": 0.2,
+        "min_score": 0.35,
+        "eq_tolerance": 0.0,
+        "name_similarity": 0.8,
+        "weight_mandatory": 2.0,
+        "weight_optional": 1.0,
+        "above_credit": 0.8,
+        "missing_optional_credit": 0.4,
+        "model_confirms": true,
+        "one_unconfirmed_homogeneous": true,
+        "use_title": true,
+        "unverified_quote": "reject",
+        "pair_by_unit": [
+          "г/м²"
+        ],
+        "token_synonyms": {
+          "пачк": "упаковк",
+          "вес": "масс",
+          "изготовител": "производител",
+          "граммаж": "масс",
+          "плотност": "масс"
+        }
+      },
+      "normalize": {
+        "assume_equal_units": true,
+        "bulk_units": [
+          "коробка",
+          "ящик",
+          "блок",
+          "паллета"
+        ],
+        "content_from_title": true,
+        "max_content_ratio": 2.0
+      },
+      "vat": {
+        "rate_2026": 0.22,
+        "rate_before_2026": 0.2,
+        "change_date": "2026-01-01"
+      },
+      "card": {
+        "essential_names": [
+          "вид",
+          "тип",
+          "формат",
+          "модель",
+          "марка",
+          "класс",
+          "технология",
+          "назначение",
+          "материал",
+          "состав",
+          "плотность",
+          "масса листа",
+          "масса бумаги",
+          "область печати",
+          "рабочая область",
+          "объём",
+          "объем",
+          "ёмкость",
+          "емкость",
+          "мощность",
+          "производительность",
+          "разрешение",
+          "диагональ",
+          "система экспрессии",
+          "клеточная линия",
+          "штамм",
+          "действующее вещество",
+          "концентрация"
+        ],
+        "max_essential": 4,
+        "descriptive_len": 80
+      },
+      "rounding": 0.01
+    },
+    "cpi": "загружен",
+    "org_name": "Заказчик",
+    "legal_checks": true
+  },
+  "llm": {
+    "model": "claude-sonnet-5",
+    "calls": 0,
+    "cached": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "errors": 0,
+    "skipped_budget": 0,
+    "outbound": [],
+    "error_log": []
+  },
+  "error": null
+}

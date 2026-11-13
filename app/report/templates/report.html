@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ proc.title }} — Обоснование НМЦД</title>
+{% include "favicon.html" %}
+{% include "style.css.html" %}
+</head>
+<body id="top">
+{% include "header.html" %}
+
+{% macro offer_row(x, v, kind) %}
+<tr>
+  <td>{{ x.title_short }}<span class="sub">{{ x.supplier }}{% if x.inn %}, ИНН {{ x.inn }}{% endif %}</span></td>
+  <td class="hide-narrow">{% if x.url %}<a href="{{ x.url }}" target="_blank" rel="noopener">{{ x.source_label }}</a>{% else %}{{ x.source_label }}{% endif %}<span class="sub">{{ x.date_label }}</span></td>
+  {% if kind == "in" %}
+  <td class="num hide-narrow">{{ x.price }}<span class="sub">{% if x.price_unit %}за {{ x.price_unit }}{% if x.content %}, {{ x.content }}{% endif %}{% elif x.content %}за {{ x.content }}{% endif %}</span></td>
+  <td class="num"><b>{{ x.unit_price }}</b><span class="sub">{{ x.cls }}</span></td>
+  {% else %}
+  <td class="num hide-narrow">{{ x.unit_price }}</td>
+  <td><b>{{ x.code }}</b><span class="sub">{{ x.reason_short }}</span></td>
+  {% endif %}
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-{{ x.id }}" aria-expanded="false" aria-controls="d-{{ x.id }}">Подробнее</button>
+    {% if interactive %}<button class="link-button js-reason" type="button" data-item="{{ v.item.id }}" data-offer="{{ x.id }}"
+      data-include="{{ 'false' if kind == 'in' else 'true' }}" data-label="{{ x.title_short }}">{{ "Исключить" if kind == "in" else "Вернуть" }}</button>{% endif %}
+  </td>
+</tr>
+<tr class="detail" id="d-{{ x.id }}" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        {% if x.checks %}
+        <ul class="checks">{% for c in x.checks %}<li><span class="st {{ c.cls }}">{{ c.status }}</span> {{ c.req }}{% if c.val and c.val != "—" %} — в источнике: {{ c.val }}{% endif %}{% if c.mandatory %} <span class="hint">(существенная)</span>{% endif %}</li>{% endfor %}</ul>
+        {% else %}<p class="small">{{ x.reasons|join("; ") or "Сверка не выполнялась." }}</p>{% endif %}
+        {% if x.note %}<p class="small hint" style="margin-top:10px">Комментарий сверки: {{ x.note }}</p>{% endif %}
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        {% if x.steps %}<ol>{% for s in x.steps %}<li>{{ s }}</li>{% endfor %}</ol>
+        {% elif x.norm_problem %}<p class="small" style="color:var(--red)">{{ x.norm_problem }}</p>
+        {% else %}<p class="small">Цена источника соответствует единице закупки.</p>{% endif %}
+        {% if x.flags %}<p class="small hint" style="margin-top:8px">{{ x.flags|join("; ") }}.</p>{% endif %}
+        <dl class="kv">
+          {% if not x.included %}<dt>Решение</dt><dd>{{ x.reason }}</dd>{% endif %}
+          {% if x.cls %}<dt>Сопоставимость</dt><dd>{{ x.cls }}, совпадение с ТЗ {{ x.score }}</dd>{% endif %}
+          {% if x.contract_url %}<dt>Контракт</dt><dd><a href="{{ x.contract_url }}" target="_blank" rel="noopener">карточка в ЕИС</a></dd>{% endif %}
+          {% for g in x.legal %}<dt>{{ g.label }}</dt><dd>{% if g.url %}<a href="{{ g.url }}" target="_blank" rel="noopener">{{ g.value }}</a>{% else %}{{ g.value }}{% endif %}</dd>{% endfor %}
+          {% if x.price_from %}<dt>Цена</dt><dd>{{ x.price_from }}</dd>{% endif %}
+          <dt>Получено</dt><dd>{{ x.retrieved }}</dd>
+          {% if x.evidence %}<dt>Копия страницы</dt><dd>{% if links %}<a href="/{{ x.evidence }}" target="_blank" rel="noopener">открыть</a>, {% endif %}SHA-256 {{ (x.sha256 or "")[:16] }}…</dd>{% endif %}
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+{% endmacro %}
+
+<main class="width">
+  {% if site_base %}<p class="crumbs no-print"><a href="{{ site_base }}index.html">Главная</a> › Пример расчёта</p>
+  {% elif app_nav %}<p class="crumbs no-print"><a href="/">Главная</a> › {{ "Пример расчёта" if banner else "Расчёт" }}</p>{% endif %}
+  {% if banner %}
+  <div class="banner no-print"><div class="banner-title">{{ banner.title }}</div><div class="banner-body"><p>{{ banner.text }}</p></div></div>
+  {% endif %}
+
+  <h1>{{ proc.title }}</h1>
+  {% if r.status == "failed" and not items %}
+  <div class="banner red"><div class="banner-title">Расчёт не выполнен</div><div class="banner-body"><p>{{ r.error }}</p></div></div>
+  <p><a href="/">Начать новый расчёт</a></p>
+  {% else %}
+  <dl class="summary">
+    <div><dt>Начальная (максимальная) цена договора</dt><dd class="big">{{ total|nb if r.total else "не сформирована" }}</dd></div>
+    <div><dt>Цена обоснована</dt><dd>{{ final_label }}</dd></div>
+    <div><dt>Метод</dt><dd>сопоставимых рыночных цен (анализ рынка)</dd></div>
+    <div><dt>Источники цен</dt><dd>{{ price_sources }}</dd></div>
+    <div><dt>Техническое задание</dt><dd>{{ proc.source_name }}, разобрано {{ parse_label }}</dd></div>
+    <div><dt>Дата расчёта</dt><dd>{{ calc_date }}</dd></div>
+    {% if proc.delivery_terms %}<div><dt>Срок поставки</dt><dd>{{ proc.delivery_terms }}</dd></div>{% endif %}
+  </dl>
+
+  {% if actions %}
+  <div class="button-row no-print">
+    {% for a in actions %}{% if a.primary %}<a class="button" href="{{ a.href }}">{{ a.label }}</a>{% else %}<a href="{{ a.href }}">{{ a.label }}</a>{% endif %}{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if r.status == "failed" %}
+  <div class="banner red"><div class="banner-title">Расчёт завершился с ошибкой</div><div class="banner-body"><p>{{ r.error }}</p></div></div>
+  {% endif %}
+  {% set missing = items|rejectattr("calc.final")|list %}
+  {% if missing and r.status != "failed" %}
+  <div class="banner amber"><div class="banner-title">Нужны дополнительные цены</div><div class="banner-body">
+    <p>Цена не сформирована по {{ "позиции" if missing|length == 1 else "позициям" }}
+      {% for v in missing %}<a href="#item{{ v.item.number }}">{{ v.item.number }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.
+      Подготовлен запрос коммерческих предложений с возможными адресатами{% if interactive %}; ответы поставщиков вносятся в раздел позиции, и цена пересчитывается{% endif %}.</p>
+  </div></div>
+  {% endif %}
+
+  <h2>Позиции</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>№</th><th>Наименование</th><th class="num hide-narrow">Количество</th><th class="num hide-narrow">Цена за единицу</th><th class="num">Сумма</th><th>Состояние</th></tr></thead>
+    <tbody>
+    {% for v in items %}<tr>
+      <td>{{ v.item.number }}</td>
+      <td><a href="#item{{ v.item.number }}">{{ v.item.short_name or v.item.name }}</a></td>
+      <td class="num hide-narrow">{{ v.qty_label }}</td>
+      <td class="num hide-narrow">{{ v.calc.unit_price if v.calc and v.calc.final else "—" }}</td>
+      <td class="num">{{ v.calc.total if v.calc and v.calc.final else "—" }}</td>
+      <td>{% if v.calc and v.calc.final %}<span class="tag green">обоснована</span>{% else %}<span class="tag amber">нужны цены</span>{% endif %}</td>
+    </tr>{% endfor %}
+    </tbody>
+    {% if r.total %}<tfoot><tr><td></td><td>Итого</td><td class="hide-narrow"></td><td class="hide-narrow"></td><td class="num">{{ total }}</td><td></td></tr></tfoot>{% endif %}
+  </table></div>
+
+  {% for v in items %}
+  <section class="section" id="item{{ v.item.number }}">
+    <div class="pos-head">
+      <h2>{{ v.item.number }}. {{ v.item.name }}</h2>
+      {% if v.calc and v.calc.final %}<span class="tag green">обоснована</span>{% else %}<span class="tag amber">нужны цены</span>{% endif %}
+    </div>
+    <p class="meta">{{ v.qty_label }}{% if v.content %}, в единице {{ v.content }}{% endif %}{% if v.item.brand %} · товарный знак {{ v.item.brand }}{% endif %}{% if v.item.model %} · модель {{ v.item.model }}{% endif %}{% if v.item.okpd2 %} · ОКПД2 {{ v.item.okpd2 }}{% endif %}</p>
+
+    {% if v.calc and v.calc.final %}
+    <dl class="figures">
+      <div><dt>Цена за единицу</dt><dd>{{ v.calc.unit_price|nb }}<span class="plain"> — среднее арифметическое {{ v.calc.n }} цен</span></dd></div>
+      <div><dt>НМЦД позиции</dt><dd>НМЦД = {{ v.qty|nb }} × {{ v.calc.unit_price|nb }} = {{ v.calc.total|nb }}</dd></div>
+      <div><dt>Цены в расчёте</dt><dd class="plain">{{ v.calc.n_label }} от {{ v.calc.suppliers_label }}{% if v.calc.set == "B" %}, вместе с однородными товарами{% endif %}; от {{ v.calc.min|nb }} до {{ v.calc.max|nb }}, медиана {{ v.calc.median|nb }}</dd></div>
+      <div><dt>Коэффициент вариации</dt><dd>{{ v.calc.cv|nb }}<span class="plain"> — допустимо до {{ cv_limit|nb }}</span></dd></div>
+    </dl>
+    {% elif v.calc %}
+    <div class="inset">
+      <p><b>{{ v.calc.headline }}.</b>{{ v.calc.detail }}</p>
+      {% if v.calc.hints %}<p class="small" style="margin:0 0 4px">Сильнее всего на разброс влияют цены:</p>
+      <ul class="small" style="margin:0;padding-left:20px">{% for h in v.calc.hints[:3] %}<li>«{{ h.label }}» — без неё коэффициент вариации {{ h.cv|nb }}, средняя {{ h.mean|nb }}</li>{% endfor %}</ul>{% endif %}
+    </div>
+    {% endif %}
+
+    <h3>{{ "Цены в расчёте" if v.calc and v.calc.final else "Отобранные цены" }}{% if v.included %} ({{ v.included|length }}){% endif %}</h3>
+    {% if v.included %}
+    <div class="table-wrap"><table>
+      <thead><tr><th>Предложение и поставщик</th><th class="hide-narrow">Источник</th><th class="num hide-narrow">Цена в источнике</th><th class="num">За единицу закупки</th><th class="no-print"></th></tr></thead>
+      <tbody>{% for x in v.included %}{{ offer_row(x, v, "in") }}{% endfor %}</tbody>
+    </table></div>
+    {% else %}<p>Ни одно найденное предложение не прошло отбор.</p>{% endif %}
+
+    {% if v.excluded %}
+    <details><summary><span class="u">Исключённые предложения ({{ v.excluded|length }})</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Предложение и поставщик</th><th class="hide-narrow">Источник</th><th class="num hide-narrow">За единицу закупки</th><th>Причина</th><th class="no-print"></th></tr></thead>
+        <tbody>{% for x in v.excluded %}{{ offer_row(x, v, "out") }}{% endfor %}</tbody>
+      </table></div>
+    </div></details>
+    {% endif %}
+
+    <details><summary><span class="u">Требования технического задания ({{ v.reqs|length }})</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Характеристика</th><th>Требование</th><th>Существенная</th></tr></thead>
+        <tbody>{% for q in v.reqs %}<tr><td>{{ q.name }}</td><td>{{ q.cond }}</td><td>{{ "да" if q.mandatory else "нет" }}{% if q.by_brand %}<span class="sub">задана моделью</span>{% endif %}</td></tr>{% endfor %}</tbody>
+      </table></div>
+    </div></details>
+
+    {% if interactive %}
+    <details class="no-print" {% if not (v.calc and v.calc.final) %}open{% endif %}><summary><span class="u">Добавить цену из коммерческого предложения</span></summary><div class="inner">
+      <form class="js-kp kp-form" data-item="{{ v.item.id }}" novalidate>
+        <div class="field span2"><label for="s-{{ v.item.id }}">Поставщик</label><input id="s-{{ v.item.id }}" name="supplier" maxlength="200" autocomplete="organization"></div>
+        <div class="field"><label for="i-{{ v.item.id }}">ИНН</label><span class="hint">10 или 12 цифр, необязательно</span><input id="i-{{ v.item.id }}" name="inn" inputmode="numeric" maxlength="12"></div>
+        <div class="field"><label for="p-{{ v.item.id }}">Цена за единицу, руб.</label><span class="hint">единица — {{ v.item.unit }}, с доставкой, как в запросе</span><input id="p-{{ v.item.id }}" name="price" inputmode="decimal"></div>
+        <div class="field"><label for="d-{{ v.item.id }}-date">Дата предложения</label><span class="hint">как в письме поставщика</span><input id="d-{{ v.item.id }}-date" name="price_date" type="date"></div>
+        <div class="field"><label for="n-{{ v.item.id }}">Реквизиты</label><span class="hint">номер, исполнитель</span><input id="n-{{ v.item.id }}" name="note" maxlength="300"></div>
+        <div class="field span2"><label class="checkbox"><input type="checkbox" name="no_vat"><span>Поставщик не плательщик НДС</span></label></div>
+        <div class="span2"><p class="error-text" data-error hidden></p><button class="button" type="submit">Добавить и пересчитать</button></div>
+      </form>
+    </div></details>
+    {% endif %}
+  </section>
+  {% endfor %}
+
+  <section class="section">
+    <h2>Сведения о расчёте</h2>
+    <details><summary><span class="u">Методика</span></summary><div class="inner">
+      <p>Метод сопоставимых рыночных цен (статья 22 Федерального закона № 44-ФЗ; Методические рекомендации, приказ Минэкономразвития России № 567). НМЦД позиции равна количеству, умноженному на среднее арифметическое приведённых цен (п. 3.21).</p>
+      <p>Нужно не менее {{ min_suppliers }} цен разных поставщиков (п. 3.19) и коэффициент вариации не больше {{ cv_limit }} (п. 3.20). Контракты ЕИС — исполненные, не старше {{ max_age_months }} месяцев; цены старше {{ cpi_months }} месяцев приводятся по индексу потребительских цен Росстата (п. 3.14, 3.18).</p>
+      <p>Цена, отличающаяся от медианы больше чем в {{ ratio_exclude }} раза, исключается; при {{ mad_min_n }} ценах и больше — также по модифицированному z-критерию (|M| больше {{ mad_z }}). Ради порога разброса цены не исключаются.</p>
+    </div></details>
+    <details><summary><span class="u">Источники данных</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Источник</th><th>Состояние</th><th class="num">Найдено</th><th class="hide-narrow">Запросы</th></tr></thead>
+        <tbody>{% for s in sources %}<tr><td>{{ s.source }}</td><td>{% if s.state == "ok" %}работает{% elif s.state == "disabled" %}не подключён{% elif s.state == "partial" %}работает частично{% else %}ошибка{% endif %}</td><td class="num">{{ s.found }}</td><td class="hide-narrow small">{{ s.message }}</td></tr>{% endfor %}</tbody>
+      </table></div>
+      <p class="small">Не опрашиваются ЕАТ «Берёзка», Портал поставщиков, ГИСП, Ozon, Яндекс Маркет и ВсеИнструменты: они закрыты от программ антибот-защитой или запретом в robots.txt. Защиту сайтов сервис не обходит.</p>
+    </div></details>
+    <details><summary><span class="u">Защита данных</span></summary><div class="inner">
+      {% if settings.llm %}
+      <p>Во внешнюю модель передавались только обезличенные тексты: {{ settings.redaction.summary if settings.redaction else "ТЗ не передавалось" }}. Обращений к модели: {{ llm.calls }}, из кеша: {{ llm.cached }}.</p>
+      {% if settings.redaction %}<details><summary><span class="u">Что ушло в модель вместо текста ТЗ</span></summary><div class="inner"><pre style="white-space:pre-wrap;font-size:14px;margin:0">{{ settings.redaction.preview }}</pre></div></details>{% endif %}
+      {% else %}<p>Модель не использовалась: разбор и сверка выполнены по правилам, наружу уходили только поисковые запросы.</p>{% endif %}
+    </div></details>
+    <details><summary><span class="u">Журнал расчёта ({{ trace|length }})</span></summary><div class="inner">
+      <div class="table-wrap"><table><tbody>{% for e in trace %}<tr><td class="nowrap small">{{ e.ts_label }}</td><td class="small">{{ e.message }}{% if e.data.url %} · <a href="{{ e.data.url }}" target="_blank" rel="noopener">ссылка</a>{% endif %}</td></tr>{% endfor %}</tbody></table></div>
+    </div></details>
+  </section>
+
+  {% endif %}
+
+  <div class="footer">Расчёт {{ r.id }} от {{ calc_date }}. SHA-256 файла ТЗ {{ proc.source_sha256[:16] }}… Копии страниц-источников сохранены вместе с отчётом и подписаны SHA-256.</div>
+</main>
+
+{% if interactive %}
+<dialog id="reason-dialog" aria-labelledby="reason-title">
+  <form method="dialog" id="reason-form" novalidate>
+    <h2 id="reason-title" data-title>Исключить цену из расчёта</h2>
+    <p class="hint" data-label></p>
+    <div class="field" style="margin-bottom:10px"><label for="reason">Причина</label><span class="hint">Будет записана в журнал расчёта</span><textarea id="reason" name="reason" rows="3" maxlength="300" style="min-height:90px"></textarea></div>
+    <p class="error-text" data-error hidden></p>
+    <div class="button-row" style="margin:18px 0 0"><button class="button" type="submit" data-submit>Исключить</button><button class="link-button" type="button" data-cancel>Отмена</button></div>
+  </form>
+</dialog>
+{% endif %}
+<script>
+document.querySelectorAll('[data-toggle]').forEach(b => b.addEventListener('click', () => {
+  const row = document.getElementById(b.dataset.toggle); row.hidden = !row.hidden;
+  b.textContent = row.hidden ? 'Подробнее' : 'Свернуть'; b.setAttribute('aria-expanded', String(!row.hidden));
+}));
+{% if interactive %}
+const base = location.pathname.replace(/\/$/, '');
+async function post(path, body){
+  const r = await fetch(base + path, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)});
+  if (r.ok) return null;
+  let t = await r.text(); try { t = JSON.parse(t).detail || t; } catch (_) {}
+  return typeof t === 'string' ? t : 'Не удалось выполнить действие';
+}
+function fail(el, msg){ el.textContent = msg; el.hidden = false; }
+const dlg = document.getElementById('reason-dialog'), dform = document.getElementById('reason-form');
+let pending = null;
+document.querySelectorAll('.js-reason').forEach(b => b.addEventListener('click', () => {
+  pending = {item_id: b.dataset.item, offer_id: b.dataset.offer, include: b.dataset.include === 'true'};
+  dlg.querySelector('[data-title]').textContent = pending.include ? 'Вернуть цену в расчёт' : 'Исключить цену из расчёта';
+  dlg.querySelector('[data-submit]').textContent = pending.include ? 'Вернуть' : 'Исключить';
+  dlg.querySelector('[data-label]').textContent = b.dataset.label;
+  dform.reason.value = ''; dlg.querySelector('[data-error]').hidden = true;
+  dlg.showModal(); dform.reason.focus();
+}));
+dlg.querySelector('[data-cancel]').addEventListener('click', () => dlg.close());
+dform.addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const reason = dform.reason.value.trim(), out = dlg.querySelector('[data-error]');
+  if (!reason) return fail(out, 'Укажите причину');
+  const btn = dlg.querySelector('[data-submit]'); btn.disabled = true;
+  const err = await post('/override', {...pending, reason});
+  if (err) { fail(out, err); btn.disabled = false; } else { location.reload(); }
+});
+document.querySelectorAll('.js-kp').forEach(f => f.addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const d = new FormData(f), btn = f.querySelector('button[type=submit]'), out = f.querySelector('[data-error]');
+  out.hidden = true;
+  if (!String(d.get('supplier') || '').trim()) return fail(out, 'Укажите поставщика');
+  if (!String(d.get('price') || '').trim()) return fail(out, 'Укажите цену');
+  if (!d.get('price_date')) return fail(out, 'Укажите дату предложения');
+  btn.disabled = true;
+  const err = await post('/manual', {item_id: f.dataset.item, supplier: d.get('supplier'), inn: d.get('inn') || '', price: d.get('price'),
+                                     price_date: d.get('price_date'), no_vat: d.get('no_vat') === 'on', note: d.get('note') || ''});
+  if (err) { fail(out, err); btn.disabled = false; } else { location.reload(); }
+}));
+{% endif %}
+</script>
+</body>
+</html>

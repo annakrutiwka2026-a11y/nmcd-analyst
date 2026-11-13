@@ -1,0 +1,1366 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Закупка на поставку цитокинов — Обоснование НМЦД</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23132a4a'/%3E%3Ctext x='16' y='23' font-size='19' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3E%E2%82%BD%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#16202c;--ink-2:#4b5563;--ink-3:#6b7480;
+  --rule:#d9dde3;--rule-strong:#9aa3ad;--field:#7c8691;
+  --page:#ffffff;--wash:#f4f5f7;
+  --navy:#132a4a;--link:#1550a8;--link-hover:#0d3a7c;--link-visited:#1550a8;
+  --green:#0f6b3a;--green-bg:#dff0e5;--amber:#7a4b00;--amber-bg:#fbeccd;--red:#a3231a;--red-bg:#f9e1de;--grey-bg:#e7eaee;
+  --focus:#ffcc33
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);
+  font:16px/1.5 "PT Sans","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-variant-numeric:lining-nums tabular-nums}
+a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:var(--link-hover);text-decoration-thickness:2px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{
+  outline:3px solid var(--focus);outline-offset:0;box-shadow:0 0 0 1px var(--ink)}
+h1{font-size:34px;line-height:1.18;font-weight:700;margin:0 0 18px;letter-spacing:-.005em}
+h2{font-size:25px;line-height:1.25;font-weight:700;margin:44px 0 14px}
+h3{font-size:19px;line-height:1.3;font-weight:700;margin:30px 0 10px}
+p{margin:0 0 14px}
+.lede{font-size:19px;line-height:1.45;color:var(--ink);max-width:720px;margin-bottom:28px}
+.hint{color:var(--ink-3);font-size:15px}
+.small{font-size:14px}
+.nowrap{white-space:nowrap}
+.width{max-width:1040px;margin:0 auto;padding-left:32px;padding-right:32px}
+main{padding:36px 0 72px}
+
+/* шапка */
+.masthead{background:var(--navy);color:#fff;border-bottom:6px solid #2d5fa8}
+.masthead .width{display:flex;align-items:center;gap:28px;min-height:62px}
+.service{color:#fff;font-weight:700;font-size:19px;text-decoration:none;letter-spacing:.005em}
+.service:hover{color:#fff;text-decoration:underline}
+.masthead nav{margin-left:auto;display:flex;gap:26px}
+.masthead nav a{color:#fff;text-decoration:none;font-size:16px}
+.masthead nav a:hover,.masthead nav a[aria-current]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+.crumbs{font-size:15px;color:var(--ink-3);margin:0 0 22px}
+.crumbs a{color:var(--ink-2)}
+
+/* кнопки */
+.button{display:inline-block;background:var(--link);color:#fff;border:0;border-radius:3px;font:inherit;font-weight:700;
+  font-size:17px;line-height:1;padding:13px 22px;cursor:pointer;text-decoration:none;box-shadow:0 2px 0 #0b2f66}
+.button:hover{background:var(--link-hover);color:#fff;text-decoration:none}
+.button:active{transform:translateY(2px);box-shadow:none}
+.button.secondary{background:var(--wash);color:var(--ink);box-shadow:0 2px 0 #b8bec6}
+.button.secondary:hover{background:#e6e9ed}
+.button[disabled]{opacity:.6;cursor:progress}
+.button-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin:6px 0 28px}
+.link-button{background:none;border:0;padding:0;font:inherit;color:var(--link);text-decoration:underline;
+  text-decoration-thickness:1px;text-underline-offset:2px;cursor:pointer}
+.link-button:hover{color:var(--link-hover);text-decoration-thickness:2px}
+
+/* метки состояния */
+.tag{display:inline-block;padding:3px 8px 2px;border-radius:2px;font-size:13px;font-weight:700;line-height:1.35;
+  letter-spacing:.02em;white-space:nowrap}
+.tag.green{background:var(--green-bg);color:var(--green)}
+.tag.amber{background:var(--amber-bg);color:var(--amber)}
+.tag.red{background:var(--red-bg);color:var(--red)}
+.tag.grey{background:var(--grey-bg);color:var(--ink-2)}
+
+/* реквизиты «название — значение» */
+.summary{margin:0 0 30px;border-top:1px solid var(--rule)}
+.summary div{display:grid;grid-template-columns:240px 1fr;gap:16px;padding:11px 0;border-bottom:1px solid var(--rule)}
+.summary dt{font-weight:700}
+.summary dd{margin:0}
+.summary .big{font-size:24px;font-weight:700;line-height:1.25}
+
+/* врезка и уведомление */
+.inset{border-left:5px solid var(--rule);padding:4px 0 4px 18px;margin:18px 0 22px;max-width:760px}
+.banner{border:4px solid var(--link);margin:0 0 30px}
+.banner .banner-title{background:var(--link);color:#fff;font-weight:700;padding:6px 16px 8px;font-size:16px}
+.banner .banner-body{padding:16px 18px 6px}
+.banner.amber{border-color:#b26f00}
+.banner.amber .banner-title{background:#b26f00}
+.banner.red{border-color:var(--red)}
+.banner.red .banner-title{background:var(--red)}
+
+/* формы */
+.field{margin:0 0 26px;max-width:720px}
+.field>label,.field>legend{display:block;font-weight:700;font-size:18px;margin:0 0 4px}
+.field .hint{display:block;margin:0 0 10px}
+input[type=text],input:not([type]),input[type=date],textarea{width:100%;font:inherit;font-size:17px;color:var(--ink);
+  border:2px solid var(--field);border-radius:0;padding:8px 10px;background:#fff}
+textarea{min-height:120px;resize:vertical;line-height:1.45}
+input[type=file]{font:inherit;font-size:16px;max-width:100%}
+input[type=file]::file-selector-button{font:inherit;font-weight:700;font-size:16px;margin-right:14px;padding:9px 16px;
+  border:0;border-radius:3px;background:var(--wash);color:var(--ink);box-shadow:0 2px 0 #b8bec6;cursor:pointer}
+fieldset{border:0;margin:0;padding:0}
+.checks-list{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.checkbox{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;font-size:17px;cursor:pointer}
+.checkbox input{width:24px;height:24px;margin:1px 0 0;accent-color:var(--navy)}
+.checkbox .hint{display:block;font-size:15px}
+.or{font-weight:700;margin:-6px 0 18px;color:var(--ink-2)}
+.error-text{color:var(--red);font-weight:700;margin:6px 0 0}
+.field.has-error{border-left:5px solid var(--red);padding-left:16px}
+
+/* таблицы */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 8px}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+caption{text-align:left;font-weight:700;font-size:19px;padding:0 0 10px}
+th,td{text-align:left;vertical-align:top;padding:11px 16px 11px 0;border-bottom:1px solid var(--rule)}
+th{font-weight:700;border-bottom:2px solid var(--rule-strong)}
+th:last-child,td:last-child{padding-right:0}
+td.num,th.num{text-align:right}
+td.num{white-space:nowrap}
+tr.detail>td{background:var(--wash);padding:18px 18px 20px}
+td .sub{display:block;color:var(--ink-3);font-size:14px;margin-top:2px}
+tfoot td{font-weight:700;border-bottom:0}
+
+/* раскрытие */
+details{margin:0 0 6px}
+details>summary{cursor:pointer;color:var(--link);display:inline-block;list-style:none;padding-left:22px;position:relative}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";position:absolute;left:2px;top:.42em;border-style:solid;border-width:6px 0 6px 10px;
+  border-color:transparent transparent transparent currentColor}
+details[open]>summary::before{border-width:10px 6px 0 6px;border-color:currentColor transparent transparent transparent;top:.5em}
+details>summary span.u{text-decoration:underline;text-underline-offset:2px}
+details>summary:hover span.u{text-decoration-thickness:2px}
+details>.inner{border-left:5px solid var(--rule);padding:12px 0 6px 20px;margin:10px 0 18px}
+
+/* разделы отчёта */
+.section{border-top:2px solid var(--ink);padding-top:6px;margin-top:48px}
+.section>h2{margin-top:10px}
+.pos-head{display:flex;gap:16px;justify-content:space-between;align-items:flex-start}
+.pos-head h2{margin:10px 0 6px}
+.pos-head .tag{margin-top:16px}
+.meta{color:var(--ink-2);margin:0 0 18px}
+.figures{margin:0 0 22px;border-top:1px solid var(--rule);max-width:760px}
+.figures div{display:grid;grid-template-columns:240px 1fr;gap:16px;padding:9px 0;border-bottom:1px solid var(--rule)}
+.figures dt{color:var(--ink-2)}
+.figures dd{margin:0;font-weight:700}
+.figures .plain{font-weight:400}
+.checks{list-style:none;margin:0;padding:0;font-size:15px}
+.checks li{padding:3px 0}
+.checks .st{display:inline-block;min-width:116px;font-weight:700}
+.st.ok,.st.above{color:var(--green)}.st.fail{color:var(--red)}.st.missing,.st.unclear{color:var(--ink-3)}
+.detail-cols{display:grid;grid-template-columns:1.25fr 1fr;gap:32px}
+.detail-cols h4{font-size:15px;margin:0 0 8px}
+.detail-cols ol{margin:0;padding-left:20px;font-size:15px}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;font-size:15px;margin:12px 0 0}
+.kv dt{color:var(--ink-3)}.kv dd{margin:0;word-break:break-word}
+.row-tools{white-space:nowrap;text-align:right;font-size:15px}
+.row-tools .link-button+.link-button{margin-left:14px}
+.ex-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px 20px;white-space:nowrap}
+.ex-actions form{margin:0}
+.kp-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px;max-width:760px}
+.kp-form .field{margin-bottom:18px;max-width:none}
+.field>.checkbox{display:grid;font-weight:400;font-size:17px;margin:0}
+.kp-form .span2{grid-column:1/-1}
+
+dialog{border:0;padding:0;width:min(560px,calc(100vw - 32px));border-top:6px solid var(--navy)}
+dialog::backdrop{background:rgba(11,20,32,.55)}
+dialog form{padding:26px 28px 28px}
+dialog h2{margin:0 0 6px;font-size:22px}
+
+.footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--rule);color:var(--ink-3);font-size:14px}
+
+@media (max-width:760px){
+  .width{padding-left:16px;padding-right:16px}
+  main{padding:24px 0 56px}
+  h1{font-size:27px}
+  h2{font-size:21px}
+  .lede{font-size:17px}
+  .masthead nav{display:none}
+  .summary div,.figures div{grid-template-columns:1fr;gap:2px}
+  .detail-cols,.kp-form{grid-template-columns:1fr}
+  .hide-narrow{display:none}
+  .tag{white-space:normal}
+  th,td{padding-right:10px}
+  .row-tools{white-space:normal;text-align:left;width:1%}
+  .row-tools .link-button{display:block;margin:0 0 8px}
+  .row-tools .link-button+.link-button{margin-left:0}
+  .ex-actions{flex-direction:column;align-items:flex-start;gap:8px}
+  .pos-head{flex-direction:column;gap:0}
+  .pos-head .tag{margin:0 0 10px}
+  tr.detail>td{padding:14px 12px 16px}
+}
+@media print{
+  .masthead,.no-print,.button,.button-row,dialog,details:not([open]){display:none!important}
+  main{padding:0}
+  body{font-size:12pt}
+  a{color:inherit;text-decoration:none}
+}
+</style>
+</head>
+<body id="top">
+<header class="masthead">
+  <div class="width">
+    
+    <a class="service" href="#top">Обоснование НМЦД</a>
+    
+    
+  </div>
+</header>
+
+
+
+<main class="width">
+  
+  
+
+  <h1>Закупка на поставку цитокинов</h1>
+  
+  <dl class="summary">
+    <div><dt>Начальная (максимальная) цена договора</dt><dd class="big">не сформирована</dd></div>
+    <div><dt>Цена обоснована</dt><dd>нет, нужны дополнительные цены</dd></div>
+    <div><dt>Метод</dt><dd>сопоставимых рыночных цен (анализ рынка)</dd></div>
+    <div><dt>Источники цен</dt><dd>реестр контрактов ЕИС</dd></div>
+    <div><dt>Техническое задание</dt><dd>tz_cytokines.docx, разобрано по правилам, без модели</dd></div>
+    <div><dt>Дата расчёта</dt><dd>13.11.2026</dd></div>
+    <div><dt>Срок поставки</dt><dd>в течение 7 (Семи) рабочих дней с даты подписания Договора</dd></div>
+  </dl>
+
+  
+  <div class="button-row no-print">
+    <a class="button" href="obosnovanie_nmcd.docx">Скачать обоснование (DOCX)</a><a href="report.xlsx">Таблица расчёта (XLSX)</a><a href="zapros_kp.docx">Запрос коммерческих предложений (DOCX)</a>
+  </div>
+  
+
+  
+  
+  
+  <div class="banner amber"><div class="banner-title">Нужны дополнительные цены</div><div class="banner-body">
+    <p>Цена не сформирована по позициям
+      <a href="#item1">1</a>, <a href="#item2">2</a>, <a href="#item3">3</a>, <a href="#item4">4</a>, <a href="#item5">5</a>.
+      Подготовлен запрос коммерческих предложений с возможными адресатами.</p>
+  </div></div>
+  
+
+  <h2>Позиции</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>№</th><th>Наименование</th><th class="num hide-narrow">Количество</th><th class="num hide-narrow">Цена за единицу</th><th class="num">Сумма</th><th>Состояние</th></tr></thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#item1">rhTGFbeta1 Трансформирующий фактор роста бета 1 человека, рекомбинантный белок</a></td>
+      <td class="num hide-narrow">2 шт.</td>
+      <td class="num hide-narrow">—</td>
+      <td class="num">—</td>
+      <td><span class="tag amber">нужны цены</span></td>
+    </tr><tr>
+      <td>2</td>
+      <td><a href="#item2">rhIL-15, Интерлейкин-15 человека, рекомбинантный белок</a></td>
+      <td class="num hide-narrow">1 шт.</td>
+      <td class="num hide-narrow">—</td>
+      <td class="num">—</td>
+      <td><span class="tag amber">нужны цены</span></td>
+    </tr><tr>
+      <td>3</td>
+      <td><a href="#item3">rhIL-7, Интерлейкин-7 человека, рекомбинантный белок</a></td>
+      <td class="num hide-narrow">1 шт.</td>
+      <td class="num hide-narrow">—</td>
+      <td class="num">—</td>
+      <td><span class="tag amber">нужны цены</span></td>
+    </tr><tr>
+      <td>4</td>
+      <td><a href="#item4">rhIL-2, Интерлейкин-2 человека, рекомбинантный белок</a></td>
+      <td class="num hide-narrow">2 шт.</td>
+      <td class="num hide-narrow">—</td>
+      <td class="num">—</td>
+      <td><span class="tag amber">нужны цены</span></td>
+    </tr><tr>
+      <td>5</td>
+      <td><a href="#item5">rhIL-21, Интерлейкин-21 человека, рекомбинантный белок</a></td>
+      <td class="num hide-narrow">1 шт.</td>
+      <td class="num hide-narrow">—</td>
+      <td class="num">—</td>
+      <td><span class="tag amber">нужны цены</span></td>
+    </tr>
+    </tbody>
+    
+  </table></div>
+
+  
+  <section class="section" id="item1">
+    <div class="pos-head">
+      <h2>1. rhTGFbeta1 Трансформирующий фактор роста бета 1 человека, рекомбинантный белок</h2>
+      <span class="tag amber">нужны цены</span>
+    </div>
+    <p class="meta">2 шт., в единице не менее 10 мкг · ОКПД2 20.59.51.120</p>
+
+    
+    <div class="inset">
+      <p><b>Цена не сформирована.</b> Цен разных поставщиков найдено 0, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.</p>
+      
+    </div>
+    
+
+    <h3>Отобранные цены</h3>
+    <p>Ни одно найденное предложение не прошло отбор.</p>
+
+    
+    <details><summary><span class="u">Исключённые предложения (1)</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Предложение и поставщик</th><th class="hide-narrow">Источник</th><th class="num hide-narrow">За единицу закупки</th><th>Причина</th><th class="no-print"></th></tr></thead>
+        <tbody>
+<tr>
+  <td>трансформирующий фактор роста бета 1 человека, рекомбинантный белок<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772809483224000939" target="_blank" rel="noopener">ЕИС, контракт № 1772809483224000939</a><span class="sub">цена от 12.08.2024</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item1-e1" aria-expanded="false" aria-controls="d-item1-e1">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item1-e1" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhTGFb1»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Трансформирующий фактор роста бета 1 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS) содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность оценивается по способности rhTGFb1 поддерживать пролиферацию клеток линии эритролейкоза человека TF-1. ED50: от 1 до 1.6 нг/мл</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> Хранения разведенного белкового препарата в стерильных условиях (6 месяцев) в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 89 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 51 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772809483224000939" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 463ddfeb3d07377d…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+</tbody>
+      </table></div>
+    </div></details>
+    
+
+    <details><summary><span class="u">Требования технического задания (10)</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Характеристика</th><th>Требование</th><th>Существенная</th></tr></thead>
+        <tbody><tr><td>Назначение</td><td>содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhTGFb1»</td><td>нет</td></tr><tr><td>Вид товара</td><td>содержит «Трансформирующий фактор роста бета 1 человека, рекомбинантный белок»</td><td>да</td></tr><tr><td>Лиофильно высушен из фосфатного буферного раствора (PBS) содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.</td><td>наличие</td><td>нет</td></tr><tr><td>Уровень эндотоксина, LAL-test</td><td>менее 0.1 EU/1 мкг белка</td><td>нет</td></tr><tr><td>Чистота, в соответствии с электрофорезом в ПААГ</td><td>более 97 %</td><td>нет</td></tr><tr><td>Окраска</td><td>содержит «Coomassie Brilliant Blue.»</td><td>нет</td></tr><tr><td>Биологическая активность оценивается по способности rhTGFb1 поддерживать пролиферацию клеток линии эритролейкоза человека TF-1. ED50</td><td>от 1 до 1.6 нг/мл</td><td>нет</td></tr><tr><td>24 месяца хранение не вскрытой упаковки в диапазоне 0C</td><td>от -70 до -20 0C</td><td>нет</td></tr><tr><td>Хранение разведенного белкового препарата в стерильных условиях, 1 месяц</td><td>от 2 до 8 0C</td><td>нет</td></tr><tr><td>Хранения разведенного белкового препарата в стерильных условиях (6 месяцев) в диапазоне 0C</td><td>от -70 до -20 0C</td><td>нет</td></tr></tbody>
+      </table></div>
+    </div></details>
+
+    
+  </section>
+  
+  <section class="section" id="item2">
+    <div class="pos-head">
+      <h2>2. rhIL-15, Интерлейкин-15 человека, рекомбинантный белок</h2>
+      <span class="tag amber">нужны цены</span>
+    </div>
+    <p class="meta">1 шт., в единице не менее 10 мкг · ОКПД2 20.59.51.120</p>
+
+    
+    <div class="inset">
+      <p><b>Цена не сформирована.</b> Цен разных поставщиков найдено 0, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.</p>
+      
+    </div>
+    
+
+    <h3>Отобранные цены</h3>
+    <p>Ни одно найденное предложение не прошло отбор.</p>
+
+    
+    <details><summary><span class="u">Исключённые предложения (5)</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Предложение и поставщик</th><th class="hide-narrow">Источник</th><th class="num hide-narrow">За единицу закупки</th><th>Причина</th><th class="no-print"></th></tr></thead>
+        <tbody>
+<tr>
+  <td>rhIL-15, интерлейкин-15 человека, рекомбинантный белок, 100 мкг. Товарный знак…<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202031325000110" target="_blank" rel="noopener">ЕИС, контракт № 1771202031325000110</a><span class="sub">цена от 26.08.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">Фасовка в источнике 100 мкг, по ТЗ 10 мкг: при разнице больше чем в 2 раза цена пропорционально не пересчитывается</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item2-e1" aria-expanded="false" aria-controls="d-item2-e1">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item2-e1" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-15»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 15 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-15. Форма: лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-15 стимулирует пролиферацию клеток линии CTLL-2. ED50: от 2.5 до 3.8 нг/мл</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 100 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">фасовка в источнике 100 мкг, по ТЗ 10 мкг: при разнице больше чем в 2 раза цена пропорционально не пересчитывается</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>фасовка в источнике 100 мкг, по ТЗ 10 мкг: при разнице больше чем в 2 раза цена пропорционально не пересчитывается</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 51 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1771202031325000110" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 87732416ed06d652…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин 15 человека, rhIL-15, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772843475025000880" target="_blank" rel="noopener">ЕИС, контракт № 1772843475025000880</a><span class="sub">цена от 15.09.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item2-e2" aria-expanded="false" aria-controls="d-item2-e2">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item2-e2" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-15»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 15 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-15. Форма: лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-15 стимулирует пролиферацию клеток линии CTLL-2. ED50: от 2.5 до 3.8 нг/мл</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 100 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 51 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772843475025000880" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 544cd0e9f594b8e7…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин-15 человека, рекомбинантный белок. Товарный знак: Отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202031325000141" target="_blank" rel="noopener">ЕИС, контракт № 1771202031325000141</a><span class="sub">цена от 23.12.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item2-e3" aria-expanded="false" aria-controls="d-item2-e3">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item2-e3" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-15»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 15 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-15. Форма: лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-15 стимулирует пролиферацию клеток линии CTLL-2. ED50: от 2.5 до 3.8 нг/мл</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 83 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 51 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1771202031325000141" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:12 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 751a318882bf3f9a…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин 15 человека, рекомбинантный белок<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772806585625000118" target="_blank" rel="noopener">ЕИС, контракт № 1772806585625000118</a><span class="sub">цена от 24.03.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item2-e4" aria-expanded="false" aria-controls="d-item2-e4">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item2-e4" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-15»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 15 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-15. Форма: лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-15 стимулирует пролиферацию клеток линии CTLL-2. ED50: от 2.5 до 3.8 нг/мл</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 83 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 51 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772806585625000118" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 71fb14a37d098493…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин 15 человека, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772806585625000301" target="_blank" rel="noopener">ЕИС, контракт № 1772806585625000301</a><span class="sub">цена от 17.08.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item2-e5" aria-expanded="false" aria-controls="d-item2-e5">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item2-e5" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-15»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 15 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-15. Форма: лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-15 стимулирует пролиферацию клеток линии CTLL-2. ED50: от 2.5 до 3.8 нг/мл</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 83 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 51 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772806585625000301" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 2944ad96fa2470a5…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+</tbody>
+      </table></div>
+    </div></details>
+    
+
+    <details><summary><span class="u">Требования технического задания (10)</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Характеристика</th><th>Требование</th><th>Существенная</th></tr></thead>
+        <tbody><tr><td>Назначение</td><td>содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-15»</td><td>нет</td></tr><tr><td>Вид товара</td><td>содержит «Интерлейкин 15 человека, рекомбинантный белок»</td><td>да</td></tr><tr><td>Клеточная линия CHO, продуцирующая rhIL-15. Форма: лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.</td><td>наличие</td><td>нет</td></tr><tr><td>Уровень эндотоксина, LAL-test</td><td>менее 0.1 EU/1 мкг белка</td><td>нет</td></tr><tr><td>Чистота, в соответствии с электрофорезом в ПААГ</td><td>более 97 %</td><td>нет</td></tr><tr><td>Окраска</td><td>содержит «Coomassie Brilliant Blue.»</td><td>нет</td></tr><tr><td>Биологическая активность: rhIL-15 стимулирует пролиферацию клеток линии CTLL-2. ED50</td><td>от 2.5 до 3.8 нг/мл</td><td>нет</td></tr><tr><td>24 месяца хранение не вскрытой упаковки в диапазоне 0C</td><td>от -70 до -20 0C</td><td>нет</td></tr><tr><td>Хранение разведенного белкового препарата в стерильных условиях, 1 месяц</td><td>от 2 до 8 0C</td><td>нет</td></tr><tr><td>6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C</td><td>от -70 до -20 0C</td><td>нет</td></tr></tbody>
+      </table></div>
+    </div></details>
+
+    
+  </section>
+  
+  <section class="section" id="item3">
+    <div class="pos-head">
+      <h2>3. rhIL-7, Интерлейкин-7 человека, рекомбинантный белок</h2>
+      <span class="tag amber">нужны цены</span>
+    </div>
+    <p class="meta">1 шт., в единице не менее 10 мкг · ОКПД2 20.59.51.120</p>
+
+    
+    <div class="inset">
+      <p><b>Цена не сформирована.</b> Цен разных поставщиков найдено 0, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.</p>
+      
+    </div>
+    
+
+    <h3>Отобранные цены</h3>
+    <p>Ни одно найденное предложение не прошло отбор.</p>
+
+    
+    <details><summary><span class="u">Исключённые предложения (6)</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Предложение и поставщик</th><th class="hide-narrow">Источник</th><th class="num hide-narrow">За единицу закупки</th><th>Причина</th><th class="no-print"></th></tr></thead>
+        <tbody>
+<tr>
+  <td>rhIL-7, интерлейкин-7 человека, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202031325000110" target="_blank" rel="noopener">ЕИС, контракт № 1771202031325000110</a><span class="sub">цена от 26.08.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>характеристики не подтверждены</b><span class="sub">Обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item3-e1" aria-expanded="false" aria-controls="d-item3-e1">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item3-e1" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-7»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 7 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-7.: наличие <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-7 стимулирует пролиферацию ФГА-активированных мононуклеарных клеток периферической крови человека, ED50: от 0.07 до 0.5 нг/мл</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 100 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</dd>
+          <dt>Сопоставимость</dt><dd>неподходящее, совпадение с ТЗ 43 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1771202031325000110" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 87732416ed06d652…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Рекомбинантный белок, rhIL-7, интерлейкин 7 человека. Товарный знак: СайСторЛаб<span class="sub">Петрова Раушания Рашитовна, ИНН 183501444976</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772407516225000745" target="_blank" rel="noopener">ЕИС, контракт № 1772407516225000745</a><span class="sub">цена от 16.06.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>характеристики не подтверждены</b><span class="sub">Обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item3-e2" aria-expanded="false" aria-controls="d-item3-e2">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item3-e2" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-7»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 7 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-7.: наличие <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-7 стимулирует пролиферацию ФГА-активированных мононуклеарных клеток периферической крови человека, ED50: от 0.07 до 0.5 нг/мл</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 100 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</dd>
+          <dt>Сопоставимость</dt><dd>неподходящее, совпадение с ТЗ 43 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772407516225000745" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 8854cf9560539128…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин-7 человека, рекомбинантный белок. Товарный знак: Отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202031325000141" target="_blank" rel="noopener">ЕИС, контракт № 1771202031325000141</a><span class="sub">цена от 23.12.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>характеристики не подтверждены</b><span class="sub">Обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item3-e3" aria-expanded="false" aria-controls="d-item3-e3">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item3-e3" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-7»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 7 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-7.: наличие <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-7 стимулирует пролиферацию ФГА-активированных мононуклеарных клеток периферической крови человека, ED50: от 0.07 до 0.5 нг/мл</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 83 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</dd>
+          <dt>Сопоставимость</dt><dd>неподходящее, совпадение с ТЗ 43 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1771202031325000141" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:12 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 751a318882bf3f9a…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин 7 человека, рекомбинантный белок<span class="sub">Марков Вячеслав Дмитриевич, ИНН 616105510700</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772407516224001141" target="_blank" rel="noopener">ЕИС, контракт № 1772407516224001141</a><span class="sub">цена от 20.08.2024</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>характеристики не подтверждены</b><span class="sub">Обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item3-e4" aria-expanded="false" aria-controls="d-item3-e4">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item3-e4" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-7»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 7 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-7.: наличие <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-7 стимулирует пролиферацию ФГА-активированных мононуклеарных клеток периферической крови человека, ED50: от 0.07 до 0.5 нг/мл</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 83 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</dd>
+          <dt>Сопоставимость</dt><dd>неподходящее, совпадение с ТЗ 43 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772407516224001141" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 6461f81a07702af5…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин 7 человека, рекомбинантный белок<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772806585625000118" target="_blank" rel="noopener">ЕИС, контракт № 1772806585625000118</a><span class="sub">цена от 24.03.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>характеристики не подтверждены</b><span class="sub">Обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item3-e5" aria-expanded="false" aria-controls="d-item3-e5">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item3-e5" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-7»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 7 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-7.: наличие <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-7 стимулирует пролиферацию ФГА-активированных мононуклеарных клеток периферической крови человека, ED50: от 0.07 до 0.5 нг/мл</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 83 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</dd>
+          <dt>Сопоставимость</dt><dd>неподходящее, совпадение с ТЗ 43 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772806585625000118" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 71fb14a37d098493…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин 7 человека, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772806585625000301" target="_blank" rel="noopener">ЕИС, контракт № 1772806585625000301</a><span class="sub">цена от 17.08.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>характеристики не подтверждены</b><span class="sub">Обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item3-e6" aria-expanded="false" aria-controls="d-item3-e6">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item3-e6" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-7»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 7 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Клеточная линия CHO, продуцирующая rhIL-7.: наличие <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 97 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-7 стимулирует пролиферацию ФГА-активированных мононуклеарных клеток периферической крови человека, ED50: от 0.07 до 0.5 нг/мл</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 83 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 10 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>обязательная характеристика не подтверждена источником: Клеточная линия CHO, продуцирующая rhIL-7.: наличие</dd>
+          <dt>Сопоставимость</dt><dd>неподходящее, совпадение с ТЗ 43 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772806585625000301" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 2944ad96fa2470a5…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+</tbody>
+      </table></div>
+    </div></details>
+    
+
+    <details><summary><span class="u">Требования технического задания (12)</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Характеристика</th><th>Требование</th><th>Существенная</th></tr></thead>
+        <tbody><tr><td>Назначение</td><td>содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-7»</td><td>нет</td></tr><tr><td>Вид товара</td><td>содержит «Интерлейкин 7 человека, рекомбинантный белок»</td><td>да</td></tr><tr><td>Клеточная линия CHO, продуцирующая rhIL-7.</td><td>наличие</td><td>да</td></tr><tr><td>Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.</td><td>наличие</td><td>нет</td></tr><tr><td>Уровень эндотоксина, LAL-test</td><td>менее 0.1 EU/1 мкг белка</td><td>нет</td></tr><tr><td>Чистота, в соответствии с электрофорезом в ПААГ</td><td>более 97 %</td><td>нет</td></tr><tr><td>Окраска</td><td>содержит «Coomassie Brilliant Blue.»</td><td>нет</td></tr><tr><td>Биологическая активность: rhIL-7 стимулирует пролиферацию ФГА-активированных мононуклеарных клеток периферической крови человека, ED50</td><td>от 0.07 до 0.5 нг/мл</td><td>нет</td></tr><tr><td>Условия транспортировки при температуре окружающей среды</td><td>наличие</td><td>нет</td></tr><tr><td>24 месяца хранение не вскрытой упаковки в диапазоне 0C</td><td>от -70 до -20 0C</td><td>нет</td></tr><tr><td>Хранение разведенного белкового препарата в стерильных условиях, 1 месяц</td><td>от 2 до 8 0C</td><td>нет</td></tr><tr><td>6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C</td><td>от -70 до -20 0C</td><td>нет</td></tr></tbody>
+      </table></div>
+    </div></details>
+
+    
+  </section>
+  
+  <section class="section" id="item4">
+    <div class="pos-head">
+      <h2>4. rhIL-2, Интерлейкин-2 человека, рекомбинантный белок</h2>
+      <span class="tag amber">нужны цены</span>
+    </div>
+    <p class="meta">2 шт., в единице не менее 100 мкг · ОКПД2 20.59.51.120</p>
+
+    
+    <div class="inset">
+      <p><b>Цена не сформирована.</b> Цен разных поставщиков найдено 0, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.</p>
+      
+    </div>
+    
+
+    <h3>Отобранные цены</h3>
+    <p>Ни одно найденное предложение не прошло отбор.</p>
+
+    
+    <details><summary><span class="u">Исключённые предложения (5)</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Предложение и поставщик</th><th class="hide-narrow">Источник</th><th class="num hide-narrow">За единицу закупки</th><th>Причина</th><th class="no-print"></th></tr></thead>
+        <tbody>
+<tr>
+  <td>rhIL-2, интерлейкин-2 человека, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202031325000110" target="_blank" rel="noopener">ЕИС, контракт № 1771202031325000110</a><span class="sub">цена от 26.08.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item4-e1" aria-expanded="false" aria-controls="d-item4-e1">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item4-e1" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-2 1»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 2 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм, не содержит вспомогательных белков.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 95 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Молекулярный вес: 15 кДа</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 100 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 50 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1771202031325000110" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 87732416ed06d652…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>rhIL-2, Интерлейкин 2 человека, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1773401321426000090" target="_blank" rel="noopener">ЕИС, контракт № 1773401321426000090</a><span class="sub">цена от 14.05.2026</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item4-e2" aria-expanded="false" aria-controls="d-item4-e2">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item4-e2" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-2 1»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 2 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм, не содержит вспомогательных белков.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 95 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Молекулярный вес: 15 кДа</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 100 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 50 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1773401321426000090" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 f8f07b39e4ff0a78…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин 2 человека, rhIL-2, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772843475025000880" target="_blank" rel="noopener">ЕИС, контракт № 1772843475025000880</a><span class="sub">цена от 15.09.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item4-e3" aria-expanded="false" aria-controls="d-item4-e3">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item4-e3" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-2 1»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 2 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм, не содержит вспомогательных белков.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 95 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Молекулярный вес: 15 кДа</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 100 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 50 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772843475025000880" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 544cd0e9f594b8e7…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин 2 человека, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772470742126000094" target="_blank" rel="noopener">ЕИС, контракт № 1772470742126000094</a><span class="sub">цена от 05.05.2026</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item4-e4" aria-expanded="false" aria-controls="d-item4-e4">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item4-e4" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-2 1»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 2 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм, не содержит вспомогательных белков.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 95 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Молекулярный вес: 15 кДа</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 83 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 50 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772470742126000094" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 a1a6a7caac728c3a…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Фактор роста фибробластов 2 человека, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772843475025000880" target="_blank" rel="noopener">ЕИС, контракт № 1772843475025000880</a><span class="sub">цена от 15.09.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item4-e5" aria-expanded="false" aria-controls="d-item4-e5">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item4-e5" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-2 1»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 2 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм, не содержит вспомогательных белков.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 95 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Молекулярный вес: 15 кДа</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 67 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 50 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772843475025000880" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 544cd0e9f594b8e7…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+</tbody>
+      </table></div>
+    </div></details>
+    
+
+    <details><summary><span class="u">Требования технического задания (11)</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Характеристика</th><th>Требование</th><th>Существенная</th></tr></thead>
+        <tbody><tr><td>Назначение</td><td>содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-2 1»</td><td>нет</td></tr><tr><td>Вид товара</td><td>содержит «Интерлейкин 2 человека, рекомбинантный белок»</td><td>да</td></tr><tr><td>Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм, не содержит вспомогательных белков.</td><td>наличие</td><td>нет</td></tr><tr><td>Уровень эндотоксина, LAL-test</td><td>менее 0.1 EU/1 мкг белка</td><td>нет</td></tr><tr><td>Чистота, в соответствии с электрофорезом в ПААГ</td><td>более 95 %</td><td>нет</td></tr><tr><td>Окраска</td><td>содержит «Coomassie Brilliant Blue.»</td><td>нет</td></tr><tr><td>Молекулярный вес</td><td>15 кДа</td><td>нет</td></tr><tr><td>Условия транспортировки при температуре окружающей среды</td><td>наличие</td><td>нет</td></tr><tr><td>24 месяца хранение не вскрытой упаковки в диапазоне 0C</td><td>от -70 до -20 0C</td><td>нет</td></tr><tr><td>Хранение разведенного белкового препарата в стерильных условиях, 1 месяц</td><td>от 2 до 8 0C</td><td>нет</td></tr><tr><td>6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C</td><td>от -70 до -20 0C</td><td>нет</td></tr></tbody>
+      </table></div>
+    </div></details>
+
+    
+  </section>
+  
+  <section class="section" id="item5">
+    <div class="pos-head">
+      <h2>5. rhIL-21, Интерлейкин-21 человека, рекомбинантный белок</h2>
+      <span class="tag amber">нужны цены</span>
+    </div>
+    <p class="meta">1 шт., в единице не менее 100 мкг · ОКПД2 20.59.51.120</p>
+
+    
+    <div class="inset">
+      <p><b>Цена не сформирована.</b> Цен разных поставщиков найдено 1, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.</p>
+      
+    </div>
+    
+
+    <h3>Отобранные цены (1)</h3>
+    
+    <div class="table-wrap"><table>
+      <thead><tr><th>Предложение и поставщик</th><th class="hide-narrow">Источник</th><th class="num hide-narrow">Цена в источнике</th><th class="num">За единицу закупки</th><th class="no-print"></th></tr></thead>
+      <tbody>
+<tr>
+  <td>rhIL-21, интерлейкин-21 человека, рекомбинантный белок, 100 мкг. Товарный знак…<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202031325000110" target="_blank" rel="noopener">ЕИС, контракт № 1771202031325000110</a><span class="sub">цена от 26.08.2025</span></td>
+  
+  <td class="num hide-narrow">151 614,24 ₽<span class="sub">за штуку, 100 мкг</span></td>
+  <td class="num"><b>161 785,60 ₽</b><span class="sub">идентичное</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item5-e1" aria-expanded="false" aria-controls="d-item5-e1">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item5-e1" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-21»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 21 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 98 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-2 стимулирует пролиферацию клеток линии CTLL-2. ED50: от 0.1 до 0.6 нг/мл</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 100 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <ol><li>содержимое единицы совпадает: 100 мкг</li><li>цена от 26.08.2025 приведена к текущему уровню: ИПЦ Росстата (месяц к предыдущему), произведение месячных индексов за сентябрь 2025 – сентябрь 2026, 13 мес.: K = 1,067087098</li></ol>
+        
+        <p class="small hint" style="margin-top:8px">поставщик без НДС: цена контракта как оплачена.</p>
+        <dl class="kv">
+          
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 50 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1771202031325000110" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          <dt>Неустойки</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/process-info.html?reestrNumber=1771202031325000110" target="_blank" rel="noopener">не взыскивались</a></dd><dt>Реестр недобросовестных поставщиков</dt><dd><a href="https://zakupki.gov.ru/epz/dishonestsupplier/search/results.html?searchString=7731333664&amp;fz44=on&amp;fz223=on&amp;dsStatuses=0&amp;dsStatuses_0=on" target="_blank" rel="noopener">не значится</a></dd>
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 87732416ed06d652…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+</tbody>
+    </table></div>
+    
+
+    
+    <details><summary><span class="u">Исключённые предложения (3)</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Предложение и поставщик</th><th class="hide-narrow">Источник</th><th class="num hide-narrow">За единицу закупки</th><th>Причина</th><th class="no-print"></th></tr></thead>
+        <tbody>
+<tr>
+  <td>Интерлейкин 21 человека, rhIL-21, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772843475025000880" target="_blank" rel="noopener">ЕИС, контракт № 1772843475025000880</a><span class="sub">цена от 15.09.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item5-e2" aria-expanded="false" aria-controls="d-item5-e2">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item5-e2" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-21»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 21 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 98 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-2 стимулирует пролиферацию клеток линии CTLL-2. ED50: от 0.1 до 0.6 нг/мл</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 100 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 50 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772843475025000880" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 544cd0e9f594b8e7…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин-21 человека, рекомбинантный белок. Товарный знак: Отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1771202031325000141" target="_blank" rel="noopener">ЕИС, контракт № 1771202031325000141</a><span class="sub">цена от 23.12.2025</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item5-e3" aria-expanded="false" aria-controls="d-item5-e3">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item5-e3" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-21»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 21 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 98 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-2 стимулирует пролиферацию клеток линии CTLL-2. ED50: от 0.1 до 0.6 нг/мл</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 83 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 50 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1771202031325000141" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:12 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 751a318882bf3f9a…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>Интерлейкин 21 человека, рекомбинантный белок. Товарный знак: отсутствует<span class="sub">ООО «Сайсторлаб», ИНН 7731333664</span></td>
+  <td class="hide-narrow"><a href="https://zakupki.gov.ru/epz/contract/contractCard/payment-info-and-target-of-order.html?reestrNumber=1772470742126000206" target="_blank" rel="noopener">ЕИС, контракт № 1772470742126000206</a><span class="sub">цена от 11.08.2026</span></td>
+  
+  <td class="num hide-narrow">—</td>
+  <td><b>единица несопоставима</b><span class="sub">В источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</span></td>
+  
+  <td class="row-tools no-print">
+    <button class="link-button" type="button" data-toggle="d-item5-e4" aria-expanded="false" aria-controls="d-item5-e4">Подробнее</button>
+    
+  </td>
+</tr>
+<tr class="detail" id="d-item5-e4" hidden>
+  <td colspan="5">
+    <div class="detail-cols">
+      <div>
+        <h4>Сверка с техническим заданием</h4>
+        
+        <ul class="checks"><li><span class="st missing">нет данных</span> Назначение: содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-21»</li><li><span class="st ok">совпадает</span> Вид товара: содержит «Интерлейкин 21 человека, рекомбинантный белок» — в источнике: найдено в описании <span class="hint">(существенная)</span></li><li><span class="st missing">нет данных</span> Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.: наличие</li><li><span class="st missing">нет данных</span> Уровень эндотоксина, LAL-test: менее 0.1 EU/1 мкг белка</li><li><span class="st missing">нет данных</span> Чистота, в соответствии с электрофорезом в ПААГ: более 98 %</li><li><span class="st missing">нет данных</span> Окраска: содержит «Coomassie Brilliant Blue.»</li><li><span class="st missing">нет данных</span> Биологическая активность: rhIL-2 стимулирует пролиферацию клеток линии CTLL-2. ED50: от 0.1 до 0.6 нг/мл</li><li><span class="st missing">нет данных</span> Условия транспортировки при температуре окружающей среды: наличие</li><li><span class="st missing">нет данных</span> 24 месяца хранение не вскрытой упаковки в диапазоне 0C: от -70 до -20 0C</li><li><span class="st missing">нет данных</span> Хранение разведенного белкового препарата в стерильных условиях, 1 месяц: от 2 до 8 0C</li><li><span class="st missing">нет данных</span> 6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C: от -70 до -20 0C</li></ul>
+        
+        <p class="small hint" style="margin-top:10px">Комментарий сверки: сверка без модели: совпадает 83 % слов названия позиции</p>
+      </div>
+      <div>
+        <h4>Приведение цены к единице закупки</h4>
+        <p class="small" style="color:var(--red)">в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</p>
+        
+        
+        <dl class="kv">
+          <dt>Решение</dt><dd>в источнике не указано содержимое единицы (по ТЗ не менее 100 мкг): цену нельзя привести к единице закупки</dd>
+          <dt>Сопоставимость</dt><dd>идентичное, совпадение с ТЗ 50 %</dd>
+          <dt>Контракт</dt><dd><a href="https://zakupki.gov.ru/epz/contract/contractCard/common-info.html?reestrNumber=1772470742126000206" target="_blank" rel="noopener">карточка в ЕИС</a></dd>
+          
+          
+          <dt>Получено</dt><dd>12.11.2026 23:13 МСК</dd>
+          <dt>Копия страницы</dt><dd>SHA-256 83c1e20da8e2933f…</dd>
+        </dl>
+      </div>
+    </div>
+  </td>
+</tr>
+</tbody>
+      </table></div>
+    </div></details>
+    
+
+    <details><summary><span class="u">Требования технического задания (11)</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Характеристика</th><th>Требование</th><th>Существенная</th></tr></thead>
+        <tbody><tr><td>Назначение</td><td>содержит «Вещества белковые и их производные предназначены для исследовательских целей. Клеточная линия CHO, продуцирующая rhIL-21»</td><td>нет</td></tr><tr><td>Вид товара</td><td>содержит «Интерлейкин 21 человека, рекомбинантный белок»</td><td>да</td></tr><tr><td>Лиофильно высушен из фосфатного буферного раствора (PBS), содержащего 0,05% Tween20, pH 7.0, профильтрованного через фильтр с диаметром пор 0,22мкм.</td><td>наличие</td><td>нет</td></tr><tr><td>Уровень эндотоксина, LAL-test</td><td>менее 0.1 EU/1 мкг белка</td><td>нет</td></tr><tr><td>Чистота, в соответствии с электрофорезом в ПААГ</td><td>более 98 %</td><td>нет</td></tr><tr><td>Окраска</td><td>содержит «Coomassie Brilliant Blue.»</td><td>нет</td></tr><tr><td>Биологическая активность: rhIL-2 стимулирует пролиферацию клеток линии CTLL-2. ED50</td><td>от 0.1 до 0.6 нг/мл</td><td>нет</td></tr><tr><td>Условия транспортировки при температуре окружающей среды</td><td>наличие</td><td>нет</td></tr><tr><td>24 месяца хранение не вскрытой упаковки в диапазоне 0C</td><td>от -70 до -20 0C</td><td>нет</td></tr><tr><td>Хранение разведенного белкового препарата в стерильных условиях, 1 месяц</td><td>от 2 до 8 0C</td><td>нет</td></tr><tr><td>6 месяцев хранения разведенного белкового препарата в стерильных условиях в диапазоне 0C</td><td>от -70 до -20 0C</td><td>нет</td></tr></tbody>
+      </table></div>
+    </div></details>
+
+    
+  </section>
+  
+
+  <section class="section">
+    <h2>Сведения о расчёте</h2>
+    <details><summary><span class="u">Методика</span></summary><div class="inner">
+      <p>Метод сопоставимых рыночных цен (статья 22 Федерального закона № 44-ФЗ; Методические рекомендации, приказ Минэкономразвития России № 567). НМЦД позиции равна количеству, умноженному на среднее арифметическое приведённых цен (п. 3.21).</p>
+      <p>Нужно не менее 3 цен разных поставщиков (п. 3.19) и коэффициент вариации не больше 33 % (п. 3.20). Контракты ЕИС — исполненные, не старше 36 месяцев; цены старше 6 месяцев приводятся по индексу потребительских цен Росстата (п. 3.14, 3.18).</p>
+      <p>Цена, отличающаяся от медианы больше чем в 2 раза, исключается; при 5 ценах и больше — также по модифицированному z-критерию (|M| больше 3,5). Ради порога разброса цены не исключаются.</p>
+    </div></details>
+    <details><summary><span class="u">Источники данных</span></summary><div class="inner">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Источник</th><th>Состояние</th><th class="num">Найдено</th><th class="hide-narrow">Запросы</th></tr></thead>
+        <tbody><tr><td>ЕИС, реестр контрактов 44-ФЗ</td><td>работает</td><td class="num">21</td><td class="hide-narrow small">запросов 54, ошибок 0</td></tr><tr><td>Сайты поставщиков (Яндекс Search API)</td><td>не подключён</td><td class="num">0</td><td class="hide-narrow small">не задан ключ поискового API или поиск выключен</td></tr></tbody>
+      </table></div>
+      <p class="small">Не опрашиваются ЕАТ «Берёзка», Портал поставщиков, ГИСП, Ozon, Яндекс Маркет и ВсеИнструменты: они закрыты от программ антибот-защитой или запретом в robots.txt. Защиту сайтов сервис не обходит.</p>
+    </div></details>
+    <details><summary><span class="u">Защита данных</span></summary><div class="inner">
+      <p>Модель не использовалась: разбор и сверка выполнены по правилам, наружу уходили только поисковые запросы.</p>
+    </div></details>
+    <details><summary><span class="u">Журнал расчёта (29)</span></summary><div class="inner">
+      <div class="table-wrap"><table><tbody><tr><td class="nowrap small">04:35</td><td class="small">Анализ начат</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Документ «tz_cytokines.docx» разобран по правилам: позиций 5</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Позиция 1: rhTGFbeta1 Трансформирующий фактор роста бета 1 человека, рекомбинантный белок</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Позиция 2: rhIL-15, Интерлейкин-15 человека, рекомбинантный белок</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Позиция 3: rhIL-7, Интерлейкин-7 человека, рекомбинантный белок</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Позиция 4: rhIL-2, Интерлейкин-2 человека, рекомбинантный белок</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Позиция 5: rhIL-21, Интерлейкин-21 человека, рекомбинантный белок</td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: «rhTGFbeta1 Трансформирующий фактор роста бета 1 человека, рекомбинантный белок» — найдено контрактов 0, исполненных за 3 года 0 · <a href="https://zakupki.gov.ru/epz/contract/search/results.html?searchString=rhTGFbeta1+%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B8%D0%B9+%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80+%D1%80%D0%BE%D1%81%D1%82%D0%B0+%D0%B1%D0%B5%D1%82%D0%B0+1+%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%2C+%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B9+%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA&amp;morphology=on&amp;fz44=on&amp;contractStageList_1=on&amp;contractStageList=1&amp;sortBy=UPDATE_DATE&amp;sortDirection=false&amp;recordsPerPage=_20&amp;pageNumber=1" target="_blank" rel="noopener">ссылка</a></td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: «Трансформирующий фактор роста бета 1 человека, рекомбинантный белок» — найдено контрактов 7, исполненных за 3 года 2 · <a href="https://zakupki.gov.ru/epz/contract/search/results.html?searchString=%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B8%D0%B9+%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80+%D1%80%D0%BE%D1%81%D1%82%D0%B0+%D0%B1%D0%B5%D1%82%D0%B0+1+%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%2C+%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B9+%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA&amp;morphology=on&amp;fz44=on&amp;contractStageList_1=on&amp;contractStageList=1&amp;sortBy=UPDATE_DATE&amp;sortDirection=false&amp;recordsPerPage=_20&amp;pageNumber=1" target="_blank" rel="noopener">ссылка</a></td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: отобрано позиций контрактов для сверки — 1</td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: «rhIL-15, Интерлейкин-15 человека, рекомбинантный белок» — найдено контрактов 4, исполненных за 3 года 2 · <a href="https://zakupki.gov.ru/epz/contract/search/results.html?searchString=rhIL-15%2C+%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD-15+%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%2C+%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B9+%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA&amp;morphology=on&amp;fz44=on&amp;contractStageList_1=on&amp;contractStageList=1&amp;sortBy=UPDATE_DATE&amp;sortDirection=false&amp;recordsPerPage=_20&amp;pageNumber=1" target="_blank" rel="noopener">ссылка</a></td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: «Интерлейкин-15 человека, рекомбинантный белок» — найдено контрактов 12, исполненных за 3 года 5 · <a href="https://zakupki.gov.ru/epz/contract/search/results.html?searchString=%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD-15+%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%2C+%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B9+%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA&amp;morphology=on&amp;fz44=on&amp;contractStageList_1=on&amp;contractStageList=1&amp;sortBy=UPDATE_DATE&amp;sortDirection=false&amp;recordsPerPage=_20&amp;pageNumber=1" target="_blank" rel="noopener">ссылка</a></td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: отобрано позиций контрактов для сверки — 5</td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: «rhIL-7, Интерлейкин-7 человека, рекомбинантный белок» — найдено контрактов 3, исполненных за 3 года 3 · <a href="https://zakupki.gov.ru/epz/contract/search/results.html?searchString=rhIL-7%2C+%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD-7+%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%2C+%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B9+%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA&amp;morphology=on&amp;fz44=on&amp;contractStageList_1=on&amp;contractStageList=1&amp;sortBy=UPDATE_DATE&amp;sortDirection=false&amp;recordsPerPage=_20&amp;pageNumber=1" target="_blank" rel="noopener">ссылка</a></td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: «Интерлейкин-7 человека, рекомбинантный белок» — найдено контрактов 12, исполненных за 3 года 7 · <a href="https://zakupki.gov.ru/epz/contract/search/results.html?searchString=%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD-7+%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%2C+%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B9+%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA&amp;morphology=on&amp;fz44=on&amp;contractStageList_1=on&amp;contractStageList=1&amp;sortBy=UPDATE_DATE&amp;sortDirection=false&amp;recordsPerPage=_20&amp;pageNumber=1" target="_blank" rel="noopener">ссылка</a></td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: отобрано позиций контрактов для сверки — 6</td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: «rhIL-2, Интерлейкин-2 человека, рекомбинантный белок» — найдено контрактов 7, исполненных за 3 года 3 · <a href="https://zakupki.gov.ru/epz/contract/search/results.html?searchString=rhIL-2%2C+%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD-2+%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%2C+%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B9+%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA&amp;morphology=on&amp;fz44=on&amp;contractStageList_1=on&amp;contractStageList=1&amp;sortBy=UPDATE_DATE&amp;sortDirection=false&amp;recordsPerPage=_20&amp;pageNumber=1" target="_blank" rel="noopener">ссылка</a></td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: «Интерлейкин-2 человека, рекомбинантный белок» — найдено контрактов 19, исполненных за 3 года 4 · <a href="https://zakupki.gov.ru/epz/contract/search/results.html?searchString=%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD-2+%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%2C+%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B9+%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA&amp;morphology=on&amp;fz44=on&amp;contractStageList_1=on&amp;contractStageList=1&amp;sortBy=UPDATE_DATE&amp;sortDirection=false&amp;recordsPerPage=_20&amp;pageNumber=1" target="_blank" rel="noopener">ссылка</a></td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: отобрано позиций контрактов для сверки — 5</td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: «rhIL-21, Интерлейкин-21 человека, рекомбинантный белок» — найдено контрактов 4, исполненных за 3 года 2 · <a href="https://zakupki.gov.ru/epz/contract/search/results.html?searchString=rhIL-21%2C+%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD-21+%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%2C+%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B9+%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA&amp;morphology=on&amp;fz44=on&amp;contractStageList_1=on&amp;contractStageList=1&amp;sortBy=UPDATE_DATE&amp;sortDirection=false&amp;recordsPerPage=_20&amp;pageNumber=1" target="_blank" rel="noopener">ссылка</a></td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: «Интерлейкин-21 человека, рекомбинантный белок» — найдено контрактов 9, исполненных за 3 года 4 · <a href="https://zakupki.gov.ru/epz/contract/search/results.html?searchString=%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B5%D0%B9%D0%BA%D0%B8%D0%BD-21+%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%2C+%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B9+%D0%B1%D0%B5%D0%BB%D0%BE%D0%BA&amp;morphology=on&amp;fz44=on&amp;contractStageList_1=on&amp;contractStageList=1&amp;sortBy=UPDATE_DATE&amp;sortDirection=false&amp;recordsPerPage=_20&amp;pageNumber=1" target="_blank" rel="noopener">ссылка</a></td></tr><tr><td class="nowrap small">04:35</td><td class="small">ЕИС: отобрано позиций контрактов для сверки — 4</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Позиция 1: Цена не сформирована: цен разных поставщиков найдено 0, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Позиция 2: Цена не сформирована: цен разных поставщиков найдено 0, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Позиция 3: Цена не сформирована: цен разных поставщиков найдено 0, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Позиция 4: Цена не сформирована: цен разных поставщиков найдено 0, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Позиция 5: Цена не сформирована: цен разных поставщиков найдено 1, нужно не менее 3 (п. 3.19). Нужны дополнительные цены — запрос коммерческих предложений.</td></tr><tr><td class="nowrap small">04:35</td><td class="small">Готово: позиций 5, с обоснованной ценой 0; НМЦД по ним — руб.</td></tr><tr><td class="nowrap small">16:44</td><td class="small">Позиция 5: проверены неустойки по контрактам (1) и РНП по ИНН поставщиков (1); неустойки — 0, в РНП — 0</td></tr></tbody></table></div>
+    </div></details>
+  </section>
+
+  
+
+  <div class="footer">Расчёт b83a62833988 от 13.11.2026. SHA-256 файла ТЗ 66e313c38800f710… Копии страниц-источников сохранены вместе с отчётом и подписаны SHA-256.</div>
+</main>
+
+
+<script>
+document.querySelectorAll('[data-toggle]').forEach(b => b.addEventListener('click', () => {
+  const row = document.getElementById(b.dataset.toggle); row.hidden = !row.hidden;
+  b.textContent = row.hidden ? 'Подробнее' : 'Свернуть'; b.setAttribute('aria-expanded', String(!row.hidden));
+}));
+
+</script>
+</body>
+</html>

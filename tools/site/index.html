@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Обоснование НМЦД — готовые расчёты</title>
+<meta name="description" content="Сервис обоснования начальной (максимальной) цены договора методом сопоставимых рыночных цен: готовые расчёты по ТЗ кейса, видео, презентация и запуск">
+{% include "favicon.html" %}
+{% include "style.css.html" %}
+<style>
+pre.cmd{background:var(--wash);border-left:5px solid var(--rule);padding:14px 18px;margin:0 0 18px;font:15px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-x:auto;max-width:760px}
+video{width:100%;max-width:960px;border:1px solid var(--rule);background:#000}
+.materials{display:flex;flex-wrap:wrap;gap:14px 28px;margin:14px 0 0}
+</style>
+</head>
+<body>
+{% set page = "index" %}{% include "header.html" %}
+<main class="width">
+  <h1>Обоснование начальной (максимальной) цены договора</h1>
+  <p class="lede">Сервис по техническому заданию находит цены сопоставимых товаров в реестре контрактов ЕИС и на сайтах поставщиков, сверяет их с требованиями ТЗ и готовит обоснование методом сопоставимых рыночных цен (статья 22 Федерального закона № 44-ФЗ, приказ Минэкономразвития России № 567).</p>
+
+  <div class="banner" id="live" hidden><div class="banner-title">Работающий сервис</div><div class="banner-body">
+    <p>Сейчас доступна рабочая копия сервиса: можно загрузить своё ТЗ и получить расчёт.</p>
+    <p><a class="button" id="live-link" href="#">Открыть сервис</a></p>
+  </div></div>
+
+  <div class="inset"><p style="margin:0">На этой странице — расчёты, которые сервис выполнил по техническим заданиям из материалов кейса: отчёты с источниками цен, документы обоснования и таблицы расчёта. Новый расчёт запускается в своей копии сервиса одной командой — раздел «<a href="#run">Запуск</a>».</p></div>
+
+  <h2 id="examples">Готовые расчёты</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Закупка</th><th class="hide-narrow">Состав</th><th class="num">НМЦД</th><th>Отчёт</th></tr></thead>
+    <tbody>
+    {% for ex in examples %}<tr>
+      <td><b>{{ ex.title }}</b><span class="sub">{{ ex.final }}</span></td>
+      <td class="hide-narrow">{{ ex.meta }}</td>
+      <td class="num">{{ ex.total }}</td>
+      <td class="nowrap"><a href="examples/full/{{ ex.key }}/index.html">полный режим</a>{% if ex.no_keys %}<span class="sub"><a href="examples/no_keys/{{ ex.key }}/index.html">без ключей</a></span>{% endif %}</td>
+    </tr>{% endfor %}
+    </tbody>
+  </table></div>
+  <p class="hint">Полный режим — реестр ЕИС, сайты поставщиков и разбор ТЗ моделью по обезличенному тексту. Без ключей — только реестр ЕИС и разбор по правилам. Расчёт {{ calc_date }}.</p>
+
+  <h2 id="video">Видео и презентация</h2>
+  <video controls preload="metadata" src="nmcd_demo.mp4"></video>
+  <div class="materials">
+    <a href="nmcd_presentation.pdf">Презентация решения (PDF)</a>
+    <a href="nmcd_demo.mp4">Видео работы сервиса (MP4, {{ video_len }})</a>
+    <a href="{{ repo_url }}">Код, инструкция и тесты на GitHub</a>
+  </div>
+
+  <h2 id="run">Запуск</h2>
+  <p>Нужен Docker с Compose v2. Сервис поднимается одной командой и открывается в браузере по адресу http://localhost:8000.</p>
+  <pre class="cmd">git clone {{ repo_url }}
+cd nmcd-analyst
+docker compose up -d --build</pre>
+  <p>Без ключей сервис разбирает ТЗ по правилам и берёт цены из реестра контрактов ЕИС. Ключ поискового API добавляет цены интернет-магазинов и дистрибьюторов, ключ модели — разбор ТЗ и страниц моделью; ключи записываются в файл .env по образцу .env.example. Общедоступный стенд с HTTPS поднимается командой из deploy/README.md.</p>
+
+  <h2>Как устроен расчёт</h2>
+  <ol style="max-width:760px;padding-left:22px">
+    <li>Из ТЗ составляется карточка: позиции, количество, существенные характеристики с цитатами.</li>
+    <li>Цены ищутся в исполненных контрактах ЕИС и на сайтах поставщиков; у каждой цены — ссылка, дата и копия страницы.</li>
+    <li>Каждая характеристика предложения сверяется с ТЗ; другая модель, совместимый товар или неподтверждённая характеристика — причина исключения.</li>
+    <li>Цена приводится к единице закупки: фасовка, НДС, доставка, индекс потребительских цен для цен старше полугода.</li>
+    <li>Проверяются неустойки по контракту и реестр недобросовестных поставщиков, исключаются выбросы, считается коэффициент вариации.</li>
+    <li>Если цен не меньше трёх и разброс не выше 33 %, НМЦД равна количеству, умноженному на среднее арифметическое; иначе сервис готовит запрос коммерческих предложений.</li>
+  </ol>
+  <p><a href="method.html">Методика расчёта с параметрами</a></p>
+
+  <div class="footer">Метод сопоставимых рыночных цен: статья 22 Федерального закона № 44-ФЗ, Методические рекомендации, утверждённые приказом Минэкономразвития России № 567. Хакатон «ИИ в системе управления МФТИ», 2026.</div>
+</main>
+<script>
+// рабочая копия сервиса, если она сейчас запущена (адрес публикует скрипт стенда)
+fetch('stand.json', {cache: 'no-store'}).then(r => r.ok ? r.json() : null).then(async s => {
+  if (!s || !s.url) return;
+  try { await fetch(s.url.replace(/\/$/, '') + '/healthz', {mode: 'no-cors', cache: 'no-store'}); } catch (_) { return; }
+  document.getElementById('live-link').href = s.url;
+  document.getElementById('live').hidden = false;
+}).catch(() => {});
+</script>
+</body></html>

@@ -1,0 +1,27 @@
+# Общедоступный стенд: сервис закрыт за Caddy, HTTPS-сертификат Let's Encrypt выпускается автоматически.
+# Запуск из корня проекта:
+#   NMCD_DOMAIN=<адрес стенда> docker compose -f docker-compose.yml -f deploy/docker-compose.public.yml up -d --build
+services:
+  nmcd:
+    ports: !reset []
+    environment:
+      NMCD_PUBLIC: "1"
+      NMCD_MAX_QUEUE: ${NMCD_MAX_QUEUE:-4}
+      LLM_DAILY_TOKEN_BUDGET: ${LLM_DAILY_TOKEN_BUDGET:-2000000}
+
+  caddy:
+    image: caddy:2.8
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      NMCD_DOMAIN: ${NMCD_DOMAIN:?укажите адрес стенда в NMCD_DOMAIN}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+    depends_on:
+      - nmcd
+
+volumes:
+  caddy-data:
